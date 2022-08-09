@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fenn Construction</title>
+    <meta name="author" content="Stephen Iboudah">
+    <meta name="description" content="Website construction company">
+    <meta name="keyword" content="Azel Texas Fenn construction">
+    <meta name="copyright" content="Stephen, Inc">
+</head>
+
+<body>
+  <header>
+    <!-- Logo icon size is 376-266 94-66.5 -->
+    <div>
+      <img src="./Images(Fenn)/edits/logo-gray.jpeg" alt="Fenn Construction Logo" class="center">
+    </div>
+    <nav aria-label="primary-navigation">
+       <ul>
+         <li><a href="index.html" id="homepage">Home</a></li>
+         <li><a href="services.html" id="services">Services</a></li>
+         <li><a href="about.html" id="about">About Us</a></li>
+         <li><a style="color: white; background-color: #5d3d30;" href="contact.html">Contact</a></li>
+       </ul>
+    </nav>
+    
+  </header>
+  <hr>
+
+  <main>
+    <!--Message US-->
+    <fieldset>
+      <legend><h3>Send Message</h3></legend>
+      <form method="post" action="">
+        <div style="display:inline-table;">
+          <p>
+            <label for="user-name">Name</label>
+           </p>
+           <input type="text" name="user-name" placeholder="John Smith" id="user-name">
+       
+           <p>
+             <label for="user-mail">Email</label> 
+           </p>
+           <input type="email" name="user-mail" placeholder="John@email.com" id="user-mail">
+           <p>
+             <label for="user-phone">Phone(XXX-XXX-XXX)</label> 
+           </p>
+           <input type="tel" name="user-phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+
+        <div style="display:inline-table; margin-left:100px;">
+          <p style="margin-top:20px">
+            <label for="user-subject">Subject</label>
+          </p>
+          </p> 
+           <select name="user-subject" id="user-subject" required>
+             <option></option>
+             <option value="flooring">Flooring</option>
+             <option value="kitchen">Kitchen</option>
+             <option value="bathroom">Bathroom</option>
+             <option value="outdoor">Outdoor</option>
+             <option value="other">*Other*</option>
+           </select>
+         <p>
+           <label for="user-note">Message</label>
+          </p>
+          <textarea style="margin-right:200px" id="user-note" placeholder="Write your message here" name=""user-note cols="30" rows="6"></textarea>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </div>
+      </form>
+    <br>
+    </fieldset>
+    <!--Reach Us fieldset-->
+    <fieldset>
+      <legend><h3>Reach Us</h3></legend>
+      <div style="text-align:center; margin:10px">
+        <ol>
+          <li><a href="https://www.facebook.com/FENN-Construction-243662966013522">Richie Fenn</a></li>
+          <li><a href="tel:817-495-8897">817-495-8897</a></li>
+          <li><a href="mailto: rich.e75@hotmail.com">rich.e75@hotmail.com</a></li>
+          <li><a href="https://www.google.com/maps/place/Sanctuary,+TX+76020/@32.9040668,-97.7197939,11z/data=!3m1!4b1!4m5!3m4!1s0x864de2fe142c584b:0xa91ae7528083bc5f!8m2!3d32.9186258!4d-97.5463885">
+            <address style="text-align:center; margin-bottom:40px; margin-top:30px;">
+              Azel
+              Texas Zip 76020
+            </address>
+           </a></li>
+        </ol>
+      </div>
+    </fieldset>
+
+    <br>    
+    <hr>
+  </main>
+
+  <footer>
+      <!--Site Map-->
+      <div style="display:inline; margin:0; width: 50%; float:left;">
+        <h4 style="margin-left:1em;">Sitemap</h4>
+        <ul style="list-style-type:circle;">
+         <li style="display:inline-block; margin-right: 270px"><a href="about.html">About</a></li>
+         <li style="display:inline-block; margin-left: 270px"><a href="services.html">Services</a></li>
+        </ul>
+        <ul style="list-style:circle; display:inline;">
+         <li style="display:inline-block; margin-right: 270px; margin-top:20px"><a href="contact.html">Contact</a></li>
+         <li style="display:inline-block; margin-left: 265px; margin-top:20px"><a href="flooring-pics.html">Gallery</a></li>
+        </ul>
+  
+        <p style="margin-left:10px; margin-top:4em ;margin-bottom:2em;">
+          Copyright &copy; Fenn Construction.
+        </p>
+      </div>
+       <!--Contacts-->
+      <div style="display:inline; margin-right:0; width: 50%; float: right;">
+        <div style="width:40%; float: right;">
+          <h4>Message us</h4>
+          <form method="post" action="">
+            <p>
+            <label for="user-contact">Your email</label>
+            <input type ="email" id="user-contact" name="user-contact" placeholder="name@email.com">
+            </p>
+            <p>
+              <textarea id="user-message" placeholder="write your message here" name="user-message" rows="6" cols="30" wrap="hard" ></textarea>
+            </p>
+            <p>
+            <button type="submit">Submit</button> <button type="reset">Reset</button>
+            <p></p>
+            <!--Add Facebook icon-->
+            <!--Add Copyright-->
+          </form>
+         </div>
+      </div>
+      
+
+     <!--<legend>Reach Us</legend>
+          
+-->
+  </footer>
+</body>
+
+</html>
