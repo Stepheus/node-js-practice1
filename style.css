@@ -26,7 +26,7 @@ header{
 }
 
 header div:first-child{
-    background-color: #e6e6e6;
+    background-color: #8895A8;
     height: 65%;
 }
 
@@ -73,11 +73,14 @@ li a, li a:visited{
     display: block;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
+    line-height: 4rem;
 }
 
 header a:hover, a:focus{
     background-color: #5d3d30;
     color: white;
+    text-transform: uppercase;
+    
 
     
 }
@@ -133,7 +136,8 @@ p.center-Fenn:hover{
 }
 
 p.center-Construction:hover{  
-    color:#028E41;
+    color:#99ccff;
+    /*color: #1E325C;*/
 }
 
 ol{
@@ -184,15 +188,15 @@ margin-left: 20%;
 }
 
 footer{
-    background: #1E325C;
-    color: white;
-    height: 16em;
+    height: 15rem;
+    background: #5F6369;
+    color: white;  
 }
 
 footer a{
     color:inherit;
 }
 
-a:hover{
-    color:#A64C5E;
+footer a:hover{
+    color:#FFB52E;
 }
