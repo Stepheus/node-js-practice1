@@ -26,7 +26,7 @@ header{
 }
 
 header div:first-child{
-    background-color: #8895A8;
+    background-color: #e6e6e6;
     height: 65%;
 }
 
@@ -79,15 +79,19 @@ li a, li a:visited{
 header a:hover, a:focus{
     background-color: #5d3d30;
     color: white;
-    text-transform: uppercase;
-    
-
-    
+    font-size: 1.2rem;
+       
 }
 
 header li:hover{
     background-color: #5d3d30;
     color: white
+}
+
+.current-nav{
+    color: white; 
+    background-color: #5d3d30;
+    font-size: 1.2rem
 }
 
 a:hover{
@@ -112,7 +116,8 @@ main p{
 
 .center-Fenn{
     color: #b30000;
-    font-size: 4.2rem;
+    font-family:'chalkduster', fantasy;
+    font-size: 3.2rem;
     font-weight: bolder;
     text-align: center;
     margin-left: 17%;
@@ -127,7 +132,8 @@ p.center-Fenn:hover{
 
 .center-Construction{
     color: #b30000;
-    font-size: 4.2rem;
+    font-size: 3.2rem;
+    font-family:'chalkduster', fantasy;
     font-weight: bolder;
     text-align: center;
     margin-left: 33%;
@@ -136,8 +142,8 @@ p.center-Fenn:hover{
 }
 
 p.center-Construction:hover{  
-    color:#99ccff;
-    /*color: #1E325C;*/
+    color:#006b3e;
+    
 }
 
 ol{
@@ -189,7 +195,8 @@ margin-left: 20%;
 
 footer{
     height: 15rem;
-    background: #5F6369;
+    background: #52392F;
+    /*background-color: #7e533f;*/
     color: white;  
 }
 
@@ -198,5 +205,6 @@ footer a{
 }
 
 footer a:hover{
-    color:#FFB52E;
+    color:#F7F749;
+    font-size: 1.2rem;
 }
