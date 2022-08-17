@@ -5,6 +5,7 @@
 }
 
 html{
+    /*font-size: 100%;*/
     font-size: 100%;
 }
 
@@ -20,9 +21,7 @@ a{
 header{
     /*background-color: #5da8b3;*/
     background-color: #bc815f;
-    height:20%;
-    width:100%;
-    position: absolute;
+    height:20vh;
 }
 
 header div:first-child{
@@ -58,7 +57,7 @@ header li{
     display: inline-block;
     border: solid #7e533f;
     border-bottom: 2px solid #7e533f;
-    margin-left: 15%; 
+    margin-left: 15vw; 
     background-color: #bc815f;
 }
 
@@ -98,30 +97,39 @@ a:hover{
     color:#5d3d30;
 }
 main{
-    margin-top: 15%;
-    min-height: 80vh;
+    margin-top: 5%;
 }
 
 main div{
     display: inline-block;
+    margin-top: 6%;
     float:left;
     width:50%;
     height: 90%;
 
 }
 
-main p{
+main figure{
+    margin-top: 2px;
     
+}
+
+
+.home-pic{
+    width: 43vmax;
+    height: 43vmax;
 }
 
 .center-Fenn{
     color: #b30000;
     font-family:'chalkduster', fantasy;
-    font-size: 3.2rem;
+    font-size: 3.4vmax;
     font-weight: bolder;
     text-align: center;
+    width: 40vmax;
+    heigh: 40vmax;
     margin-left: 17%;
-    margin-top: 15%;
+    /*margin-top: 15%;*/
     transform: rotate(-15deg);
 
 }
@@ -132,7 +140,7 @@ p.center-Fenn:hover{
 
 .center-Construction{
     color: #b30000;
-    font-size: 3.2rem;
+    font-size: 3.4vmax;
     font-family:'chalkduster', fantasy;
     font-weight: bolder;
     text-align: center;
@@ -200,11 +208,110 @@ footer{
     color: white;  
 }
 
+footer div:first-child{
+    display: inline-block;
+    width: 50%;
+
+}
+
+
+
+footer h4:first-child{
+    width: 70%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    left: 12%;
+    top:5%
+
+}
+footer h4:nth-child(2){
+    
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    top:5%
+}
+
+
+ footer ul{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin-top:1.2%;
+    margin-right: 0;
+    position: relative;
+    left:10%;
+    /* margin-inline-start: 0;
+    margin-inline-end: -100px;
+    margin-block-end: 0;
+    writing-mode: horizontal-tb; */
+} 
+
+footer ul:nth-child(2){
+    display: inline;
+}
+footer li{
+    display: inline;
+}
+
+footer li:first-child{
+    position: relative;
+}
+
+
+.footer-services{
+    position: relative;
+    left: 60%;
+}
+
+.footer-gallery{
+    position: relative;
+    left:59%;
+}
+
+
+.copy-right{
+    display: inline-block;
+    width: 50%;
+    font-size: medium;
+    float: left;
+    margin-top: 1%;
+    position: relative;
+    right:45%;
+    top:5%;
+
+}
+
+footer form{
+    display: inline-block;
+    width: 30%;
+    float:right;
+    position: relative;
+    top: 13%;
+}
+
 footer a{
+    display: inline;
     color:inherit;
 }
 
 footer a:hover{
-    color:#F7F749;
+    color:#B4D9EF;
     font-size: 1.2rem;
+
+}
+
+footer input[type=email]:focus{
+    background-color: #B4D9EF;
+
+}
+
+footer textarea:focus{
+    background-color: #B4D9EF;
+} 
+
+footer button{
+    padding-left: 10px;
+    padding-right: 10px;
 }
