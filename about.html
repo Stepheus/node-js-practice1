@@ -30,58 +30,41 @@
   <hr>
 
   <main>
-    <div style="margin-top:7em;">
-      <figure style="display:inline; margin-left:10em;">
+      <figure>
         <img src="./Images(Fenn)/Richie's-Selfie.jpeg" height="20%" width="20%" alt="Owner's picture">
       </figure>
-      <p style="display:inline; float:right; margin-top:100px; margin-right: 400px;">
+      <p>
           Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ipsam<br>aliquam neque<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, numquam illum.<br>Illo optio exercitationem molestiae iste asperiores facilis veritatis, totam pariatur
       </p>
-    </div>
   
   </main>
 
-  <hr style="float:none;">
 
   <footer>
-    <!--Site Map-->
-    <div style="display:inline; margin:0; width: 50%; float:left;">
-      <h4 style="margin-left:1em;">Sitemap</h4>
-      <ul style="list-style-type:circle;">
-       <li style="display:inline-block; margin-right: 270px"><a href="about.html">About</a></li>
-       <li style="display:inline-block; margin-left: 270px"><a href="services.html">Services</a></li>
-      </ul>
-      <ul style="list-style:circle; display:inline;">
-       <li style="display:inline-block; margin-right: 270px; margin-top:20px"><a href="contact.html">Contact</a></li>
-       <li style="display:inline-block; margin-left: 265px; margin-top:20px"><a href="flooring-pics.html">Gallery</a></li>
-      </ul>
-
-      <p style="margin-left:10px; margin-top:4em ;margin-bottom:2em;">
-        Copyright &copy; Fenn Construction.
+    <h4>Sitemap</h4>
+    <h4>Message us</h4>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li class="footer-services"><a href="services.html">Services</a></li>
+    </ul>
+    <form method="post" action="">
+      <p>
+      <label for="user-contact">Your email</label>
+      <input type ="email" id="user-contact" name="user-contact" placeholder="name@email.com">
       </p>
-    </div>
-     <!--Contacts-->
-    <div style="display:inline; margin-right:0; width: 50%; float: right;">
-      <div style="width:40%; float: right;">
-        <h4>Message us</h4>
-        <form method="post" action="">
-          <p>
-          <label for="user-contact">Your email</label>
-          <input type ="email" id="user-contact" name="user-contact" placeholder="name@email.com">
-          </p>
-          <p>
-            <textarea id="user-message" placeholder="write your message here" name="user-message" rows="6" cols="30" wrap="hard" ></textarea>
-          </p>
-          <p>
-          <button type="submit">Submit</button> <button type="reset">Reset</button>
-          <p></p>
-          <!--Add Facebook icon-->
-          <!--Add Copyright-->
-        </form>
-       </div>
-    </div>
-    
-
+      <p>
+        <textarea id="user-message" placeholder="write your message here" name="user-message" rows="6" cols="30" wrap="hard" ></textarea>
+      </p>
+      <p>
+      <button type="submit">Submit</button> <button type="reset">Reset</button>
+      </p>
+      
+    </form>
+    <ul>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="footer-gallery"><a href="flooring-pics.html">Gallery</a></li>
+    </ul>
+    <p class="copy-right">Copyright &copy; Fenn Construction.</p>
    
   </footer>
 </body>
