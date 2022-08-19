@@ -200,6 +200,78 @@ margin-left: 20%;
     display: inline;
     text-align: right;
 }
+*/
+
+/*Service Page */
+.text-center{
+text-align: center;
+
+}
+
+
+
+.service-left-image{
+    display: inline-block;
+    width:25vmax;
+    height:25vmax;
+    margin-left:3%;
+
+}
+
+.service-right-paragraph{
+    display: inline;
+    margin-top: 2%;
+    float: right;
+    margin-right: 20%;
+
+}
+
+.service-caption-left{
+    margin-left: 3%;
+}
+
+.service-caption-color{
+    color:#7d4727;
+
+}
+
+.light-brown{
+    background-color: #CAD5E3;
+}
+
+.service-title{
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+.service-right-image{
+    display: inline;
+    width:25vmax;
+    height:25vmax;
+    margin-left:6.2%;
+
+
+}
+
+.service-caption-right{
+    text-align: right;
+    margin-right: 23%;
+
+}
+
+
+
+.service-left-paragraph{
+    display: inline;
+    margin-top: 2%;
+    float: left;
+    margin-left: 22%;
+
+
+}
+
+/*Service page (end) */
 
 footer{
     height: 15rem;
@@ -307,11 +379,18 @@ footer input[type=email]:focus{
 
 }
 
-footer textarea:focus{
-    background-color: #B4D9EF;
-} 
-
 footer button{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+footer button:hover{
+    cursor: pointer;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+footer textarea:focus{
+    background-color: #B4D9EF;
+} 
+
