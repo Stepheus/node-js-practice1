@@ -96,7 +96,7 @@ header li:hover{
 a:hover{
     color:#5d3d30;
 }
-main{
+.home-main{
     margin-top: 5%;
 }
 
@@ -109,8 +109,9 @@ main div{
 
 }
 
-main figure{
-    margin-top: 2px;
+.home-main{
+    margin-top: 5%;
+
     
 }
 
@@ -118,6 +119,7 @@ main figure{
 .home-pic{
     width: 43vmax;
     height: 43vmax;
+    
 }
 
 .center-Fenn{
@@ -202,7 +204,7 @@ margin-left: 20%;
 }
 */
 
-/*Service Page */
+/*------------------------------------------------Service Page ------------------------------------------------------------*/
 .text-center{
 text-align: center;
 
@@ -271,8 +273,139 @@ text-align: center;
 
 }
 
-/*Service page (end) */
+/* ----------------------------------------------Service Page (end)----------------------------------------------------------*/
 
+/* ---------------------------------------------------About US---------------------------------------------------------------*/
+.about-figure{
+    display: inline;
+    width:40%;
+}
+
+.about-pic{
+    display: inline;
+    border: 4px #bc815f solid;
+    width:20vmax;
+    height:23vmax;
+    position: relative;
+    left:20%;
+    margin-bottom: 10%;
+    margin-top: 7%;
+}
+
+.about-text{
+    display: inline-block;
+    max-width: 40%;
+    float:right;
+    position:relative;
+    right:14%;
+    bottom:2%;
+    padding: 6% 6%;
+    border: 5px #287ab8 solid;
+    margin-top: 5%;
+    margin-bottom: 1%;
+
+}
+
+/* .about-main{
+    height: 40vmax;
+} */
+
+/* --------------------------------------------------About US (end)-----------------------------------------------------------*/
+
+/* -----------------------------------------------------Contact---------------------------------------------------------------*/
+.contact-main{
+    margin-top: 5%;
+}
+
+.contact-fieldset{
+    width:80%;
+    margin:auto;
+    margin-bottom: 5%;
+}
+
+.contact-form{
+    display: inline-block;
+    float:left;
+    width: 50%;
+    background-color: #287ab8;
+    color: #e6e6e6;
+    
+}
+
+.contact-input{
+    width:30ch;
+    display: block;
+    margin:auto;
+    margin-bottom: 2%;
+}
+
+input.contact-input:focus{
+    background-color: #C1E1C1;
+}
+
+textarea.contact-area:focus{
+    background-color: #C1E1C1;
+}
+
+.contact-legend{
+    text-align: center;
+    width: auto;
+}
+
+.contact-center{
+    text-align: center;
+}
+
+.contact-subject{
+    width: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.contact-area{
+    display: block;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.contact-p-button{
+    text-align: center;
+    position: relative;
+    right: 22%;
+}
+.contact-button{
+    display: inline-block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2.2px;
+    padding-right: 2.2px;
+    margin-right: 2px;
+    margin-bottom: 5%;
+}
+
+.contact-ul{
+    text-align: center;
+    display: inline-block;
+    padding-top: 4%;
+    padding-bottom: 9.3%;
+    font-size: larger;
+    font-weight: bold;
+    width: 50%;
+    float: right;
+    background: #e2d8cc;
+}
+
+ul.contact-ul a{
+    display: contents;
+    color:#7d4727;
+}
+
+ul.contact-ul a:hover{
+    color:#b30000
+}
+
+/* ----------------------------------------------------Contact(end)----------- ----------------------------------------------*/
 footer{
     height: 15rem;
     background: #52392F;
@@ -375,7 +508,8 @@ footer a:hover{
 }
 
 footer input[type=email]:focus{
-    background-color: #B4D9EF;
+    /* background-color: #B4D9EF; */
+    background-color: #C1E1C1;
 
 }
 
@@ -391,6 +525,7 @@ footer button:hover{
 }
 
 footer textarea:focus{
-    background-color: #B4D9EF;
+    /* background-color: #B4D9EF; */
+    background-color: #C1E1C1;
 } 
 
