@@ -5,7 +5,6 @@
 }
 
 html{
-    /*font-size: 100%;*/
     font-size: 100%;
 }
 
@@ -68,7 +67,7 @@ li:last-child{
     margin-right: 0;
 }
 
-li a, li a:visited{
+header a, header a:visited{
     text-decoration: none;
     color: #e6e6e6;
     display: block;
@@ -79,7 +78,7 @@ li a, li a:visited{
     line-height: 4rem;
 }
 
-header a:hover, a:focus{
+header a:hover, header a:focus{
     background-color: #5d3d30;
     color: white;
        
@@ -280,6 +279,59 @@ text-align: center;
 
 /* ----------------------------------------------Service Page (end)----------------------------------------------------------*/
 
+/* --------------------------------------------------Floor Gallery----------------------------------------------------------*/
+
+.floor-center{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid gray;
+}
+
+.floor-pics-center{
+    margin: auto;
+    width: 95%;
+}
+.previous-left{
+    display:inline-block;
+    width:50%;
+    float: left;
+    color: #b30000;
+}
+
+.next-right{
+    display: block;
+    width:50%;
+    float: right;
+    text-align: right;
+    color:#b30000;
+   
+}
+
+.previous-left-last{
+    color: #b30000;
+}
+
+a.next-right:hover{
+    color: #b30000;
+    opacity: 0.6;
+}
+
+a.previous-left:hover{
+    color: #b30000;
+    opacity: 0.6;
+}
+
+a.previous-left-last:hover{
+    color: #b30000;
+    opacity: 0.6;
+}
+
+
+/* ------------------------------------------------Floor Gallery(end)----------------------------------------------------------*/
+
+
 /* ---------------------------------------------------About US---------------------------------------------------------------*/
 .about-figure{
     display: inline;
@@ -437,6 +489,7 @@ ul.contact-ul a:hover{
 /* ----------------------------------------------------Contact(end)----------- ----------------------------------------------*/
 /* -------------------------------------------------------Footer-------------------------------------------------------------*/
 footer{
+    display: block;
     height: 15rem;
     background: #52392F;
     /*background-color: #7e533f;*/
@@ -473,18 +526,16 @@ footer h4:nth-child(2){
     display: inline-block;
     width: 50%;
     float: left;
-    margin-top:1.2%;
     margin-right: 0;
     position: relative;
+    top:13%;
     left:10%;
-    /* margin-inline-start: 0;
-    margin-inline-end: -100px;
-    margin-block-end: 0;
-    writing-mode: horizontal-tb; */
 } 
 
-footer ul:nth-child(2){
+.footer-ul2{
     display: inline;
+    position: relative;
+    margin-top: 50px;
 }
 footer li{
     display: inline;
@@ -511,9 +562,9 @@ footer li:first-child{
     width: 50%;
     font-size: medium;
     float: left;
-    margin-top: 1%;
+    margin-top: 50px;
+    margin-left: 10px;
     position: relative;
-    right:45%;
     top:5%;
 
 }
