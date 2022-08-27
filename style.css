@@ -99,7 +99,7 @@ a:hover{
 }
 
 /*--------------------------------------------------------Header(end)------------------------------------------------------------*/
-/*-------------------------------------------------------Main------------------------------------------------------------*/
+/*-------------------------------------------------------Home-Page------------------------------------------------------------*/
 .home-main{
     margin-top: 5%;
 }
@@ -119,46 +119,76 @@ main div{
     
 }
 
+.home-section{
+    display: inline-block;
+    float:left;
+    width: 55%;
+    text-align: center;
+}
+
+.home-figure{
+    display: block;
+    width:45%;
+    float:right;
+    position: relative;
+
+}
 
 .home-pic{
     width: 43vmax;
     height: 43vmax;
+    position: relative;
+    right: 10%;
     
 }
+
 
 .center-Fenn{
     color: #b30000;
     font-family:'chalkduster', fantasy;
-    font-size: 3.4vmax;
+    font-size: 3vmax;
     font-weight: bolder;
-    text-align: center;
-    width: 40vmax;
-    heigh: 40vmax;
-    margin-left: 17%;
-    /*margin-top: 15%;*/
-    transform: rotate(-15deg);
+    margin-top: 10vmin;
+    position: relative;
+    left: 20px;
+
 
 }
 
-p.center-Fenn:hover{
+.home-slogan{
+    font-size: 2vmax;
+    font-style: italic;
+    color: gray;
+    margin-top: 3vmin;
+    position: relative;
+    left: 20px;
+
+}
+
+p.home-slogan:hover{
+    color:#006b3e;
+
+}
+
+/* p.center-Fenn:hover{
     color: #EED88B;
-}
+} */
 
 .center-Construction{
     color: #b30000;
-    font-size: 3.4vmax;
+    font-size: 3vmax;
     font-family:'chalkduster', fantasy;
     font-weight: bolder;
-    text-align: center;
-    margin-left: 33%;
-    margin-top: 0.7rem;
-    transform: rotate(-15deg);
+    position: relative;
+    left: 20px;
+
 }
 
 p.center-Construction:hover{  
     color:#006b3e;
     
 }
+
 
 ol{
     list-style-type:none;
