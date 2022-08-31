@@ -6,6 +6,7 @@
 
 html{
     font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*--------------------------------------------------------Body----------------------------------------------------------------*/
@@ -17,6 +18,7 @@ body{
 a{
     text-decoration: none;
 }
+
 
 /*----------------------------------------------------Header ------------------------------------------------------------*/
 header{
@@ -67,7 +69,7 @@ li:last-child{
     margin-right: 0;
 }
 
-header a, header a:visited{
+header a{
     text-decoration: none;
     color: #e6e6e6;
     display: block;
@@ -78,7 +80,7 @@ header a, header a:visited{
     line-height: 4rem;
 }
 
-header a:hover, header a:focus{
+header a:visited, header a:hover, header a:active{
     background-color: #5d3d30;
     color: white;
        
@@ -94,9 +96,6 @@ header li:hover{
     background-color: #5d3d30;
 }
 
-a:hover{
-    color:#5d3d30;
-}
 
 /*--------------------------------------------------------Header(end)------------------------------------------------------------*/
 /*-------------------------------------------------------Home-Page------------------------------------------------------------*/
@@ -292,7 +291,8 @@ text-align: center;
 
 .service-caption-right{
     text-align: right;
-    margin-right: 23%;
+    margin-right: 23.5%;
+    
 
 }
 
@@ -302,7 +302,9 @@ text-align: center;
     display: inline;
     margin-top: 2%;
     float: left;
-    margin-left: 22%;
+    width: 65%;
+    position: relative;
+    left:15%
 
 
 }
@@ -363,6 +365,15 @@ a.previous-left-last:hover{
 
 
 /* ---------------------------------------------------About US---------------------------------------------------------------*/
+.typography-old-title{
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+h2.typography-old-title{
+    margin-top: 5%;
+}
+
 .about-figure{
     display: inline;
     width:40%;
@@ -375,24 +386,69 @@ a.previous-left-last:hover{
     height:23vmax;
     position: relative;
     left:20%;
-    margin-bottom: 10%;
     margin-top: 7%;
 }
 
+
 .about-text{
     display: inline-block;
-    max-width: 40%;
+    max-width: 43%;
     float:right;
     position:relative;
     right:14%;
     bottom:2%;
-    padding: 6% 6%;
+    padding: 4% 4%;
     border: 5px #287ab8 solid;
-    margin-top: 5%;
-    margin-bottom: 1%;
+    margin-top: 2%;
+    font-size: 1.2rem;
 
 }
 
+p.about-text a{
+    color:#006b3e;
+}
+
+.about-figure-review-1{
+    display: inline-block;
+    width:25%;
+    position: relative;
+    left: 5%;
+    margin: 2%;
+    opacity: 0.8;
+    vertical-align: top;
+}
+.about-review-pic1{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin:auto;
+}
+
+figure.about-figure-review-1:hover{
+    opacity: 1;
+    color:#b30000;
+    font-weight: bold;
+}
+
+.review-caption{
+    text-align: center;
+    font-family: "Apple Chancery", cursive;
+}
+
+.review-see-more{
+    text-align: right;
+    position: relative;
+    right: 10%;
+}
+
+p.review-see-more a{
+    color:#7d4727;
+}
+
+p.review-see-more a:hover{
+    cursor: pointer;
+    color:#b30000;
+}
 /* .about-main{
     height: 40vmax;
 } */
