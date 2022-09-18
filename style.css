@@ -134,8 +134,8 @@ main div{
 }
 
 .home-pic{
-    width: 43vmax;
-    height: 43vmax;
+    width: 50vmax;
+    height: 50vmax;
     position: relative;
     right: 10%;
     
@@ -309,6 +309,9 @@ text-align: center;
 
 }
 
+p.service-left-paragraph a, p.service-right-paragraph a{
+    color:#006b3e;
+}
 /* ----------------------------------------------Service Page (end)----------------------------------------------------------*/
 
 /* --------------------------------------------------Floor Gallery----------------------------------------------------------*/
