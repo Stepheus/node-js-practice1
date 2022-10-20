@@ -19,86 +19,108 @@ a{
     text-decoration: none;
 }
 
+/*----------------------------------------------------Index.html------------------------------------------------------------*/
+            /*------------------------------------------Header ----------------------------------------------*/
 
-/*----------------------------------------------------Header ------------------------------------------------------------*/
-header{
-    /*background-color: #5da8b3;*/
-    background-color: #bc815f;
-    height:20vh;
-}
-
-header div:first-child{
+.body_hero{
+    min-width: 100%;
+    min-height:100%;
     background-color: #e6e6e6;
-    height: 65%;
 }
 
-header nav{
-    height:35%;
-    background-color:#bc815f;
-    border-radius: 2rem;
-    font-size: 1rem;
-    line-height: 3.5rem;
+header{
+    height:6.6%;
+    width:100%;
+}
+.nav-top{
+    z-index: 1;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 93.7%;
 }
 
-.center{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    width:"10%";
-    height:75%;
-
-}
-header ul{
-    list-style-type: none;
-    margin-left:0.5%;
-    margin-right: 0.5;
+nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    bottom:93.7%;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-header li{
-    display: inline-block;
-    border: solid #7e533f;
-    border-bottom: 2px solid #7e533f;
-    margin-left: 15vw; 
-    background-color: #bc815f;
+nav a{
+    color:#ffff;
 }
 
-
-li:last-child{
-    margin-right: 0;
-}
-
-header a{
-    text-decoration: none;
+nav a:hover{
+    
     color: #e6e6e6;
+
+}
+
+.color-brown{
+    color:#bc815f;
+}
+
+a.color-brown:hover{
+    color:#7d4727;
+}
+
+.slogan-rebuild{
+   position: absolute;
+   left:33.33%;
+   top:55.5%;
+   color:#ffffff;
+   font-size: 40px; 
+   font-weight: bold;
+}
+
+.slogan-to{
+    position: absolute;
+    left:39.93%;
+    top:61.67%;
+    color:#BC815F;
+    font-size: 40px; 
+    font-weight: bold;
+}
+
+.slogan-love{
+    position: absolute;
+    left:44%;
+    top:61.67%;
+    color:#34A56F;
+    font-size: 40px; 
+    font-weight: bold;
+}
+
+.fennco{
+    position: absolute;
+    left:85.21%;
+    top:87.23%;
+    font-family: 'Oleo Script', cursive;
+    font-size: 20px;
+    color:#b30000;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: [column-third-0]33.3% [column-third-1]33.3% [column-third-2]33.3%;
+    grid-template-rows:[row-third-0]33.3% [row-third-1]33% [row-third-2]33%;
+}
+
+.image-block{
     display: block;
-    width:10ch;
-    text-align: center;
-    /* padding-left: 0.7rem;
-    padding-right: 0.7rem; */
-    line-height: 4rem;
-}
-
-header a:visited, header a:hover, header a:active{
-    background-color: #5d3d30;
-    color: white;
-       
-}
-
-header li:hover{
-    background-color: #5d3d30;
-    color: white
-}
-
-.current-nav{
-    color: white; 
-    background-color: #5d3d30;
 }
 
 
 /*--------------------------------------------------------Header(end)------------------------------------------------------------*/
-/*-------------------------------------------------------Home-Page------------------------------------------------------------*/
+          /*-----------------------------------------------Home-Page-------------------------------------------------*/
 .home-main{
     margin-top: 5%;
 }
@@ -120,15 +142,15 @@ main div{
 
 .home-section{
     display: inline-block;
-    float:left;
+    float: left;
     width: 55%;
     text-align: center;
 }
 
 .home-figure{
     display: block;
-    width:45%;
-    float:right;
+    width: 45%;
+    float: right;
     position: relative;
 
 }
