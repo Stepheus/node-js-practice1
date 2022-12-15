@@ -19,7 +19,7 @@ a{
     text-decoration: none;
 }
 
-/*----------------------------------------------------Index.html------------------------------------------------------------*/
+/*----------------------------------------------------<Hero-Page>------------------------------------------------------------*/
             /*------------------------------------------Header ----------------------------------------------*/
 
 .body_hero{
@@ -72,6 +72,8 @@ a.color-brown:hover{
     color:#7d4727;
 }
 
+/* -------------------------------------------------<Page1-home>------------------------------------------------------ */
+
 .slogan-rebuild{
    position: absolute;
    left:33.33%;
@@ -108,117 +110,122 @@ a.color-brown:hover{
     color:#b30000;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: [column-third-0]33.3% [column-third-1]33.3% [column-third-2]33.3%;
-    grid-template-rows:[row-third-0]33.3% [row-third-1]33% [row-third-2]33%;
-}
-
 .image-block{
     display: block;
 }
 
+/* -------------------------------------------------<Page1-Home-end>------------------------------------------------------ */
+
+/* -------------------------------------------------<Page2-Service>------------------------------------------------------ */
+
+.titles-page{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 45.5%;
+    top: 4.74%;
+}
+
+.kitchen-services-cover{
+    position: absolute;
+    left: 41.53%;
+    top: 23.84%;
+    opacity: 70%;
+    border:solid 6px #BC815F;
+}
+img.kitchen-services-cover:hover{
+    opacity:80%;
+    
+}
+.kitchen-cover-label{
+    position: absolute;
+    left:47.36%;
+    top: 48.2%;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+.bathroom-services-cover{
+    position: absolute;
+    left: 24.37%;
+    top: 15.81%;
+    opacity: 70%;
+    border:solid 6px #BC815F;
+}
+img.bathroom-services-cover:hover{
+    opacity: 80%;
+}
+.bathroom-cover-label{
+    position: absolute;
+    left:28.8%;
+    top: 35.2%;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+.flooring-services-cover{
+    position: absolute;
+    left: 25.69%;
+    top: 50%;
+    opacity: 70%;
+    border:solid 6px #BC815F;
+}
+img.flooring-services-cover:hover{
+    opacity: 80%;
+}
+.flooring-cover-label{
+    position: absolute;
+    left:28.2%;
+    top: 63%;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+.patio-services-cover{
+    position: absolute;
+    left: 61.94%;
+    top: 15.82%;
+    opacity: 70%;
+    border:solid 6px #BC815F;
+}
+img.patio-services-cover:hover{
+    opacity: 80%;
+}
+.patio-cover-label{
+    position: absolute;
+    left:66.58%;
+    top: 34.4%;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+.see-more-services{
+    position: absolute;
+    left: 72.15%;
+    top: 73.2%;
+    color: #B30000;
+}
+
+.see-more-line{
+    display: block;
+    position: absolute;
+    top: 75.42%;
+    left: 19.44%;
+}
+
+
+
+
+/* ----------------------------------------------Service-Page (new-end)----------------------------------------------------------*/
 
 /*--------------------------------------------------------Header(end)------------------------------------------------------------*/
           /*-----------------------------------------------Home-Page-------------------------------------------------*/
-.home-main{
-    margin-top: 5%;
-}
-
-main div{
-    display: inline-block;
-    margin-top: 6%;
-    float:left;
-    width:50%;
-    height: 90%;
-
-}
-
-.home-main{
-    margin-top: 5%;
-
-    
-}
-
-.home-section{
-    display: inline-block;
-    float: left;
-    width: 55%;
-    text-align: center;
-}
-
-.home-figure{
-    display: block;
-    width: 45%;
-    float: right;
-    position: relative;
-
-}
-
-.home-pic{
-    width: 50vmax;
-    height: 50vmax;
-    position: relative;
-    right: 10%;
-    
-}
 
 
-.center-Fenn{
-    color: #b30000;
-    font-family:'chalkduster', fantasy;
-    font-size: 3vmax;
-    font-weight: bolder;
-    margin-top: 10vmin;
-    position: relative;
-    left: 20px;
-
-
-}
-
-.home-slogan{
-    font-size: 2vmax;
-    font-style: italic;
-    color: gray;
-    margin-top: 3vmin;
-    position: relative;
-    left: 20px;
-
-}
-
-p.home-slogan:hover{
-    color:#006b3e;
-
-}
-
-/* p.center-Fenn:hover{
-    color: #EED88B;
-} */
-
-.center-Construction{
-    color: #b30000;
-    font-size: 3vmax;
-    font-family:'chalkduster', fantasy;
-    font-weight: bolder;
-    position: relative;
-    left: 20px;
-
-}
-
-p.center-Construction:hover{  
-    color:#006b3e;
-    
-}
-
-
-ol{
-    list-style-type:none;
-    line-height: 3em;
-}
-
-ul{
-    list-style: none;
-}
 
 .fa {
     padding: 0.5em 0.8em;
@@ -334,7 +341,7 @@ text-align: center;
 p.service-left-paragraph a, p.service-right-paragraph a{
     color:#006b3e;
 }
-/* ----------------------------------------------Service Page (end)----------------------------------------------------------*/
+/* ----------------------------------------------Page2-Service(end)----------------------------------------------------------*/
 
 /* --------------------------------------------------Floor Gallery----------------------------------------------------------*/
 
