@@ -261,6 +261,27 @@ img.patio-services-cover:hover{
     top: 41.30%;
     left: 21.32%;
 }
+
+.story-board{
+    position: absolute;
+    top:30.56%;
+    left:55.06%;
+}
+
+.about-story{
+    width: 290px;
+    height: 451px;
+    position: absolute;
+    top:32.56%;
+    left:56.9%; 
+}
+
+article.about-story section{
+    font-family: cursive;
+    font-weight: bold;
+    text-indent: 10%;
+    margin-bottom: 5px;
+}
 /*--------------------------------------------------------Header(end)------------------------------------------------------------*/
           /*-----------------------------------------------Home-Page-------------------------------------------------*/
 
