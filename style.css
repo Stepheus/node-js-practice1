@@ -21,9 +21,18 @@ a{
 
 /*----------------------------------------------------<Common Classes>------------------------------------------------------------*/
 .text-center{
-    text-align: center;
-    
-    }
+    display: block;
+     text-align: center;
+}
+
+.round-img{
+    border-radius: 50%;
+}
+
+.center-img{
+    display: block;
+    margin: auto;
+}
 
 /*----------------------------------------------------<End-Common Classes>------------------------------------------------------------*/
 
@@ -271,17 +280,65 @@ img.patio-services-cover:hover{
 .about-story{
     width: 290px;
     height: 451px;
+    font-family: "inter";
+    font-weight: bolder;
     position: absolute;
     top:32.56%;
     left:56.9%; 
 }
 
 article.about-story section{
-    font-family: cursive;
+    /* font-family: cursive; */
     font-weight: bold;
     text-indent: 10%;
     margin-bottom: 5px;
 }
+/*----------------------------------------------Home-About-end----------------------------------------------------------*/
+
+/*----------------------------------------------Home-reviews----------------------------------------------------------*/
+.review-page-box{
+    width:1054px;
+    margin:auto;
+}
+
+.home-page4-reviews{
+    column-count: 3;
+}
+
+.home-review{
+    width: 351px;
+    height:700px;
+    opacity: 80%;
+}
+
+
+.home-review-pic{
+    width: 190px;
+    height:190px;
+    position:relative;
+    top:69px;
+    margin-bottom: 23px;
+}
+
+.home-review-caption{
+    width: 308px;
+    font-family: "inter";
+    font-size: 18px;
+    position:relative;
+    top: 69px;
+    margin:auto;
+}
+
+section.home-review:hover{
+    background-color: #BC815F;
+    color: white;
+    opacity: 100%;
+}
+
+
+
+/*----------------------------------------------Home-review-end----------------------------------------------------------*/
+
 /*--------------------------------------------------------Header(end)------------------------------------------------------------*/
           /*-----------------------------------------------Home-Page-------------------------------------------------*/
 
