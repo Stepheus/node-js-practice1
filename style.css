@@ -144,35 +144,36 @@ a.color-brown:hover{
 }
 
 .kitchen-services-cover{
+    width:336px ;
     position: absolute;
-    left: 41.53%;
-    top: 23.84%;
+    left: 38.40%;
+    top: 19.1%;
     opacity: 70%;
-    border:solid 6px #BC815F;
+    border:solid 6px #bc815f;
 }
 img.kitchen-services-cover:hover{
     opacity:80%;
-    width: 297px;
-    height: 297px;
-    left: 39.83%;
-    top: 21.84%;
+    width: 336px;
+    left: 38.40%;
+    top: 19.1%;
 
 }
 .kitchen-cover-label{
     position: absolute;
-    left:47.36%;
-    top: 48.2%;
+    left:47.15%;
+    top: 54.50%;
     font-weight: bold;
     color: white;
-    text-decoration: underline;
+    background-color:#52392F;
 }
 
 .bathroom-services-cover{
+    width:281px;
     position: absolute;
-    left: 24.37%;
-    top: 15.81%;
+    left: 16.46%;
+    top: 15%;
     opacity: 70%;
-    border:solid 6px #BC815F;
+    border:solid 6px #bc815f;
 }
 img.bathroom-services-cover:hover{
     opacity: 80%;
@@ -183,19 +184,21 @@ img.bathroom-services-cover:hover{
 }
 .bathroom-cover-label{
     position: absolute;
-    left:28.8%;
-    top: 35.2%;
+    left:22.36%;
+    top: 42.82%;
     font-weight: bold;
     color: white;
-    text-decoration: underline;
+    background-color:#52392F;
 }
 
 .flooring-services-cover{
+    width:200px;
+    height: 206px;
     position: absolute;
-    left: 25.69%;
-    top: 50%;
+    left: 20.06%;
+    top: 53.40%;
     opacity: 70%;
-    border:solid 6px #BC815F;
+    border:solid 6px #bc815f;
 }
 img.flooring-services-cover:hover{
     opacity: 80%;
@@ -206,19 +209,20 @@ img.flooring-services-cover:hover{
 }
 .flooring-cover-label{
     position: absolute;
-    left:28.2%;
-    top: 63%;
+    left:24.2%;
+    top: 73.47%;
     font-weight: bold;
     color: white;
-    text-decoration: underline;
+    background-color:#52392F;
 }
 
 .patio-services-cover{
+    width: 270px;
     position: absolute;
-    left: 61.94%;
-    top: 15.82%;
+    left: 64.16%;
+    top: 15.20%;
     opacity: 70%;
-    border:solid 6px #BC815F;
+    border:solid 6px #bc815f;
 }
 img.patio-services-cover:hover{
     opacity: 80%;
@@ -229,25 +233,26 @@ img.patio-services-cover:hover{
 }
 .patio-cover-label{
     position: absolute;
-    left:66.58%;
-    top: 34.4%;
+    left:71.25%;
+    top:43.31%;
     font-weight: bold;
     color: white;
-    text-decoration: underline;
+    background-color:#52392F;
 }
 
 .see-more-services{
     position: absolute;
-    left: 72.15%;
-    top: 73.2%;
+    left: 76.45%;
+    top: 80.5%;
     color: #B30000;
 }
 
 .see-more-line{
+    width: 974px;
     display: block;
     position: absolute;
-    top: 75.42%;
-    left: 19.44%;
+    left: 15.62%;
+    top: 84%;
 }
 
 
@@ -267,8 +272,8 @@ img.patio-services-cover:hover{
 
 .richie-portrait{
     position: absolute;
-    top: 41.30%;
-    left: 21.32%;
+    top: 49.30%;
+    left: 22.32%;
 }
 
 .story-board{
@@ -595,6 +600,17 @@ p.review-see-more a:hover{
     cursor: pointer;
     color:#b30000;
 }
+
+.home-review-see-more{
+    color:#B30000; 
+    display: block; 
+    text-align:end;
+
+}
+
+a.home-review-see-more:hover{
+    opacity: 80%;
+}
 /* .about-main{
     height: 40vmax;
 } */
@@ -610,6 +626,7 @@ p.review-see-more a:hover{
     width:80%;
     margin:auto;
     margin-bottom: 5%;
+    margin-top: 194px;
 }
 
 .contact-form{
