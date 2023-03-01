@@ -5,8 +5,8 @@
 }
 
 html{
-    font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*--------------------------------------------------------Body----------------------------------------------------------------*/
@@ -96,7 +96,7 @@ a.color-brown:hover{
    left:33.33%;
    top:55.5%;
    color:#ffffff;
-   font-size: 40px; 
+   font-size: 2.5rem; 
    font-weight: bold;
 }
 
@@ -105,7 +105,7 @@ a.color-brown:hover{
     left:39.93%;
     top:61.67%;
     color:#BC815F;
-    font-size: 40px; 
+    font-size: 2.5rem; 
     font-weight: bold;
 }
 
@@ -114,7 +114,7 @@ a.color-brown:hover{
     left:44%;
     top:61.67%;
     color:#34A56F;
-    font-size: 40px; 
+    font-size: 2.5rem; 
     font-weight: bold;
 }
 
@@ -123,7 +123,7 @@ a.color-brown:hover{
     left:85.21%;
     top:87.23%;
     font-family: 'Oleo Script', cursive;
-    font-size: 20px;
+    font-size: 1.25rem;
     color:#b30000;
 }
 
@@ -136,7 +136,7 @@ a.color-brown:hover{
 /* -------------------------------------------------<Home-Page2-Service>------------------------------------------------------ */
 
 .titles-page{
-    font-size: 30px;
+    font-size: 1.875rem;
     color: white;
     position: absolute;
     left: 45.5%;
@@ -150,6 +150,7 @@ a.color-brown:hover{
     top: 19.1%;
     opacity: 70%;
     border:solid 6px #bc815f;
+    outline: solid 2px #52392F;
 }
 img.kitchen-services-cover:hover{
     opacity:80%;
@@ -174,6 +175,7 @@ img.kitchen-services-cover:hover{
     top: 15%;
     opacity: 70%;
     border:solid 6px #bc815f;
+    outline: solid 2px #52392F;
 }
 img.bathroom-services-cover:hover{
     opacity: 80%;
@@ -199,6 +201,7 @@ img.bathroom-services-cover:hover{
     top: 53.40%;
     opacity: 70%;
     border:solid 6px #bc815f;
+    outline: solid 2px #52392F;
 }
 img.flooring-services-cover:hover{
     opacity: 80%;
@@ -223,6 +226,7 @@ img.flooring-services-cover:hover{
     top: 15.20%;
     opacity: 70%;
     border:solid 6px #bc815f;
+    outline: solid 2px #52392F;
 }
 img.patio-services-cover:hover{
     opacity: 80%;
@@ -263,7 +267,7 @@ img.patio-services-cover:hover{
 /*----------------------------------------------Home-About-Page----------------------------------------------------------*/
 .home-about-title{
     color:#7d4727;
-    font-size: 30px;
+    font-size: 1.875rem;
     position: absolute;
     top: 1.55%;
     left: 46.80%;
@@ -328,7 +332,7 @@ article.about-story section{
 .home-review-caption{
     width: 308px;
     font-family: "inter";
-    font-size: 18px;
+    font-size: 1.125rem;
     position:relative;
     top: 69px;
     margin:auto;
