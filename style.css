@@ -91,31 +91,91 @@ a.color-brown:hover{
 
 /* -------------------------------------------------<Page1-home>------------------------------------------------------ */
 
+@keyframes fenn-paint {
+    0%{
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+
+.fenn-painting{
+    position:absolute;
+    top: 7%;
+    left:49.86%;
+    opacity: 0;
+    animation-name: fenn-paint;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.blue-rectangle{
+    position:absolute;
+    top:52.79%;
+    left: 24.1%;
+   
+}
+
+@keyframes slogan-slide {
+    0%{
+        opacity: 0;
+        transform: translateX(0);
+
+    }
+    100%{
+        opacity:100%;
+        transform: translateX(25%);
+
+    }
+    
+}
 .slogan-rebuild{
    position: absolute;
-   left:33.33%;
+   left:30.33%;
    top:55.5%;
    color:#ffffff;
    font-size: 2.5rem; 
    font-weight: bold;
+   opacity: 0%;
+   animation-name: slogan-slide;
+   animation-duration: 1s;
+   animation-delay: 1.4s;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-out;
 }
 
 .slogan-to{
     position: absolute;
-    left:39.93%;
+    left:36.93%;
     top:61.67%;
     color:#BC815F;
     font-size: 2.5rem; 
     font-weight: bold;
+    opacity: 0%;
+    animation-name: slogan-slide;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 .slogan-love{
     position: absolute;
-    left:44%;
+    left:40%;
     top:61.67%;
     color:#34A56F;
     font-size: 2.5rem; 
     font-weight: bold;
+    opacity: 0%;
+    animation-name: slogan-slide;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 .fennco{
@@ -154,9 +214,10 @@ a.color-brown:hover{
 }
 img.kitchen-services-cover:hover{
     opacity:80%;
-    width: 336px;
-    left: 38.40%;
-    top: 19.1%;
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+    transform: scale(1.09);
 
 }
 .kitchen-cover-label{
@@ -178,11 +239,11 @@ img.kitchen-services-cover:hover{
     outline: solid 2px #52392F;
 }
 img.bathroom-services-cover:hover{
-    opacity: 80%;
-    width: 249.6px;
-    height:249.6px;
-    left: 22.93%;
-    top: 13.28%;
+    opacity:80%;
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+    transform: scale(1.09);
 }
 .bathroom-cover-label{
     position: absolute;
@@ -204,11 +265,11 @@ img.bathroom-services-cover:hover{
     outline: solid 2px #52392F;
 }
 img.flooring-services-cover:hover{
-    opacity: 80%;
-    width: 177.6px;
-    height:183.6px;
-    left:24.66%;
-    top:48.16%;
+    opacity:80%;
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+    transform: scale(1.09);
 }
 .flooring-cover-label{
     position: absolute;
@@ -229,11 +290,11 @@ img.flooring-services-cover:hover{
     outline: solid 2px #52392F;
 }
 img.patio-services-cover:hover{
-    opacity: 80%;
-    width:240px;
-    height:240px;
-    left:60.45%;
-    top:13.37%;
+    opacity:80%;
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+    transform: scale(1.09);
 }
 .patio-cover-label{
     position: absolute;
