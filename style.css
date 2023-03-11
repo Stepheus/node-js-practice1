@@ -223,7 +223,7 @@ img.kitchen-services-cover:hover{
 .kitchen-cover-label{
     position: absolute;
     left:47.15%;
-    top: 54.50%;
+    top: 57.50%;
     font-weight: bold;
     color: white;
     background-color:#52392F;
@@ -247,8 +247,8 @@ img.bathroom-services-cover:hover{
 }
 .bathroom-cover-label{
     position: absolute;
-    left:22.36%;
-    top: 42.82%;
+    left:23.36%;
+    top: 45.82%;
     font-weight: bold;
     color: white;
     background-color:#52392F;
@@ -259,7 +259,7 @@ img.bathroom-services-cover:hover{
     height: 206px;
     position: absolute;
     left: 20.06%;
-    top: 53.40%;
+    top: 59.40%;
     opacity: 70%;
     border:solid 6px #bc815f;
     outline: solid 2px #52392F;
@@ -273,8 +273,8 @@ img.flooring-services-cover:hover{
 }
 .flooring-cover-label{
     position: absolute;
-    left:24.2%;
-    top: 73.47%;
+    left:25.2%;
+    top: 80.47%;
     font-weight: bold;
     color: white;
     background-color:#52392F;
@@ -284,7 +284,7 @@ img.flooring-services-cover:hover{
     width: 270px;
     position: absolute;
     left: 64.16%;
-    top: 15.20%;
+    top: 17%;
     opacity: 70%;
     border:solid 6px #bc815f;
     outline: solid 2px #52392F;
@@ -299,7 +299,7 @@ img.patio-services-cover:hover{
 .patio-cover-label{
     position: absolute;
     left:71.25%;
-    top:43.31%;
+    top:48.31%;
     font-weight: bold;
     color: white;
     background-color:#52392F;
@@ -308,7 +308,7 @@ img.patio-services-cover:hover{
 .see-more-services{
     position: absolute;
     left: 76.45%;
-    top: 80.5%;
+    top: 92%;
     color: #B30000;
 }
 
@@ -317,7 +317,7 @@ img.patio-services-cover:hover{
     display: block;
     position: absolute;
     left: 15.62%;
-    top: 84%;
+    top: 95%;
 }
 
 
