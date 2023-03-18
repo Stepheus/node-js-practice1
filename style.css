@@ -220,6 +220,7 @@ img.kitchen-services-cover:hover{
     transform: scale(1.09);
 
 }
+
 .kitchen-cover-label{
     position: absolute;
     left:47.15%;
@@ -227,7 +228,11 @@ img.kitchen-services-cover:hover{
     font-weight: bold;
     color: white;
     background-color:#52392F;
+    transition-property: font-size;
+    transition-duration: 0.1s;
 }
+
+
 
 .bathroom-services-cover{
     width:281px;
@@ -245,6 +250,7 @@ img.bathroom-services-cover:hover{
     transition-timing-function: ease-in;
     transform: scale(1.09);
 }
+
 .bathroom-cover-label{
     position: absolute;
     left:23.36%;
@@ -264,6 +270,7 @@ img.bathroom-services-cover:hover{
     border:solid 6px #bc815f;
     outline: solid 2px #52392F;
 }
+
 img.flooring-services-cover:hover{
     opacity:80%;
     transition-property: transform;
@@ -305,11 +312,21 @@ img.patio-services-cover:hover{
     background-color:#52392F;
 }
 
-.see-more-services{
+a.see-more-services{
     position: absolute;
-    left: 76.45%;
-    top: 92%;
+    left: 77.45%;
+    top: 92.6%;
     color: #B30000;
+    transition-property: font-size;
+    transition-duration: 0.1s;
+
+}
+
+a.see-more-services:hover,
+a.see-more-services:focus
+{
+    opacity: 80%;
+    cursor: pointer;
 }
 
 .see-more-line{
@@ -317,8 +334,15 @@ img.patio-services-cover:hover{
     display: block;
     position: absolute;
     left: 15.62%;
-    top: 95%;
+    top: 96%;
 }
+
+.more-services{
+    display:none;
+    background-color: #939799;
+    width: 100%;
+}
+
 
 
 
@@ -362,6 +386,21 @@ article.about-story section{
     font-weight: bold;
     text-indent: 10%;
     margin-bottom: 5px;
+}
+div.home-story{
+    width:334px;
+    height: 485px;
+    position: absolute;
+    top:30.56%;
+    left:55.06%;
+}
+
+div.home-story:hover img{
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+    transform: scale(1.1);
+
 }
 /*----------------------------------------------Home-About-end----------------------------------------------------------*/
 
