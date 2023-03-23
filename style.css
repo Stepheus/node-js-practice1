@@ -387,21 +387,6 @@ article.about-story section{
     text-indent: 10%;
     margin-bottom: 5px;
 }
-div.home-story{
-    width:334px;
-    height: 485px;
-    position: absolute;
-    top:30.56%;
-    left:55.06%;
-}
-
-div.home-story:hover img{
-    transition-property: transform;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-in;
-    transform: scale(1.1);
-
-}
 /*----------------------------------------------Home-About-end----------------------------------------------------------*/
 
 /*----------------------------------------------Home-reviews----------------------------------------------------------*/
