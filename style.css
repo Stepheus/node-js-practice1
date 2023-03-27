@@ -178,7 +178,7 @@ a.color-brown:hover{
     opacity: 0%;
     animation-name: slogan-slide;
     animation-duration: 1s;
-    animation-delay: 2s;
+    animation-delay: 2.2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
@@ -434,6 +434,14 @@ section.home-review:hover{
     opacity: 100%;
 }
 
+a.home-review-see-more:visited,
+a.home-review-see-more:active,
+a.home-review-see-more{
+    display: block;
+    color:#B30000;
+    text-align: right;
+}
+
 
 
 /*----------------------------------------------Home-review-end----------------------------------------------------------*/
@@ -584,7 +592,7 @@ footer h4{
     width: 33.3%;
 }
 
-footer ul{
+footer .align-list{
     list-style-type: none;
     width: 58%;
     float: right;
@@ -592,7 +600,22 @@ footer ul{
     padding-top: 5px;
 }
 
+footer .contact-icons-list{
+    list-style-type: none;
+    width:67%;
+    float: right;
+    margin-top: 5px;
+}
 
+footer .contact-icons-list li{
+    display: inline;
+    padding: 2px;
+}
+
+footer ul.contact-icons-list img{
+    width:30px;
+    height:30px;
+}
 .services-footer{
     width:32%;
 }
@@ -604,16 +627,11 @@ footer ul{
 }
 
 
-.copy-right{
-    display: inline-block;
-    width: 50%;
-    font-size: medium;
-    float: left;
-    margin-top: 50px;
-    margin-left: 10px;
-    position: relative;
-    top:5%;
-
+footer .copy-right{
+    width:99%;
+    float:right;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 footer form{
@@ -622,8 +640,10 @@ footer form{
 
 }
 
+footer a:visited,
 footer a{
-   
+    text-decoration: none;
+    color: white;
 }
 
 footer li a:hover{
