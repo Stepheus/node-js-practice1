@@ -15,9 +15,14 @@ body{
     background-color: #e6e6e6;
     
   }
-a{
+
+a:visited,
+a
+{
     text-decoration: none;
 }
+
+
 
 /*----------------------------------------------------<Common Classes>------------------------------------------------------------*/
 .text-center{
@@ -433,279 +438,6 @@ section.home-review:hover{
 
 /*----------------------------------------------Home-review-end----------------------------------------------------------*/
 
-/*--------------------------------------------------------Header(end)------------------------------------------------------------*/
-          /*-----------------------------------------------Home-Page-------------------------------------------------*/
-
-
-
-.fa {
-    padding: 0.5em 0.8em;
-    font-size: 1.2em;
-    width: 2em;
-    text-align: left;
-    text-decoration: none;
-    border-radius: 70%;
-  }
-
-
-.fa:hover {
-    opacity: 0.7;
-  }
-  
-.fa-facebook{
-    background-color: #3B5998;
-    color: white;
-}
-
-/*text align left text align right */
-.align-left{
-display: inline;
-float: left;
-text-align: center;
-margin-right: 20%;
-margin-left: 20%;
-}
-
-.aling-center{
- display: inline;
- float: right;  
-}
-
-.align-right{
-    display: inline;
-    text-align: right;
-}
-*/
-
-/*------------------------------------------------Service Page ------------------------------------------------------------*/
-
-
-
-
-.service-left-image{
-    display: inline-block;
-    width:25vmax;
-    height:25vmax;
-    margin-left:3%;
-
-}
-
-.service-right-paragraph{
-    display: inline;
-    margin-top: 2%;
-    float: right;
-    margin-right: 20%;
-
-}
-
-.service-caption-left{
-    margin-left: 3%;
-}
-
-.service-caption-color{
-    color:#7d4727;
-
-}
-
-.light-brown{
-    background-color: #CAD5E3;
-}
-
-.service-title{
-    text-align: center;
-    margin-top: 2%;
-
-}
-
-.service-right-image{
-    display: inline;
-    width:25vmax;
-    height:25vmax;
-    margin-left:6.2%;
-
-
-}
-
-.service-caption-right{
-    text-align: right;
-    margin-right: 23.5%;
-    
-
-}
-
-
-
-.service-left-paragraph{
-    display: inline;
-    margin-top: 2%;
-    float: left;
-    width: 65%;
-    position: relative;
-    left:15%
-
-
-}
-
-p.service-left-paragraph a, p.service-right-paragraph a{
-    color:#006b3e;
-}
-/* ----------------------------------------------Page2-Service(end)----------------------------------------------------------*/
-
-/* --------------------------------------------------Floor Gallery----------------------------------------------------------*/
-
-.floor-center{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: solid gray;
-}
-
-.floor-pics-center{
-    margin: auto;
-    width: 95%;
-}
-.previous-left{
-    display:inline-block;
-    width:50%;
-    float: left;
-    color: #b30000;
-}
-
-.next-right{
-    display: block;
-    width:50%;
-    float: right;
-    text-align: right;
-    color:#b30000;
-   
-}
-
-.previous-left-last{
-    color: #b30000;
-}
-
-a.next-right:hover{
-    color: #b30000;
-    opacity: 0.6;
-}
-
-a.previous-left:hover{
-    color: #b30000;
-    opacity: 0.6;
-}
-
-a.previous-left-last:hover{
-    color: #b30000;
-    opacity: 0.6;
-}
-
-
-/* ------------------------------------------------Floor Gallery(end)----------------------------------------------------------*/
-
-
-/* ---------------------------------------------------About US---------------------------------------------------------------*/
-.typography-old-title{
-    font-family: Georgia, serif;
-    text-align: center;
-}
-
-h2.typography-old-title{
-    margin-top: 5%;
-}
-
-.about-figure{
-    display: inline;
-    width:40%;
-}
-
-.about-pic{
-    display: inline;
-    border: 4px #bc815f solid;
-    width:20vmax;
-    height:23vmax;
-    position: relative;
-    left:20%;
-    margin-top: 7%;
-}
-
-
-.about-text{
-    display: inline-block;
-    max-width: 43%;
-    float:right;
-    position:relative;
-    right:14%;
-    bottom:2%;
-    padding: 4% 4%;
-    border: 5px #287ab8 solid;
-    margin-top: 2%;
-    font-size: 1.2rem;
-
-}
-
-p.about-text a{
-    color:#006b3e;
-}
-
-.about-figure-review-1{
-    display: inline-block;
-    width:25%;
-    position: relative;
-    left: 5%;
-    margin: 2%;
-    opacity: 0.8;
-    vertical-align: top;
-}
-.about-review-pic1{
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    margin:auto;
-}
-
-figure.about-figure-review-1:hover{
-    opacity: 1;
-    color:#b30000;
-    font-weight: bold;
-}
-
-.review-caption{
-    text-align: center;
-    font-family: "Apple Chancery", cursive;
-}
-
-.review-see-more{
-    text-align: right;
-    position: relative;
-    right: 10%;
-}
-
-p.review-see-more a{
-    color:#7d4727;
-}
-
-p.review-see-more a:hover{
-    cursor: pointer;
-    color:#b30000;
-}
-
-.home-review-see-more{
-    color:#B30000; 
-    display: block; 
-    text-align:end;
-
-}
-
-a.home-review-see-more:hover{
-    opacity: 80%;
-}
-/* .about-main{
-    height: 40vmax;
-} */
-
-/* --------------------------------------------------About US (end)-----------------------------------------------------------*/
-
 /* -----------------------------------------------------Contact---------------------------------------------------------------*/
 .contact-main{
     margin-top: 5%;
@@ -718,15 +450,23 @@ a.home-review-see-more:hover{
     margin-top: 194px;
 }
 
+.contact-legend{
+    text-align: center;
+    width: auto;
+}
+
 .contact-form{
     display: inline-block;
     float:left;
     width: 50%;
     height: 25.5rem;
     background-color: #287ab8;
-    /* background-color: #4169e1; */
     color: #e6e6e6;
     
+}
+
+.contact-center{
+    text-align: center;
 }
 
 .contact-input{
@@ -742,15 +482,6 @@ input.contact-input:focus{
 
 textarea.contact-area:focus{
     background-color: #C1E1C1;
-}
-
-.contact-legend{
-    text-align: center;
-    width: auto;
-}
-
-.contact-center{
-    text-align: center;
 }
 
 .contact-subject{
@@ -827,71 +558,49 @@ ul.contact-ul a:hover{
 /* ----------------------------------------------------Contact(end)----------- ----------------------------------------------*/
 /* -------------------------------------------------------Footer-------------------------------------------------------------*/
 footer{
-    display: block;
-    height: 15rem;
+    
+    height: 13rem;
     background: #52392F;
-    /*background-color: #7e533f;*/
     color: white;  
 }
 
-footer div:first-child{
-    display: inline-block;
-    width: 50%;
+.footer-titles{
+    display: flex;
+    justify-content: space-around;
 
 }
 
-
-
-footer h4:first-child{
-    width: 70%;
-    display: inline-block;
-    float: left;
-    position: relative;
-    left: 12%;
-    top:5%
-
-}
-footer h4:nth-child(2){
-    
-    width: 30%;
-    display: inline-block;
-    position: relative;
-    top:5%
+footer h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-
- footer ul{
-    display: inline-block;
-    width: 50%;
-    float: left;
-    margin-right: 0;
-    position: relative;
-    top:13%;
-    left:10%;
-} 
-
-.footer-ul2{
-    display: inline;
-    position: relative;
-    margin-top: 50px;
-}
-footer li{
-    display: inline;
+.footer-contents{
+    height:10rem;
+    display: flex;
 }
 
-footer li:first-child{
-    position: relative;
+.sitemap-list{
+    width: 33.3%;
+}
+
+footer ul{
+    list-style-type: none;
+    width: 58%;
+    float: right;
+    line-height: 30px;
+    padding-top: 5px;
 }
 
 
-.footer-services{
-    position: relative;
-    left: 60%;
+.services-footer{
+    width:32%;
 }
 
-.footer-gallery{
-    position: relative;
-    left:59%;
+
+.message-us{
+    width: 35%;
+    padding-top: 5px;
 }
 
 
@@ -908,20 +617,18 @@ footer li:first-child{
 }
 
 footer form{
-    display: inline-block;
-    width: 30%;
-    float:right;
-    position: relative;
-    top: 13%;
+    width:70%;
+    float: right;
+
 }
 
 footer a{
-    display: inline;
-    color:inherit;
+   
 }
 
-footer a:hover{
-    color:#B4D9EF;
+footer li a:hover{
+    color:#e6e6e6;
+    cursor: pointer;
 
 }
 
