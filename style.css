@@ -17,8 +17,7 @@ body{
   }
 
 a:visited,
-a
-{
+a{
     text-decoration: none;
 }
 
@@ -50,10 +49,12 @@ a
     background-color: #e6e6e6;
 }
 
+
 header{
     height:6.6%;
     width:100%;
 }
+
 .nav-top{
     z-index: 1;
     position: fixed;
@@ -63,10 +64,32 @@ header{
     bottom: 93.7%;
 }
 
+.nav-top-xsmall{
+    display: none;
+}
+
+.fenn-construction-title{
+    position: fixed;
+    top:0;
+    left:12.5%;
+    z-index: 3;
+    line-height: 15px;
+    
+}
+
+
+
+.logo-wheels{
+    color:#181818; 
+    font-size:larger;
+    position:relative;
+    top: 5px;
+
+}
 nav{
     position: fixed;
     top:0;
-    left: 0;
+    left: 25%;
     right:0;
     bottom:93.7%;
     z-index: 2;
@@ -76,7 +99,9 @@ nav{
     align-items: center;
 }
 
-nav a{
+
+header a:visited,
+header a{
     color:#ffff;
 }
 
@@ -86,13 +111,94 @@ nav a:hover{
 
 }
 
-.color-brown{
+header a.color-brown{
     color:#bc815f;
 }
 
 a.color-brown:hover{
     color:#7d4727;
 }
+
+header button{
+    display: none;
+}
+
+/*XSMALL - Screen phone--------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:120px) and (max-width: 600px){
+    header nav{
+        display:none;
+    }
+
+    header .nav-top{
+        display:none;
+    }
+
+    header .nav-top-xsmall{
+        display:block;
+        z-index: 1;
+        position: fixed;
+        top:0;
+        right:0;
+        left:0;
+
+    }
+    
+    p.fenn-construction-title img{
+        width:30px;
+
+    }
+
+    .fenn-painting{
+        transform: translateX(-10px);
+    }
+
+    .fenn-construction-title{
+        
+         position:fixed;
+         top:0;
+         left:5%;
+         z-index:3;
+         line-height:12px;
+         font-size: 0.7rem;
+         font-weight:bold;
+         opacity: 80%;
+    }
+
+    header button.menu-button{
+        display: block;
+        z-index:3;
+    }
+    
+    .menu-button{
+        background-color: transparent;
+        display: flex;
+        place-content: center;
+        position:fixed;
+        top: 5px;
+        right:10px;
+        border:none;
+        width: 48px;
+        height:48px;
+    }
+
+    .menu-icon::before,
+    .menu-icon::after{
+        content: "";
+    }
+
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after{
+        width:40px;
+        height:5px;
+        border-radius: 5px;
+        transition-property: all 0.5s;
+        color:#52392F;
+    }
+}
+
+
 
 /* -------------------------------------------------<Page1-home>------------------------------------------------------ */
 
@@ -117,13 +223,6 @@ a.color-brown:hover{
     animation-fill-mode: forwards;
 }
 
-
-.blue-rectangle{
-    position:absolute;
-    top:52.79%;
-    left: 24.1%;
-   
-}
 
 @keyframes slogan-slide {
     0%{
@@ -196,6 +295,30 @@ a.color-brown:hover{
     display: block;
 }
 
+
+/*XSMALL - Screen phone--------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:120px) and (max-width:600px){
+    .slogan-rebuild{
+        -webkit-text-stroke: 1px #B30000;
+        font-size: 25px;
+        left:24%;
+        top:73.4%;
+    }
+    
+    .slogan-to{
+        display: none;
+    }
+
+    .slogan-love{
+        display: none;
+    }
+
+    .fenn-painting{
+        width: 157px;
+        height: 273px;
+    }
+}
+
 /* -------------------------------------------------<Home-Page1-Home-end>------------------------------------------------------ */
 
 /* -------------------------------------------------<Home-Page2-Service>------------------------------------------------------ */
@@ -206,6 +329,12 @@ a.color-brown:hover{
     position: absolute;
     left: 45.5%;
     top: 4.74%;
+}
+
+.wall-lamp{
+    position: absolute;
+    left: 11.4%;
+    top: 5.24%;
 }
 
 .kitchen-services-cover{
@@ -335,7 +464,7 @@ a.see-more-services:focus
 }
 
 .see-more-line{
-    width: 974px;
+    width: 68%;
     display: block;
     position: absolute;
     left: 15.62%;
@@ -346,6 +475,45 @@ a.see-more-services:focus
     display:none;
     background-color: #939799;
     width: 100%;
+}
+
+.slideshow-large{
+    display:none;
+}
+
+
+/*XSMALL - Screen phone------------*/
+
+@media screen and (min-width:120px) and (max-width: 600px){
+    img.home-services-background{
+        height:254px;
+    }
+
+    .titles-page{
+        font-size: 1rem;
+    }
+
+    .wall-lamp{
+        width:20px;
+    }
+
+    .services-canvas{
+        display: none;
+    }
+
+    .slideshow-xsmall{
+        display: block;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .slideshow-xsmall img{
+        width: 200px;
+        height: 200px;
+    }
+
+
 }
 
 
@@ -392,11 +560,21 @@ article.about-story section{
     text-indent: 10%;
     margin-bottom: 5px;
 }
+
+@media screen and (min-width:120px) and (max-width: 600px){
+.story-board,
+.about-story,
+.richie-portrait{
+    display:none;
+}
+
+}
+
 /*----------------------------------------------Home-About-end----------------------------------------------------------*/
 
 /*----------------------------------------------Home-reviews----------------------------------------------------------*/
 .review-page-box{
-    width:1054px;
+    width:73.19%;
     margin:auto;
 }
 
@@ -442,6 +620,11 @@ a.home-review-see-more{
     text-align: right;
 }
 
+@media screen and (min-width:120px) and (max-width: 600px){
+.review-page-box{
+    display: none;
+}
+}
 
 
 /*----------------------------------------------Home-review-end----------------------------------------------------------*/
@@ -561,6 +744,13 @@ ul.contact-ul a:hover{
     text-align: center;
     margin-bottom: 5%;
     font-size: larger;
+
+}
+
+@media screen and (min-width:120px) and (max-width: 600px){
+    li{
+        word-wrap: break-word;
+    }
 
 }
 /* ----------------------------------------------------Contact(end)----------- ----------------------------------------------*/
