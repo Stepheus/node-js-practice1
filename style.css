@@ -10,20 +10,25 @@ html{
 }
 
 /*--------------------------------------------------------Body----------------------------------------------------------------*/
-body{
-    font-size: 1.1rem;
-    background-color: #e6e6e6;
+/* MEDIA Laptop size */
+@media screen and (min-width: 1025px) {
+    body{
+        font-size: 1.1rem;
+        background-color: #e6e6e6;
+        
+      }
     
-  }
+    a:visited,
+    a{
+        text-decoration: none;
+    }
 
-a:visited,
-a{
-    text-decoration: none;
 }
 
 
 
 /*----------------------------------------------------<Common Classes>------------------------------------------------------------*/
+
 .text-center{
     display: block;
      text-align: center;
@@ -125,7 +130,7 @@ header button{
 
 /*XSMALL - Screen phone--------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width:120px) and (max-width: 600px){
+@media screen and (min-width:120px) and (max-width: 320px){
     header nav{
         display:none;
     }
@@ -296,7 +301,7 @@ header button{
 }
 
 
-/*XSMALL - Screen phone--------------------------------------------------------------------------------------------------*/
+/* MEDIA XSMALL - Screen phone----------------------------------------------------------*/
 @media screen and (min-width:120px) and (max-width:600px){
     .slogan-rebuild{
         -webkit-text-stroke: 1px #B30000;
@@ -323,12 +328,18 @@ header button{
 
 /* -------------------------------------------------<Home-Page2-Service>------------------------------------------------------ */
 
+
 .titles-page{
     font-size: 1.875rem;
     color: white;
     position: absolute;
     left: 45.5%;
     top: 4.74%;
+}
+
+.services-canvas{
+    
+    background-image: url("../Images(Fenn)/edits/home-page2-skeleton(3).png")
 }
 
 .wall-lamp{
@@ -477,7 +488,7 @@ a.see-more-services:focus
     width: 100%;
 }
 
-.slideshow-large{
+.slideshow-xsmall{
     display:none;
 }
 
@@ -508,7 +519,7 @@ a.see-more-services:focus
         overflow: hidden;
     }
 
-    .slideshow-xsmall img{
+    .slide img{
         width: 200px;
         height: 200px;
     }
