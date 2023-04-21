@@ -21,16 +21,18 @@
 <body class="body_hero">
   <header>
     <img src="./Images-Fenn/edits/background-hero-7-nav.png" width="100%" class="nav-top" alt="nav-pic">
-    <img src="./Images-Fenn/edits/background-hero-nav-top(xsmall).png" width="100%"  class="nav-top-xsmall" alt="nav-pic">
+    <img src="./Images-Fenn/edits/background-hero-nav-top-xsmall.png" width="100%"  class="nav-top-xsmall" alt="nav-pic">
     <p class="fenn-construction-title"><img src="./Images-Fenn/edits/logo-blue.png" width="45px" alt="logo"><a href="#">Fenn<br>C<span class="logo-wheels">o</span>nstructi<span class="logo-wheels">o</span>n</a></p>
     <nav>
-      <p><a href="#home-services">services</a></p>
-      <p><a href="#about">about</a></p>
-      <p><a href="#contact" class="color-brown">contact</a></p>
+      <input type="radio" name="nav-logo" id="nav-logo">
+      <label for="nav-logo"><button class="menu-button"><div class="menu-icon"></div></button></label>
+
+      <ul class="nav-list">
+       <li><a href="#home-services">services</a></li>
+       <li><a href="#about">about</a></li>
+       <li><a href="#contact" class="color-brown">contact</a></li>
+      </ul>
     </nav>
-    <button class="menu-button">
-      <div class="menu-icon"></div>
-    </button>
   </header>
 
 
@@ -47,64 +49,70 @@
      <img  src="./Images-Fenn/edits/transition-p1-p2-test.png" width="100%" class="image-block" alt="transition">
      
      <!--Page-2(Home-Service) -->
-    <div id="home-services" style="position:relative;">
-     <img src="./Images-Fenn/edits/home-page2-skeleton(3).png" width="100%" class="image-block home-services-background" alt="page2">
-     <img src="./Images-Fenn/edits/wall-lamp.png" class="wall-lamp" width="60px" alt="wall-lamp">
-     <p class="titles-page">Services</p>
-     <figure class="services-canvas xsmall large">
-       <img id="kitchen-cover" class="kitchen-services-cover" src="./Images-Fenn/Kitchen/kitchen-cover.jpeg" width="336px" heigh="336px" alt="kitchen-services">
-       <label for="kitchen-cover" class="kitchen-cover-label"> Kitchen </label>
+     <div class="services-canvas">
+       <h3 class="titles-page">Services</h3>
+       <img src="./Images-Fenn/edits/home-page2-skeleton3.png" width="100%" class="home-service-bar" alt="title-overlay">
+       <img src="./Images-Fenn/edits/wall-lamp.png" class="wall-lamp" alt="wall-lamp">
 
-       <img id="bathroom-services-cover" class= "bathroom-services-cover" src="./Images-Fenn/Bathroom/bathroom-cover.jpeg" width="281px" height="281px" alt="bathroom-services">
-       <label for="bathroom-services-cover" class="bathroom-cover-label"> Bathroom </label>
+       <figure class="slideshow-xsmall">
+          <figure class="slides">
 
-       <img id="flooring-services-cover" class="flooring-services-cover" src="./Images-Fenn/Flooring/flooring-cover.jpeg" width="200px" heigh="206px" alt="flooring-services">
-       <label for="flooring-services-cover" class="flooring-cover-label"> Flooring </label>
+           <input type="radio" name="photo-radio" id="photo-radio0" checked>
+           <input type="radio" name="photo-radio" id="photo-radio1">
+           <input type="radio" name="photo-radio" id="photo-radio2">
+           <input type="radio" name="photo-radio" id="photo-radio3">
 
-       <img id="patio-cover-label" class="patio-services-cover" src="./Images-Fenn/Patio/patio-cover.jpeg" width="270px" height="270px" alt="patio-services">
-       <label for="patio-cover-label" class="patio-cover-label"> Outdoor </label>
+           <div class="slide s0">
+             <img id="kitchen-cover" class="brown-border" src="./Images-Fenn/Kitchen/kitchen-cover.jpeg" width="336px" heigh="336px" alt="kitchen-services">
+           </div>
+  
+           <div class="slide s1">
+             <img id="bathroom-services-cover" class="brown-border" src="./Images-Fenn/Bathroom/bathroom-cover.jpeg" width="281px" height="281px" alt="bathroom-services">
+           </div>
+  
+           <div class="slide s2">
+             <img id="flooring-services-cover" class="brown-border" src="./Images-Fenn/Flooring/flooring-cover.jpeg" width="200px" heigh="206px" alt="flooring-services">
+           </div>
+          
+           <div class="slide s3">
+             <img id="patio-cover-label" class="brown-border" src="./Images-Fenn/Patio/patio-cover.jpeg" width="270px" height="270px" alt="patio-services">
+           </div>
+         </figure>
+
+         <div class="services-nav">
+           <label for="photo-radio0" class="photo-bar"></label>
+           <label for="photo-radio1" class="photo-bar"></label>
+           <label for="photo-radio2" class="photo-bar"></label>
+           <label for="photo-radio3" class="photo-bar"></label>
+         </div>
+       </figure>
+       <!-- <img id="kitchen-cover"src="./Images-Fenn/Kitchen/kitchen-cover.jpeg" width="336px" heigh="336px" alt="kitchen-services">
+       <label for="kitchen-cover"> Kitchen </label>
+
+       <img id="bathroom-services-cover" src="./Images-Fenn/Bathroom/bathroom-cover.jpeg" width="281px" height="281px" alt="bathroom-services">
+       <label for="bathroom-services-cover"> Bathroom </label>
+
+       <img id="flooring-services-cover" src="./Images-Fenn/Flooring/flooring-cover.jpeg" width="200px" heigh="206px" alt="flooring-services">
+       <label for="flooring-services-cover"> Flooring </label>
+
+       <img id="patio-cover-label"src="./Images-Fenn/Patio/patio-cover.jpeg" width="270px" height="270px" alt="patio-services">
+       <label for="patio-cover-label"> Outdoor </label>
 
        <a href="#more-services" class="see-more-services">see more</a>
-       <img class="see-more-line" src="./Images-Fenn/edits/line-see-more.png" alt="line-see-more">
-    </figure>
-     
-    <figure class="slideshow-xsmall">
-      <figure class="slides">
-        <div class="slide s0">
-          <img id="kitchen-cover" class="kitchen-services-cover" src="./Images-Fenn/Kitchen/kitchen-cover.jpeg" width="336px" heigh="336px" alt="kitchen-services">
-        </div>
-
-        <div class="slide s1">
-          <img id="bathroom-services-cover" class= "bathroom-services-cover" src="./Images-Fenn/Bathroom/bathroom-cover.jpeg" width="281px" height="281px" alt="bathroom-services">
-        </div>
-
-        <div class="slide s2">
-          <img id="flooring-services-cover" class="flooring-services-cover" src="./Images-Fenn/Flooring/flooring-cover.jpeg" width="200px" heigh="206px" alt="flooring-services">
-        </div>
-        
-        <div class="slide s3">
-          <img id="patio-cover-label" class="patio-services-cover" src="./Images-Fenn/Patio/patio-cover.jpeg" width="270px" height="270px" alt="patio-services">
-        </div>
-
-      </figure>
-    </figure>
-     
-     
-     
+       <img class="see-more-line" src="./Images-Fenn/edits/line-see-more.png" alt="line-see-more"> -->
     </div>
 
     <!--Page-3(Home-About) -->
     <img src="./Images-Fenn/edits/Transition-p2-p3(2).png" width="100%" alt="transition-space">
-    <div id="about" style="position:relative">
-     <img src="./Images-Fenn/edits/home-page3-skeleton.png" width="100%" alt="background-frame">
-     <p class="home-about-title">About</p>
+    <div id="about" class="about" style="position:relative;">
+     <h3 class="home-about-title">About</h3>
      <img class="richie-portrait" src="./Images-Fenn/edits/richie-frame-edit.png" width="270px" `qalt="richie-portrait" loading="easy">
      <img class="story-board" src="./Images-Fenn/edits/frame-text-darkbrown(edit).png" width="334px" height="485px" alt="story-board">
        <article class="about-story" id="about-story">
-        <section><span style="font-size:2rem; color: #287AB8">W</span>e founded FennCo in 2014. Then, we were just a few contractors that came together to service our folks of Azle, Tx.</section>
-        <section>Today, our company has worked over 100 sites, and holds a 5 star rating from our recurring and loyal customers.</section>
-        <section>We keep our people by providing quality work paired with a transparent process that keeps you fully informed on each stage of the execution.</section>
-        <section><a style="color:#B30000;" href="#contact">Contact us</a> for more inquiries and free estimates and check our <a style="color:#BC815F;" href="#reviews">reviews</a> below.</section>
+         <section><span style="font-size:2rem; color: #287AB8">W</span>e founded FennCo in 2014. Then, we were just a few contractors that came together to service our folks of Azle, Tx.</section>
+         <section>Today, our company has worked over 100 sites, and holds a 5 star rating from our recurring and loyal customers.</section>
+         <section>We keep our people by providing quality work paired with a transparent process that keeps you fully informed on each stage of the execution.</section>
+         <section><a style="color:#B30000;" href="#contact">Contact us</a> for more inquiries and free estimates and check our <a style="color:#34A56F;" href="#reviews">reviews</a> below.</section>
        </article>
        
     
@@ -115,6 +123,7 @@
     <!--Transition-space-->
     <!-- <img src="./Images-Fenn/edits/transition-p3-p4.png" width="100%" alt="transition-space"> -->
     <!--Page-4-->
+    <div class="gradient">
     <div id="reviews" class="review-page-box">
      <article class="home-page4-reviews">
        <!--review1-->
@@ -147,13 +156,14 @@
          </figure>
        </section>
      </article>
-     <a href="https://www.facebook.com/profile.php?id=100063510165548&sk=reviews" target="_blank" class= "home-review-see-more">see more</a>
+     <p class="home-review-see-more"><a href="https://www.facebook.com/profile.php?id=100063510165548&sk=reviews" target="_blank">see more</a></p>
+    </div>
     </div>
 
     <!--Home-Contact-->
     <div id="contact" ></div>
     <fieldset class="contact-fieldset">
-      <legend class="contact-legend"><h2>Reach Us</h2></legend>
+      <legend class="contact-legend"><h3 class="contact-title">Reach Us</h3></legend>
       <form method="post" action="" class="contact-form">
         <p class="contact-center">
           <label for="user-name">Name</label>
@@ -201,8 +211,8 @@
     </fieldset>
     <!--Time-->
     <article id="schedule">
-      <h4 id="schedule-days" class="contact-days">Monday - Friday</h4>
-      <h4 id="schedule-hours" class="contact-hours"><time datetime="09:00">9am</time> - <time datetime="17:00">5pm</time></h4>
+      <p id="schedule-days" class="contact-days">Monday - Friday</p>
+      <p id="schedule-hours" class="contact-hours"><time datetime="09:00">9am</time> - <time datetime="17:00">5pm</time></p>
 
     </article>    
     <br>    
