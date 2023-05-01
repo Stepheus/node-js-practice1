@@ -13,8 +13,9 @@ html{
 body{
     font-size: 1.1rem;
     background-color: #e6e6e6;
+    min-width: 320px;
     
-  }
+}
 
 a:visited,
 a{
@@ -43,17 +44,42 @@ a{
 /*----------------------------------------------------<Hero-Page>------------------------------------------------------------*/
             /*------------------------------------------Header ----------------------------------------------*/
 
-.body_hero{
-    min-width: 100%;
-    min-height:100%;
-    background-color: #e6e6e6;
-}
-
 
 header{
-    height:6.6%;
-    width:100%;
+    min-width: 320px;
+    height:36px;;
+    background-image: url("./Images-Fenn/edits/background-hero-9.png");
+    background-size: 100% 182.6px;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 2; 
+    
 }
+
+nav .icon-logo{
+    display:none;
+}
+
+.fenn-construction-title{
+    display: block;
+     position:fixed;
+     top:0;
+     left:5%;
+     z-index:1;
+     line-height:12px;
+     font-size: 0.7rem;
+     font-weight:bold;
+     opacity: 80%;
+}
+
+.logo-wheels{
+    color:#181818; 
+    font-size:larger;
+    position:relative;
+    top: 5px;
+
+}
+
 
 .nav-top{
     z-index: 1;
@@ -64,28 +90,18 @@ header{
     bottom: 93.7%;
 }
 
-.nav-top-xsmall{
-    display: none;
-}
 
-.fenn-construction-title{
-    position: fixed;
-    top:0;
-    left:12.5%;
-    z-index: 3;
-    line-height: 15px;
+p.fenn-construction-title img{
+    width:30px;
     
 }
 
-
-
-.logo-wheels{
-    color:#181818; 
-    font-size:larger;
-    position:relative;
-    top: 5px;
-
+p.fenn-construction-title a{
+    color: white;
 }
+
+
+
 nav{
     position: fixed;
     top:0;
@@ -99,8 +115,115 @@ nav{
     align-items: center;
 }
 
+#nav-logo{
+    visibility: hidden;
+}
 
-header a:visited,
+.menu-button{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.menu-icon::before,
+.menu-icon,
+.menu-icon::after{
+    width: 30px;
+    height: 5px;
+    background-color: #bc815f;
+    position: absolute;
+    border-radius: 20%;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+@media  screen and (min-width:2px) and (max-width:245px){
+    .menu-icon::before,
+    .menu-icon,
+    .menu-icon::after{
+        background-color: #e6e6e6;
+    }
+
+    .title-text{
+        visibility: hidden;
+    }
+    
+}
+
+.menu-icon::before,
+.menu-icon::after{
+    content:"";
+}   
+
+.menu-icon::before{
+    transform: translateY(-8px);
+}
+
+.menu-icon::after{
+    transform: translateY(8px)
+}
+
+#nav-logo:checked ~ ul.nav-list{
+    right:0;
+}
+
+#nav-logo:checked ~ .menu-button .menu-icon{
+    background-color: transparent;
+}
+
+#nav-logo:checked ~ .menu-button .menu-icon::before{
+    transform: translateY(8px);
+    transform: rotate(-45deg);
+}
+
+#nav-logo:checked ~ .menu-button .menu-icon::after{
+    transform: translateY(-8px);
+    transform: rotate(45deg);
+}
+
+header ul.nav-list{
+    background-image: radial-gradient(#9e6b4e, #BC815F);   
+    list-style-type: none;
+    position: fixed;
+    top: 35px;
+    right:-100%;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    transition-property: all;
+    transition-duration: 0.4s;
+    z-index: 2;
+}
+header li:first-child{
+    margin-top: 50px;
+}
+header li{
+    display: block;
+    align-self: center;
+    margin: 10px;
+}
+
+header li a.color-brown,
+header li a:visited,
+header li a:active,
+header li a:focus,
+header li a{
+    color:white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: larger;
+}
+
+
+/* header a:visited,
 header a{
     color:#ffff;
 }
@@ -121,86 +244,59 @@ a.color-brown:hover{
 
 header button{
     display: none;
-}
+} */
 
-/*XSMALL - Screen phone--------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width:120px) and (max-width: 600px){
-    header nav{
-        display:none;
-    }
+/*Media query
+XSMALL - Screen phone-------------------------------*/
 
-    header .nav-top{
-        display:none;
-    }
+@media screen and (min-width:320px){
 
-    header .nav-top-xsmall{
-        display:block;
-        z-index: 1;
-        position: fixed;
-        top:0;
-        right:0;
-        left:0;
+    header{
+        height:11.25vw;
+        width: 100%;
+        background-size: 100% 57.08vw;
 
     }
-    
+
     p.fenn-construction-title img{
         width:30px;
-
-    }
-
-    .fenn-painting{
-        transform: translateX(-10px);
-    }
-
-    .fenn-construction-title{
-        
-         position:fixed;
-         top:0;
-         left:5%;
-         z-index:3;
-         line-height:12px;
-         font-size: 0.7rem;
-         font-weight:bold;
-         opacity: 80%;
-    }
-
-    header button.menu-button{
-        display: block;
-        z-index:3;
     }
     
+
+
+}
+
+/*Media query
+MEDIUM- Screen phone------------------------------------*/
+@media screen and (min-width:375px){
     .menu-button{
-        background-color: transparent;
-        display: flex;
-        place-content: center;
-        position:fixed;
-        top: 5px;
-        right:10px;
-        border:none;
-        width: 48px;
-        height:48px;
+        top: 17px;
     }
 
-    .menu-icon::before,
-    .menu-icon::after{
-        content: "";
-    }
-
-    .menu-icon,
-    .menu-icon::before,
-    .menu-icon::after{
-        width:40px;
-        height:5px;
-        border-radius: 5px;
-        transition-property: all 0.5s;
-        color:#52392F;
+    header{
+        height:42.19px;
     }
 }
 
+/*Media query
+PHONE- LARGE*------------------------------------*/
+@media screen and (min-width:425px){
+    header ul.nav-list{
+        line-height: 10vw;
+        font-size: 4vw;
+    }
+   
+}
 
 
 /* -------------------------------------------------<Page1-home>------------------------------------------------------ */
+/* -------------------------------------------------<Page1-home>------------------------------------------------------ */
+
+.home-hero-box{
+    width:100%;
+    height: 182px;
+}
 
 @keyframes fenn-paint {
     0%{
@@ -213,14 +309,17 @@ header button{
 }
 
 .fenn-painting{
+    width:150px;
+    height:auto;
     position:absolute;
-    top: 7%;
+    top: 2%;
     left:49.86%;
     opacity: 0;
     animation-name: fenn-paint;
     animation-timing-function: ease-in-out;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 
@@ -277,18 +376,9 @@ header button{
     opacity: 0%;
     animation-name: slogan-slide;
     animation-duration: 1s;
-    animation-delay: 2.2s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
-}
-
-.fennco{
-    position: absolute;
-    left:85.21%;
-    top:87.23%;
-    font-family: 'Oleo Script', cursive;
-    font-size: 1.25rem;
-    color:#b30000;
 }
 
 .image-block{
@@ -296,28 +386,85 @@ header button{
 }
 
 
-/*XSMALL - Screen phone--------------------------------------------------------------------------------------------------*/
-@media screen and (min-width:120px) and (max-width:600px){
-    .slogan-rebuild{
+.slogan-rebuild{
         -webkit-text-stroke: 1px #B30000;
         font-size: 25px;
         left:24%;
-        top:73.4%;
+        top:62%;
     }
     
+.slogan-to{
+        font-size: 19px;
+        left:36%;
+        top:75%;
+    }
+    
+.slogan-love{
+        font-size: 19px;
+        left:42%;
+        top:75%;
+    }
+/*Media
+Phone-XSMALL - Screen phone----------------------------------------*/
+@media screen and (min-width:320px) {
+    .home-hero-box{
+        height: 57.08vw;
+    }
+    
+}
+
+
+/*Media
+Phone-MEDIUM - Screen phone-------------------------------------*/
+@media screen and (min-width:375px){
+   .fenn-painting{
+     width: 170px;
+     height: auto;
+     left: 46%;
+   } 
+
+   .slogan-rebuild{
+    top: 67%;
+   }
+
+   .slogan-to{
+    top: 78%;
+    left: 37%;
+   }
+
+   .slogan-love{
+    top: 78%;
+   }
+    
+}
+
+/*Media
+Phone-MEDIUM - Screen phone-------------------------------------*/
+@media screen and (min-width:425px){
+
+    .slogan-rebuild{
+        font-size: 6vw;
+    }
+
     .slogan-to{
-        display: none;
+        font-size:4.4vw;
     }
 
     .slogan-love{
-        display: none;
+        font-size:4.4vw;
     }
 
+
     .fenn-painting{
-        width: 157px;
-        height: 273px;
+        right: 64%;
+        bottom:20%;
+        width: 46%;
     }
-}
+    
+   }
+
+
+
 
 /* -------------------------------------------------<Home-Page1-Home-end>------------------------------------------------------ */
 
@@ -331,9 +478,6 @@ header button{
     text-align: center;
 }
 
-.services-canvas{
-    position: relative;
-}
 
 .wall-lamp{
     position: absolute;
@@ -472,7 +616,7 @@ a.see-more-services:focus
     cursor: pointer;
 }
 
-.see-more-line{
+ .see-more-line{
     width: 68%;
     display: block;
     position: absolute;
@@ -480,71 +624,67 @@ a.see-more-services:focus
     top: 96%;
 }
 
-.more-services{
+ .more-services{
     display:none;
     background-color: #939799;
     width: 100%;
 }
 
-.slideshow-large{
+ .slideshow-large{
     display:none;
 }
 
 
 /*XSMALL - Screen phone------------*/
-
-@media screen and (min-width:120px) and (max-width: 320px){
     /* img.home-services-background{
         height:254px;
     } */
 
-    .titles-page{
-        display: block;
-        font-size: 1rem;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top:5%;
-        z-index: 2;
+
+.services-canvas{
+        width:100%;
+        height:370px;
+        background-image:url("./Images-Fenn/edits/home-services-title.png"), linear-gradient(to right bottom, #e6e6e6, #939799);
+        background-size: 100% 100%;
+        background-repeat: no-repeat; 
+
     }
 
-    .home-service-bar{
+ .service-home-title{
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+    }
+
+ .home-service-bar{
         position: absolute;
         top: 5px;
         height: 270px;
-        z-index: 1;
+        z-index: 0;
     }
-
-    .wall-lamp{
+    
+ .wall-lamp{
         width:20px;
     }
 
-    .services-canvas{
-        width:100%;
-        height:350px;
-        background-image:linear-gradient(to right bottom, #e6e6e6, #939799);
-        background-size: 100% 100;
-        background-repeat: no-repeat;
-     
-
-    }
-
-    .slideshow-xsmall{
+    
+ .slideshow{
         display: block;
         width: 270px;
         height: 270px;
-        position: absolute;
-        top: 15%;
-        left: 8%;
+        margin:auto;
+        margin-top: 20px;
         overflow: hidden;  
     }
 
-    .slideshow-xsmall img{
+ .slideshow-xsmall img{
         width: 100%;
         height: 100%;
     }
 
-    .slides{
+ .slides{
         width: 500%;
         height:100%;
         display: flex;
@@ -555,15 +695,15 @@ a.see-more-services:focus
         visibility: hidden;
     }
 
-    .services-nav{
+ .services-nav{
         display: flex;
         position: absolute;
         height:20px;
         bottom: 10%;
-        left: 6%;
+        left: 6%; 
     }
 
-    .photo-bar{
+ .photo-bar{
         width:20px;
         height:10px;
         margin:15px;
@@ -572,42 +712,59 @@ a.see-more-services:focus
         background-color: transparent;
     }
 
-    .photo-bar:hover,
-    .photo-bar:active{
+ .photo-bar:hover,
+ .photo-bar:active{
         background-color: white;
     }
 
-    .slide{
+ .slide{
         width:20%;
         transition-duration: 0.6s;
     }
 
-    .slide img{
+ .slide img{
         width:100%;
         height:100%;
     }
 
-    #photo-radio0:checked ~ .s0{
+ #photo-radio0:checked ~ .s0{
         margin-left: 0;
     }
 
-    #photo-radio1:checked ~ .s1{
+ #photo-radio1:checked ~ .s1{
         margin-left: -20%;
     }
 
-    #photo-radio2:checked ~ .s2{
+ #photo-radio2:checked ~ .s2{
         margin-left: -40%;
     }
 
-    #photo-radio3:checked ~ .s3{
+ #photo-radio3:checked ~ .s3{
         margin-left: -60%;
     }
 
 
+/*Media query
+Tablet- LARGE*------------------------------------*/
+@media screen and (min-width:425px){
+    .service-home-title{
+        font-size: 4vw;
+        padding-top: 4.5vw;
+    }
+
+    .slideshow{
+        width: 62vw;
+        height: 62vw;
+    }
+
+    .services-canvas{
+        height:87.06vw;
+    }
+
+    .wall-lamp{
+        width: 6vw;
+    }
 }
-
-
-
 
 
 /* ----------------------------------------------End-home-Service-Page----------------------------------------------------------*/
@@ -616,19 +773,13 @@ a.see-more-services:focus
 
 .about{
     width:100%;
-    height:200px;
-    background-image: url("./Images-Fenn/edits/home-page3-skeleton.png");
-    background-size: 100% 200px;
-    background-repeat: no-repeat;
+    height:auto;
 }
 
 .home-about-title{
     color:#7d4727;
     font-size: 1.875rem;
-    position: absolute;
-    top: 1.55%;
-    left:50%;
-    margin-left: -1.3rem;
+    margin: auto;
     font-weight: bolder;
 }
 
@@ -638,10 +789,12 @@ a.see-more-services:focus
     left: 22.32%;
 }
 
-.story-board{
-    position: absolute;
-    top:30.56%;
-    left:55.06%;
+.about-window{
+    width: 100%;
+    min-height: 182px;
+    background-image: url("./Images-Fenn/edits/home-page3-skeleton.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .about-story{
@@ -649,9 +802,8 @@ a.see-more-services:focus
     height: 451px;
     font-family: "inter";
     font-weight: bolder;
-    position: absolute;
-    top:32.56%;
-    left:56.9%; 
+    margin: auto;
+    margin-top: 30px;
 }
 
 article.about-story section{
@@ -661,7 +813,8 @@ article.about-story section{
     margin-bottom: 5px;
 }
 
-@media screen and (min-width:120px) and (max-width: 320px){
+
+/*XSMALL - Screen phone------------*/
 .about{
     height: 500px;
 }
@@ -675,12 +828,13 @@ article.about-story section{
     background-color: white;
     text-align: center;
     padding:2px;
-    top:1%;
+    top:-3%;
     left:48%;
+
 }
 
 .richie-portrait{
-    top:60px;
+    bottom:30%;
     left:35%;
     width:100px;    
     margin:auto;
@@ -691,19 +845,113 @@ article.about-story section{
     width: 240px;
     height: 300px;
     overflow: scroll;
-    position: absolute;
-    left: 13%;
-    top:200px;
+    margin:auto;
     font-size: 1rem;
     margin-bottom: 10px;
+    margin-top: 5px;
     background-color: white;
     padding-left: 15px;
     padding-right: 15px;
     border: 8px solid #52392F;
 
 }
-   
+
+/*Media 
+PHONE-SMALL  -------------------------------------*/
+@media screen and (min-width:320px){
+    .about-window{
+        width:100%;
+        height:57.08vw;
+    }
+
+    .about{
+        height:auto;
+    }
 }
+
+/*Media
+MEDIUM - Screen phone-------------------------------------*/
+@media screen and (min-width:375px){
+
+    .home-about-title{
+        font-size: large;
+    }
+
+    .richie-portrait{
+        width: 118px;
+    }
+
+    .about-story{
+        width: 64vw;
+        height:80vw;
+
+    }
+    
+}
+
+/*Media
+TABLET-- --------------------------------------------------*/
+@media screen and (min-width: 425px){
+    .home-about-title{
+        font-size: 4vw;
+        width: 15vw;
+    }
+
+    .richie-portrait{
+        width: 28vw;
+        bottom: 25%;
+    }   
+
+    
+}
+
+/*Media
+TABLET--IN --------------------------------------------------*/
+@media screen and (min-width: 535px){
+
+    .richie-portrait{
+        width:25vw;
+        bottom:20%;
+        left:38%;
+    }
+
+    .about-story{
+        width: 50vw;
+        height: 65vw;
+        font-size: 3vw;
+    }
+
+    article.about-story section{
+        margin-bottom: 3vw;
+    }
+    
+}
+
+/*Media
+TABLET--IN --------------------------------------------------*/
+/* @media screen and (min-width: 575px){
+    .about-story{
+        width: 345px;
+        height: 421px;
+        font-size: 17.25px;
+    }
+
+    .richie-portrait{
+        width: 161px;
+    }  
+
+} */
+
+/*Media
+TABLET--IN --------------------------------------------------*/
+@media screen and (min-width: 600px){
+    .richie-portrait{
+        width:25vw;
+        bottom: 20%;
+    }
+
+}
+
 
 
 
@@ -711,19 +959,22 @@ article.about-story section{
 /*----------------------------------------------Home-About-end----------------------------------------------------------*/
 
 /*----------------------------------------------Home-reviews----------------------------------------------------------*/
+.gradient{
+    background-image:linear-gradient(#BC815F,#e6e6e6);
+    overflow: auto;
+}
+
 .review-page-box{
     width:73.19%;
     margin:auto;
+    height:auto;
+    margin-top: 40px;
 }
 
 .home-page4-reviews{
     column-count: 3;
-}
-
-.home-review{
-    width: 351px;
-    height:700px;
-    opacity: 80%;
+    column-width: 250px; 
+    height: auto;
 }
 
 
@@ -733,6 +984,7 @@ article.about-story section{
     position:relative;
     top:69px;
     margin-bottom: 23px;
+    overflow: auto;
 }
 
 .home-review-caption{
@@ -742,48 +994,31 @@ article.about-story section{
     position:relative;
     top: 69px;
     margin:auto;
-}
+}   
 
-@media screen and (width-min:1440px){
-    section.home-review:hover{
-        background-color: #BC815F;
-        color: white;
-        opacity: 100%;
-    }
-}
 
-a.home-review-see-more:visited,
-a.home-review-see-more:active,
-a.home-review-see-more{
-    display: block;
-    color:#B30000;
-    text-align: right;
+
+section.home-review:hover{
+     opacity: 100%;
 }
 
 
-@media screen and (min-width:120px) and (max-width: 320px){
-.review-page-box{
-    height: 650px;
-}
-.home-page4-reviews{
-    column-width: 150px;
-    margin-top: 20px;
-    
-}
+/*XSMALL - Screen phone------------*/
 
 .home-review{
     width: auto;
     height:auto;
     opacity: 80%;
     position: static;
-    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;    
 }
 
 .home-review-pic{
     width: 80px;
     height: 80px;
     position: static;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -821,9 +1056,61 @@ p.home-review-see-more a{
     transform: translateY(-30px);
 }
 
-.gradient{
-    background-image:linear-gradient(#BC815F,#e6e6e6)
+
+/*Media query
+Tablet- *------------------------------------*/
+@media screen and (min-width:425px){
+        .home-review{
+            width: 250px;
+        }
+    
+        .home-review-pic{
+            width: 90px;
+            height: 90px;
+        }
+
+        p.home-review-see-more a{
+            display: block;
+            width: 100%;
+            color:#B30000;
+            text-align: right;
+            font-size: 0.9rem;
+            padding:5px;
+            transform: translateY(0);
+        }
 }
+
+/*Media query
+TABLET---IN *------------------------------------*/
+@media screen and (min-width:425px){
+    .home-review-pic{
+        width: 21vw;
+        height: 21vw;
+    }
+
+    .home-review-caption{
+        font-size: 18px;
+    }
+
+}
+
+/*Media query
+TABLET---IN *------------------------------------*/
+@media screen and (min-width:525px){
+    .home-review-pic{
+
+      width: 110px;
+      height: 110px;     
+    }
+
+}
+
+/*Media query
+TABLET---IN *------------------------------------*/
+@media screen and (min-width:708px){
+    .home-review{
+        break-after: column;
+    }
 
 }
 
@@ -831,8 +1118,7 @@ p.home-review-see-more a{
 /*----------------------------------------------Home-review-end----------------------------------------------------------*/
 
 /* -----------------------------------------------------Contact---------------------------------------------------------------*/
-.contact-main{
-}
+
 
 .contact-fieldset{
     width:80%;
@@ -847,7 +1133,6 @@ p.home-review-see-more a{
 }
 
 .contact-form{
-    display: inline-block;
     float:left;
     width: 50%;
     height: 25.5rem;
@@ -890,8 +1175,6 @@ textarea.contact-area{
 
 .contact-p-button{
     text-align: center;
-    position: relative;
-    right: 22%;
 }
 .contact-button{
     display: inline-block;
@@ -905,7 +1188,6 @@ textarea.contact-area{
 
 .contact-ul{
     text-align: center;
-    display: inline-block;
     padding-top: 3rem;
     padding-bottom: 6.2rem;
     font-size: larger;
@@ -947,25 +1229,25 @@ ul.contact-ul a:hover{
 
 }
 
-@media screen and (min-width:120px) and (max-width: 320px){
-    li{
+
+/*XSMALL - Screen phone------contact------*/
+ li{
         word-wrap: break-word;
     }
 
-    .contact-fieldset{
+ .contact-fieldset{
         width:100%;
         margin:auto;
         margin-bottom: 5%;
-        margin-top: 80px;
     }
 
-    .contact-title{
+ .contact-title{
         font-size: 1rem;
         font-weight: bold;
 
     }
 
-    .contact-form{
+ .contact-form{
         display: block;
         width: 100%;
         height: 25.5rem;
@@ -974,7 +1256,7 @@ ul.contact-ul a:hover{
         
     }
 
-    textarea.contact-area{
+ textarea.contact-area{
         display: block;
         margin: auto;
         margin-bottom: 1%;
@@ -982,7 +1264,7 @@ ul.contact-ul a:hover{
         height:150px;
     }
     
-    .contact-ul{
+ .contact-ul{
         text-align: center;
         display: block;
         padding-top: 3rem;
@@ -994,15 +1276,30 @@ ul.contact-ul a:hover{
         list-style-type: none;
     }
 
-    .contact-days{
+ .contact-days{
         font-size: 1.1rem;
     }
 
-    .contact-hours{
+ .contact-hours{
         font-size: 1.1em;
     }
 
+/*Media 
+PHONE-SMALL  -------------------------------------*/
+@media screen and (min-width:325px){
+    
 }
+
+
+/*Media query
+PHONE- LARGE*------------------------------------*/
+@media screen and (min-width:425px){
+    .contact-fieldset{
+        margin-top: 40px;
+    }
+
+}
+
 /* ----------------------------------------------------Contact(end)----------- ----------------------------------------------*/
 /* -------------------------------------------------------Footer-------------------------------------------------------------*/
 footer{
@@ -1072,6 +1369,7 @@ footer .copy-right{
     float:right;
     padding: 10px;
     margin-top: 20px;
+    font-size: small;
 }
 
 footer form{
@@ -1118,5 +1416,35 @@ footer textarea:focus{
     /* background-color: #B4D9EF; */
     background-color: #C1E1C1;
 } 
+/*XSMALL - Screen phone-------footer-----*/
+ footer{
+        height: 260px;
+    }
 
+ .message-us{
+        display:none;
+    }
+
+  footer div:nth-child(3){
+        display:none;
+    }
+
+ footer .services-footer{
+        width:42%;
+    }
+
+ footer .sitemap-list{
+    width:52%;
+   }
+
+ ul.align-list:first-child{
+    width: 70%;
+   }
+
+ ul.contact-icons-list{
+    display:block;
+    float:left;
+    margin-left:48px;
+   }
+    
 /* -----------------------------------------------------Footer(end)-----------------------------------------------------------*/

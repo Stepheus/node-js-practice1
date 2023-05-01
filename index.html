@@ -18,26 +18,24 @@
 
 
 
-<body class="body_hero">
+<body>
   <header>
-    <img src="./Images-Fenn/edits/background-hero-7-nav.png" width="100%" class="nav-top" alt="nav-pic">
-    <img src="./Images-Fenn/edits/background-hero-nav-top-xsmall.png" width="100%"  class="nav-top-xsmall" alt="nav-pic">
-    <p class="fenn-construction-title"><img src="./Images-Fenn/edits/logo-blue.png" width="45px" alt="logo"><a href="#">Fenn<br>C<span class="logo-wheels">o</span>nstructi<span class="logo-wheels">o</span>n</a></p>
+    <p class="fenn-construction-title"><a href="#"><img src="./Images-Fenn/edits/logo-blue.png" width="45px" alt="logo"><span class="title-text">Fenn<br>C<span class="logo-wheels">o</span>nstructi<span class="logo-wheels">o</span>n</span></a></p>
     <nav>
-      <input type="radio" name="nav-logo" id="nav-logo">
-      <label for="nav-logo"><button class="menu-button"><div class="menu-icon"></div></button></label>
-
+      <input type="checkbox" name="nav-logo" id="nav-logo">
+      <label for="nav-logo" class="menu-button"><div class="menu-icon"></div></label>
       <ul class="nav-list">
        <li><a href="#home-services">services</a></li>
        <li><a href="#about">about</a></li>
        <li><a href="#contact" class="color-brown">contact</a></li>
+       <li><a href="#about">gallery</a></li>
       </ul>
     </nav>
   </header>
 
 
   <main>
-    <div style="position:relative;">
+    <div class="home-hero-box" style="position:relative;">
      <img src="./Images-Fenn/edits/background-hero-9.png" class="image-block" width="100%" alt="home-pic">
      <p class="slogan-rebuild">Rebuild</p>
      <p class="slogan-to">To</p>
@@ -49,12 +47,11 @@
      <img  src="./Images-Fenn/edits/transition-p1-p2-test.png" width="100%" class="image-block" alt="transition">
      
      <!--Page-2(Home-Service) -->
-     <div class="services-canvas">
-       <h3 class="titles-page">Services</h3>
-       <img src="./Images-Fenn/edits/home-page2-skeleton3.png" width="100%" class="home-service-bar" alt="title-overlay">
+     <div id="home-services" class="services-canvas" style="position: relative;">
+       <p class="service-home-title">Services</p>
        <img src="./Images-Fenn/edits/wall-lamp.png" class="wall-lamp" alt="wall-lamp">
 
-       <figure class="slideshow-xsmall">
+       <figure class="slideshow">
           <figure class="slides">
 
            <input type="radio" name="photo-radio" id="photo-radio0" checked>
@@ -105,16 +102,17 @@
     <!--Page-3(Home-About) -->
     <img src="./Images-Fenn/edits/Transition-p2-p3(2).png" width="100%" alt="transition-space">
     <div id="about" class="about" style="position:relative;">
-     <h3 class="home-about-title">About</h3>
-     <img class="richie-portrait" src="./Images-Fenn/edits/richie-frame-edit.png" width="270px" `qalt="richie-portrait" loading="easy">
-     <img class="story-board" src="./Images-Fenn/edits/frame-text-darkbrown(edit).png" width="334px" height="485px" alt="story-board">
-       <article class="about-story" id="about-story">
+     <figure class="about-window" style="position:relative" >
+      <h3 class="home-about-title">About</h3>
+       <img class="richie-portrait" src="./Images-Fenn/edits/richie-frame-edit.png" width="270px" `qalt="richie-portrait" loading="easy">
+       <img class="story-board" src="./Images-Fenn/edits/frame-text-darkbrown(edit).png" width="334px" height="485px" alt="story-board">
+     </figure>
+      <article class="about-story" id="about-story">
          <section><span style="font-size:2rem; color: #287AB8">W</span>e founded FennCo in 2014. Then, we were just a few contractors that came together to service our folks of Azle, Tx.</section>
          <section>Today, our company has worked over 100 sites, and holds a 5 star rating from our recurring and loyal customers.</section>
          <section>We keep our people by providing quality work paired with a transparent process that keeps you fully informed on each stage of the execution.</section>
          <section><a style="color:#B30000;" href="#contact">Contact us</a> for more inquiries and free estimates and check our <a style="color:#34A56F;" href="#reviews">reviews</a> below.</section>
        </article>
-       
     
     
     </div>
