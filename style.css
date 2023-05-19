@@ -1373,14 +1373,12 @@ footer ul.contact-icons-list img{
     width:30px;
     height:30px;
 }
+
+.footer-message{
+    display: none;
+}
 .services-footer{
     width:32%;
-}
-
-
-.message-us{
-    width: 35%;
-    padding-top: 5px;
 }
 
 
@@ -1436,30 +1434,6 @@ footer textarea:focus{
     /* background-color: #B4D9EF; */
     background-color: #C1E1C1;
 } 
-/*XSMALL - Screen phone-------footer-----*/
- .message-us{
-        display:none;
-    }
-
-  footer div:nth-child(3){
-        display:none;
-    }
-
- footer .services-footer{
-        width:42%;
-    }
-
- footer .sitemap-list{
-    width:52%;
-   }
-
- ul.align-list:first-child{
-    width: 70%;
-   }
-
- ul.contact-icons-list{
-    display:block;
-   }
 
 /*Media query
 PHONE- Small*------------------------------------*/
@@ -1552,6 +1526,13 @@ Tablet-Small*------------------------------------*/
 Tablet- custom M*------------------------------------*/
 @media screen and (min-width:600px){
 
+    footer ul.contact-icons-list{
+        width: 80px;
+        height:80px;
+        margin-top: 3px;
+        transform: translateX(-5px);
+    }
+    
 }
 
 
