@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+/* -----------VARIABLES-------------------------------------------- */
+
+:root{
+--TITLE-FONT-XS: 1rem;
+--TITLE-FONT-S: 4vw;
+--TITLE-FONT-M: 3.5vw;
+--TITLE-FONT-L: 1.75rem;
+--TITLE-FONT-XL: 2rem;
+}
+
+
+
+/* -----------VARIABLES(End)-------------------------------------------- */
+
 html{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
@@ -357,6 +371,8 @@ LAPTOP- LARGE ----------------------------------------------------*/
 
 
 
+
+
 /* -------------------------------------------------<Page1-header-end>------------------------------------------------------ */
 /* -------------------------------------------------<Page1-home>------------------------------------------------------ */
 
@@ -557,9 +573,9 @@ LAPTOP SMALL - Screen phone-------------------------------------*/
     }
 
     .fenn-painting{
-        width:43%;
+        /* width:43%;
         top:-5%;
-        left:44%;
+        left:44%; */
     }
 
 }
@@ -677,6 +693,35 @@ LAPTOP- LARGE ----------------------------------------------------*/
     }
 }
 
+/*Media
+4k-Big-Screen----------------------------------------------------*/
+@media screen and (min-width:1442px){
+    .fenn-painting{
+        width:29%;
+        left:52%;
+        top:5.4%;
+    }
+
+    .slogan-rebuild{
+        font-size: 4.4vw;
+    }
+
+    .slogan-to,
+    .slogan-love{
+        top: 65%;
+        font-size: 3.2vw;
+    }
+
+    .slogan-to{
+        left: 36.5%;
+    }
+
+    .slogan-love{
+        left:40%;
+    }
+
+}
+
 
 
 /* -------------------------------------------------<Home-Page1-Home-end>------------------------------------------------------ */
@@ -698,16 +743,25 @@ LAPTOP- LARGE ----------------------------------------------------*/
     top: 5.24%;
 }
 
+.slides-laptop{
+    display: none;
+    /* width: 95vw; */
+    width:729.6px;
+    height:700px;
+    margin:auto;
+}
+
 .brown-border{
     border:solid 6px #bc815f;
     /* outline: solid 2px #52392F; */
 }
 
 .kitchen-services-cover{
-    width:336px ;
+    width:33%;
     position: absolute;
-    left: 38.40%;
-    top: 19.1%;
+    left: 33.40%;
+    top: 7.1%;
+    /* top:6.4vw; */
     opacity: 70%;
     border:solid 6px #bc815f;
     /* outline: solid 2px #52392F; */
@@ -723,11 +777,11 @@ img.kitchen-services-cover:hover{
 
 .kitchen-cover-label{
     position: absolute;
-    left:47.15%;
-    top: 57.50%;
+    left:45.15%;
+    top: 36%;
     font-weight: bold;
     color: white;
-    background-color:#52392F;
+    background-color:#BC815F;
     transition-property: font-size;
     transition-duration: 0.1s;
 }
@@ -735,10 +789,12 @@ img.kitchen-services-cover:hover{
 
 
 .bathroom-services-cover{
-    width:281px;
+    width:26.6%;
+    height: auto;
     position: absolute;
-    left: 16.46%;
-    top: 15%;
+    left: 5.46%;
+    /* top: 7.2vw; */
+    top: 7.8%;
     opacity: 70%;
     border:solid 6px #bc815f;
     /* outline: solid 2px #52392F; */
@@ -753,19 +809,21 @@ img.bathroom-services-cover:hover{
 
 .bathroom-cover-label{
     position: absolute;
-    left:23.36%;
-    top: 45.82%;
+    left:13.36%;
+    /* top: 27.34vw; */
+    top: 30%;
     font-weight: bold;
     color: white;
-    background-color:#52392F;
+    background-color:#BC815F;
 }
 
 .flooring-services-cover{
-    width:200px;
-    height: 206px;
+    width:28.6%;
+    height: auto;
     position: absolute;
-    left: 20.06%;
-    top: 59.40%;
+    left: 68.06%;
+    /* top: 7.2vw; */
+    top: 10%;
     opacity: 70%;
     border:solid 6px #bc815f;
     /* outline: solid 2px #52392F; */
@@ -780,18 +838,21 @@ img.flooring-services-cover:hover{
 }
 .flooring-cover-label{
     position: absolute;
-    left:25.2%;
-    top: 80.47%;
+    left:78.2%;
+    /* top: 29.59vw; */
+    top: 34%;
     font-weight: bold;
     color: white;
-    background-color:#52392F;
+    background-color:#BC815F;
 }
 
 .patio-services-cover{
-    width: 270px;
+    width: 21.3%;
+    height:auto;
     position: absolute;
-    left: 64.16%;
-    top: 17%;
+    left: 9.16%;
+    /* top: 41vw; */
+    top: 45%;
     opacity: 70%;
     border:solid 6px #bc815f;
     /* outline: solid 2px #52392F; */
@@ -805,18 +866,22 @@ img.patio-services-cover:hover{
 }
 .patio-cover-label{
     position: absolute;
-    left:71.25%;
-    top:48.31%;
+    left:15.25%;
+    /* top:56.33vw; */
+    top: 61.7%;
     font-weight: bold;
     color: white;
-    background-color:#52392F;
+    background-color:#BC815F;
+
 }
 
 a.see-more-services{
     position: absolute;
-    left: 77.45%;
-    top: 92.6%;
+    left: 78.45%;
+    top: 69%;
     color: #B30000;
+
+    font-size: 1.1rem;
     transition-property: font-size;
     transition-duration: 0.1s;
 
@@ -830,11 +895,12 @@ a.see-more-services:focus
 }
 
  .see-more-line{
-    width: 68%;
+    width: 95.1%;
     display: block;
     position: absolute;
-    left: 15.62%;
-    top: 96%;
+    left: 2.2%;
+    /* top: 66.18vw; */
+    top: 72%;
 }
 
  .more-services{
@@ -865,7 +931,7 @@ a.see-more-services:focus
     }
 
  .service-home-title{
-        font-size: 1rem;
+        font-size: var(--TITLE-FONT-XS);
         font-weight: bold;
         text-align: center;
         color: white;
@@ -917,31 +983,103 @@ a.see-more-services:focus
 
 .slideshow-caption{
     position: absolute;
-    left:30%;
+    left: 88px;
     bottom: 0;
-    width:40%;
+    display: block;
     height: 30px;
+    width: auto;
+    border-right: white solid 2px;
     background-color: #bc815f;
-    opacity: 95%;
-    border-right: whitesmoke 2px solid;
-    border-left: whitesmoke 2px solid;
+    opacity: 98%;
+    overflow: hidden;
 }
 
-.slideshow-caption::after,
+.Service_label-list{
+    display:flex;
+}
+
+/* .slideshow-caption::after,
 .slideshow-caption::before{
     content: "";
     width:79.5%;
     height: 40px;
     background-color: #bc815f;
     position: absolute;
-}
+} */
 
-.slideshow-caption::before{
+/* .slideshow-caption::before{
     transform: translateX(-103%);
 }
 
 .slideshow-caption::after{
     transform: translateX(128%);
+
+} */
+
+.Service_label-caption{
+    width:90px;
+    height:30px;
+    border-left: whitesmoke 2px solid;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption.slideshow-caption label{
+    font-size: 14px;
+    padding: 3px;
+    color:whitesmoke;
+}
+
+.Service_left-arrow{
+    width: 30px;
+    height: auto;
+    margin: auto;
+    opacity: 100% ;
+}
+
+.Service_right-arrow{
+    width: 30px;
+    height: auto;
+    margin: auto;
+    opacity: 100%;
+}
+
+
+.slides_left-button{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 88px;
+    height: 30px;
+    opacity: 98%;
+    border: none;
+    background-color:#BC815F;
+
+}
+
+.slides_right-button{
+    display:block;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 88px;
+    height:30px;
+    opacity:98%;
+    border:none;
+    background-color:#BC815F;
+}
+
+.slides_left-button:active ~ .slideshow-caption{
+    margin-left:-90px;
+}
+ 
+/*Media query
+Tablet- LARGE*------------------------------------*/
+@media screen and (min-width:320px){
+
 
 }
 
@@ -950,7 +1088,7 @@ a.see-more-services:focus
 Tablet- LARGE*------------------------------------*/
 @media screen and (min-width:425px){
     .service-home-title{
-        font-size: 4vw;
+        font-size: var(--TITLE-FONT-S);
         padding-top: 4.5vw;
     }
 
@@ -970,16 +1108,188 @@ Tablet- LARGE*------------------------------------*/
 
 /*Media query
 Tablet- LARGE*------------------------------------*/
+@media screen and (min-width:735px){
+    .Service_label-caption{
+        width:95px;
+    }
+
+}
+
+/*Media query
+Laptop- XSMAll------------------------------------*/
 @media screen and (min-width:768px){
     .service-home-title{
-        font-size:3.5vw;
+        font-size:var(--TITLE-FONT-M);
         padding-top: 3.5vw;
     }
 
     .services-canvas{
         background-size: 100% 80%, 100% 100%;
     }
+
+    .slideshow{
+        display: none;
+    }
+
+    .slides-laptop{
+        display: block;
+    }
+    
+    .wall-lamp{
+        width:46px;
+        left: 11.4vw;
+    }
 }
+
+/*Media query
+Laptop-S*------------------------------------*/
+@media screen and (min-width:803px){
+    .services-canvas{
+        height: 699.09px;
+    }
+
+    .service-home-title{
+        font-size:var(--TITLE-FONT-L);
+        padding-top:28px;
+    }
+
+} 
+
+
+/*Media query
+Laptop-Medium*------------------------------------*/
+@media screen and (min-width:955px){
+    .services-canvas{
+        height: 900px;
+    }
+
+    .service-home-title{
+        padding-top: 42px;
+    }
+
+    .kitchen-services-cover{
+        transform: scale(1);
+    }
+
+    .kitchen-cover-label{
+        top: 44%;
+        left:46.5%;
+    }
+
+    .slides-laptop{
+        width:940px;
+    }
+
+    .bathroom-services-cover{
+        transform: scale(1);
+        left:5%;
+    }
+
+    .bathroom-cover-label{
+        top: 37%;
+        left: 14%;
+    }
+
+    .flooring-services-cover{
+        transform: scale(1);
+        right: 0%;
+    }
+
+    .flooring-cover-label{
+        top: 41.5%;
+        left: 79%;
+    }
+
+    .patio-services-cover{
+        transform: scale(1); 
+        top: 55%;   
+    }
+
+    .patio-cover-label{
+        top: 77%;
+        left:16.2%;
+    }
+
+    .see-more-line{
+        top: 95%;
+    }
+
+    a.see-more-services{
+        top: 91%;
+        left:87%;
+    }
+
+}
+
+/*Media query
+Laptop-Large-IN*------------------------------------*/
+@media screen and (min-width:1025px){
+    .service-home-title{
+        font-size: var(--TITLE-FONT-XL);
+    }
+}
+
+/*Media query
+Laptop-Large*------------------------------------*/
+@media screen and (min-width:1245px){
+
+    .services-canvas{
+        height: 1000px;
+    }
+
+    .service-home-title{
+        padding-top: 47px;
+    }
+
+    .slides-laptop{
+        width: 1100px;
+        height:800px;
+        font-size: 1.22rem;
+    }
+
+    .kitchen-cover-label{
+        top: 45%;
+    }
+
+    .bathroom-cover-label{
+        top: 38%;
+    }
+
+    .flooring-cover-label{
+        top: 43%;
+    }
+
+    .patio-cover-label{
+        top: 78%;
+    }
+
+    a.see-more-services{
+        top: 91.4%;
+    }
+
+}
+
+/*Media query
+4k-Big-Screen*------------------------------------*/
+@media screen and (min-width:1515px){
+    .service-home-title{
+        font-size: 2.25rem;
+        padding-top: 48px;
+    }
+
+    .services-canvas{
+        height: 1100px;
+    }
+
+    .slides-laptop{
+        width: 1200px;
+        height: 900px;
+        font-size: 1.3rem;
+    }
+}
+
+
+
 
 
 
@@ -994,9 +1304,15 @@ Tablet- LARGE*------------------------------------*/
 
 .home-about-title{
     color:#7d4727;
-    font-size: 1.875rem;
+    font-size: var(--TITLE-FONT-XS);
     margin: auto;
     font-weight: bolder;
+    width: 60px;
+    background-color: white;
+    text-align: center;
+    padding:2px;
+    top:-3%;
+    left:48%;
 }
 
 .richie-portrait{
@@ -1035,17 +1351,6 @@ article.about-story section{
 /*XSMALL - Screen phone------------*/
 .about{
     height: 500px;
-}
-
-.home-about-title{
-    font-size: 1rem;
-    width: 60px;
-    background-color: white;
-    text-align: center;
-    padding:2px;
-    top:-3%;
-    left:48%;
-
 }
 
 .richie-portrait{
@@ -1108,7 +1413,7 @@ MEDIUM - Screen phone-------------------------------------*/
 TABLET-- --------------------------------------------------*/
 @media screen and (min-width: 425px){
     .home-about-title{
-        font-size: 4vw;
+        font-size: var(--TITLE-FONT-S);
         width: 15vw;
     }
 
@@ -1146,13 +1451,15 @@ TABLET--IN --------------------------------------------------*/
 TABLET--IN --------------------------------------------------*/
 @media screen and (min-width: 550px){
 
+    .richie-portrait{
+        /* width:137.5px; */
+        bottom:20%;
+        left:38%;
+    }
+
 }
 
-.richie-portrait{
-    width:137.5px;
-    bottom:20%;
-    left:38%;
-}
+
 
 /*Media
 TABLET--IN --------------------------------------------------*/
@@ -1171,6 +1478,183 @@ TABLET--IN --------------------------------------------------*/
 
 /*Media
 TABLET--IN --------------------------------------------------*/
+
+/*Media
+TABLET--Medium --------------------------------------------------*/
+@media screen and (min-width: 685px){
+    .richie-portrait{
+        width: 22vw;
+        top: 55%;
+    }
+
+
+}
+
+/*Media
+TABLET--Large --------------------------------------------------*/
+@media screen and (min-width: 713px){
+
+    .richie-portrait{
+        width: 22vw;
+    }
+
+    .about-story{
+        width:356.5px;
+        height:463.45px;
+    }
+}
+
+/*Media
+LAPTOP--Small --------------------------------------------------*/
+@media screen and (min-width: 768px){
+    .home-about-title{
+        font-size: var(--TITLE-FONT-M);
+    }
+    
+    .richie-portrait{
+        width: 20vw;
+        left:40%;
+        top: 60%;
+    }
+
+    
+}
+
+/*Media
+LAPTOP--Small --------------------------------------------------*/
+@media screen and (min-width: 803px){
+    .home-about-title{
+        font-size: var(--TITLE-FONT-L);
+    }
+
+}
+
+
+
+
+/*Media
+LAPTOP--Medium --------------------------------------------------*/
+@media screen and (min-width: 845px){
+    .richie-portrait{
+        width: 18vw;
+        left:24%;
+        top: 63%;
+    }
+
+    .about-story{
+        display: none;
+
+    }
+
+    .about-story-large{
+        display: block;
+        width: 290px;
+        height: 370px;
+        overflow: scroll;
+        font-size: 1.07rem;
+        font-family: "inter";
+        background-color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 8px solid #52392F;
+        position: absolute;
+        left:52%;
+        bottom:10%;
+    }
+
+    article.about-story-large section{
+        margin-bottom: 8px;
+        font-weight: bold;
+        text-indent: 10%;
+    }
+}
+
+
+
+/*Media
+LAPTOP--Large L --------------------------------------------------*/
+@media screen and (min-width: 1025px){
+
+    .home-about-title{
+        font-size: var(--TITLE-FONT-XL);
+    }
+
+    .about-story-large{
+        left: 55%;
+        font-size:1.13rem;
+    }
+    .richie-portrait{
+        right:58%;
+        bottom: 115px;
+        width: 184.5px;
+    }
+
+}
+
+/*Media
+LAPTOP--Large XL --------------------------------------------------*/
+@media screen and (min-width: 1185px){
+    .richie-portrait{
+        width: 16%;
+    }
+
+    .about-story-large{
+        transform: scale(1.11);
+        left: 56.3%;
+        bottom: 14%;
+        font-size: 0.98rem
+    }
+}
+
+/*Media
+LAPTOP--Large XXL --------------------------------------------------*/
+@media screen and (min-width: 1352px){
+    .richie-portrait{
+        width: 16%;
+        top: 50%;
+        left:22%;
+    }
+
+    .about-story-large{
+        transform: scale(1.32);
+        left: 58.4%;
+        bottom: 23%;
+        font-size: 0.92rem;
+    }
+
+}
+
+/*Media
+LAPTOP--Large XXL --------------------------------------------------*/
+@media screen and (min-width: 1805px){
+    .about-story-large{
+        width:345.4px;
+        height: 454.4px;
+        font-size: 1.05rem;
+    }
+
+    .home-about-title{
+        font-size: 40px;
+    }
+
+    .richie-portrait{
+        top: 48%;
+    }
+
+}
+
+/*Media
+LAPTOP--Large XXXL --------------------------------------------------*/
+@media screen and (min-width: 2199px){
+    .about-story-large{
+        height: 500px;
+        width: 380px;
+    }
+
+    .richie-portrait{
+        width: 325px;
+    }
+}
 
 
 
@@ -1333,6 +1817,32 @@ TABLET---IN *------------------------------------*/
     }
 
 }
+
+/*Media query
+Laptop--- Medium *------------------------------------*/
+@media screen and (min-width:845px){
+    .gradient{
+        background-image: none;
+        background-color: #e6e6e6;
+    }
+
+}
+
+/*Media query
+Laptop--- Medium *------------------------------------*/
+@media screen and (min-width:1074px){
+    #review-3{
+        display: contents;
+    }
+
+}
+
+/*Media query
+Laptop--- Medium *------------------------------------*/
+@media screen and (min-width:1128px){
+    
+}
+
 
 
 /*----------------------------------------------Home-review-end----------------------------------------------------------*/
