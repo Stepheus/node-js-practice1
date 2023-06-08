@@ -879,9 +879,13 @@ a.see-more-services{
     position: absolute;
     left: 78.45%;
     top: 69%;
-    color: #B30000;
+    color: white;
+    background-color: #BC815F;
+    padding: 3px 5px;
+    border-radius: 10%;
+    box-shadow: #7d4727;
 
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition-property: font-size;
     transition-duration: 0.1s;
 
@@ -890,7 +894,10 @@ a.see-more-services{
 a.see-more-services:hover,
 a.see-more-services:focus
 {
-    opacity: 80%;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transform: scale(1.05);
+    background-color: #7d4727;
     cursor: pointer;
 }
 
@@ -1217,6 +1224,7 @@ Laptop-Medium*------------------------------------*/
     a.see-more-services{
         top: 91%;
         left:87%;
+        font-size: 1.05rem;
     }
 
 }
@@ -1610,7 +1618,6 @@ LAPTOP--Large XL --------------------------------------------------*/
 LAPTOP--Large XXL --------------------------------------------------*/
 @media screen and (min-width: 1352px){
     .richie-portrait{
-        width: 16%;
         top: 50%;
         left:22%;
     }
@@ -1707,6 +1714,7 @@ section.home-review:hover{
 }
 
 
+
 /*XSMALL - Screen phone------------*/
 
 .home-review{
@@ -1755,11 +1763,15 @@ p.home-review-see-more a{
     width: 100%;
     color:#B30000;
     text-align: right;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding:5px;
     transform: translateY(-30px);
 }
 
+p.home-review-see-more a:hover,
+p.home-review-see-more a:focus{
+    background-color: hsl(0, 0%, 78%);
+}
 
 /*Media query
 Tablet- *------------------------------------*/
@@ -1826,6 +1838,10 @@ Laptop--- Medium *------------------------------------*/
         background-color: #e6e6e6;
     }
 
+    p.home-review-see-more a{
+        font-size: 1.08rem;
+    }
+
 }
 
 /*Media query
@@ -1840,7 +1856,29 @@ Laptop--- Medium *------------------------------------*/
 /*Media query
 Laptop--- Medium *------------------------------------*/
 @media screen and (min-width:1128px){
-    
+    .home-review-pic{
+        width: 9.7vw;
+        height:9.7vw;
+    }
+
+}
+
+/*Media query
+Laptop--- Medium *------------------------------------*/
+@media screen and (min-width:1128px){
+    .gradient{
+        padding-bottom: 8.08vw;
+    }
+}
+/*Media query
+Laptop--- Medium *------------------------------------*/
+@media screen and (min-width:2199px){
+    .home-review-pic{
+        width: 200px;
+        height:200px;
+
+    }
+
 }
 
 
