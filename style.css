@@ -2394,7 +2394,7 @@ Tablet- custom L*------------------------------------*/
         display: block;
         margin: auto;
         overflow: hidden;
-        margin-top: -10px;
+        margin-top: -14.4px;
     }
 
     .footer-message{
@@ -2405,9 +2405,59 @@ Tablet- custom L*------------------------------------*/
         column-count: 3;
 
     }
-
-
     
+}
+
+/*Media query
+Tablet- custom S*------------------------------------*/
+@media screen and (min-width:1025px){
+    footer input[type=tel]{
+        width:28ch;
+
+    }
+
+    .footer-message{
+        margin-left: 20px;
+    }
+    
+    footer textarea{
+        width:26ch;
+
+    }
+}
+
+
+/*Media query
+Tablet- custom L*------------------------------------*/
+@media screen and (min-width:1155px){
+    
+    footer input[type=tel]{
+        width:30.2ch;
+    }
+    
+    footer textarea{
+        width:28ch;
+    }
+
+    .footer-message{
+        margin-left: 24px;
+    }
+}
+
+/*Media query
+Tablet- custom XL*------------------------------------*/
+@media screen and (min-width:1440px){
+    .footer-message{
+        margin-left:70px;
+    }
+}
+
+/*Media query
+Tablet- custom XL*------------------------------------*/
+@media screen and (min-width:2038px){
+    .footer-message{
+        margin-left:200px;
+    }
 }
     
 /* -----------------------------------------------------Footer(end)-----------------------------------------------------------*/
