@@ -2461,3 +2461,32 @@ Tablet- custom XL*------------------------------------*/
 }
     
 /* -----------------------------------------------------Footer(end)-----------------------------------------------------------*/
+/* -----------------------------------------------------Home-page(End)-----------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Flooring-services*/
+.flooring-services-box{
+    width:320px;
+    height:640px;
+    overflow: hidden;
+    background-image: url("./Images-Fenn/edits/floor-kitchen2.jpeg");
+    background-size: 480px 640px;
+    background-position: -80px;
+}
+
+.blur-veil{
+    background-color:transparent;
+    backdrop-filter: blur(4px);
+    width:320px;
+    height:640px;
+    display:grid;
+    place-content: center;
+}
+
+.flooring-services-box h2{
+    color:white;
+}
+
+
+
