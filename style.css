@@ -2243,8 +2243,8 @@ footer ul.contact-icons-list li{
 footer .footer-services{
     width:100px;
     display: inline-block;
-    /* vertical-align: top; */
-    margin-left: 50px;
+    margin-left: 15vw;
+    vertical-align: top;
 
 
 }
