@@ -218,12 +218,14 @@ header ul.nav-list{
     display:flex;
     flex-direction: column;
     align-content: center;
+    gap: 5vh;
     transition-property: all;
     transition-duration: 0.4s;
     z-index: 2;
+    font-size:1.5rem;
 }
 header li:first-child{
-    margin-top: 50px;
+    margin-top: 24vh;
 }
 header li{
     display: block;
@@ -2466,27 +2468,134 @@ Tablet- custom XL*------------------------------------*/
 
 
 /* Flooring-services*/
-.flooring-services-box{
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+.service-description{
+    height: 100vh;
+    z-index: 1;
+    top:0%;
+    display: grid;
+    place-content: center;
+}
+
+.service-description >article{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: "inter";
+    font-weight: bolder;
+    font-size: 1rem;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.service-description section{
+    margin-bottom: 3px;
+    text-indent: 10px;
+}
+
+.service-description section:first-child{
+    text-indent: 20px; 
+}
+
+
+.service-description a:first-child{
+    color:#b30000;
+}
+.service-description a:last-child{
+    text-decoration: underline;
+    color: inherit;
+}
+
+.services-box{
     width:320px;
-    height:640px;
+    /* height:640px; */
+    height:100vh;
     overflow: hidden;
+}
+
+.flooring-box{
     background-image: url("./Images-Fenn/edits/floor-kitchen2.jpeg");
-    background-size: 480px 640px;
+    background-size: 480px 100vh;
     background-position: -80px;
+}
+
+.kitchen-box{
+    background-image: url("./Images-Fenn/Kitchen/kitchen-gray.jpeg");
+    background-size: 480px 100vh;
+}
+
+.patio-box{
+    background-image: url("./Images-Fenn/Patio/veranda-house3.jpeg");
+    background-size: 480px 100vh;
+}
+
+.bathroom-box{
+    background-image: url("./Images-Fenn/Bathroom/shower-single2.jpeg");
+    background-size: cover;
+    background-position: -60px;
 }
 
 .blur-veil{
     background-color:transparent;
     backdrop-filter: blur(4px);
     width:320px;
-    height:640px;
+    height:100vh;
     display:grid;
     place-content: center;
 }
 
-.flooring-services-box h2{
+
+.services-box h2{
     color:white;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
+
+.service-gallery{
+    width:100%;
+    text-align: center;
+}
+
+.service-gallery > h3{
+    display: inline-block;
+    color:white;
+    font-size: var(--TITLE-FONT-XS);
+    background-color:#287ab8;
+    padding: 3px 6px;
+    font-weight: bold;
+
+}
+
+.service-gallery-display{
+    column-count: 2;
+    column-gap: 0px;
+    margin: auto;
+}
+
+.service-gallery-display > figure:last-child{
+    padding-top: 20px;
+
+}
+
+.service-gallery-pics{
+    width:140px;
+    height: 200px;
+    margin: 10px 2px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
 
 
 
