@@ -2411,6 +2411,15 @@ Tablet- custom L*------------------------------------*/
 
 /*Media query
 Tablet- custom S*------------------------------------*/
+@media screen and (min-width:768px){
+    .service-gallery > h3{
+        font-size:0.88px;
+}
+}
+
+
+/*Media query
+Tablet- custom S*------------------------------------*/
 @media screen and (min-width:1025px){
     footer input[type=tel]{
         width:28ch;
@@ -2480,24 +2489,31 @@ Tablet- custom XL*------------------------------------*/
     height: 100vh;
     z-index: 1;
     top:0%;
-    display: grid;
-    place-content: center;
 }
 
-.service-description >article{
+.service-description-box{
+    width: 100%;
+    height:100%;
+    display: grid;
+    place-content: center;
+    padding-left:20px;
+}
+
+.service-description article{
     padding-left: 8px;
     padding-right: 8px;
-    font-family: "inter";
-    font-weight: bolder;
-    font-size: 1rem;
     animation-name: appear;
     animation-duration: 1s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
+    width: 300px;
+    
 }
 .service-description section{
     margin-bottom: 3px;
-    text-indent: 10px;
+    line-height: 18px;
+    font-size: inherit;
+    word-spacing: 2.5px;
 }
 
 .service-description section:first-child{
@@ -2522,8 +2538,10 @@ Tablet- custom XL*------------------------------------*/
 
 .flooring-box{
     background-image: url("./Images-Fenn/edits/floor-kitchen2.jpeg");
-    background-size: 480px 100vh;
+    /* background-size: 480px 100vh; */
+    background-size: cover;
     background-position: -80px;
+    background-repeat: no-repeat;
 }
 
 .kitchen-box{
@@ -2563,6 +2581,7 @@ Tablet- custom XL*------------------------------------*/
 .service-gallery{
     width:100%;
     text-align: center;
+    padding-bottom:50px;
 }
 
 .service-gallery > h3{
@@ -2581,7 +2600,7 @@ Tablet- custom XL*------------------------------------*/
     margin: auto;
 }
 
-.service-gallery-display > figure:last-child{
+.services-gallery-padding{
     padding-top: 20px;
 
 }
@@ -2594,7 +2613,236 @@ Tablet- custom XL*------------------------------------*/
     object-fit: cover;
 }
 
+.service-gallery-display img:nth-child(7){
+    margin-top: 28px;
+}
 
 
+/*Media query
+Phone- XS*------------------------------------*/
+@media screen and (min-width:320px){
+    .services-box{
+        width: 100vw;
+    }
+
+    .blur-veil{
+        width:100vw;
+    }
+}
+
+
+/*Media query
+Phone- S*------------------------------------*/
+@media screen and (min-width:395px){
+    .service-gallery-pics{
+        width:180px;
+        height:240px;
+    }
+
+    .service-description article{
+        width: 340px;
+    }
+
+    .service-description section{
+        margin-bottom:10px;
+    }
+}
+
+/*Media query
+Tablet- S*------------------------------------*/
+@media screen and (min-width:483px){
+    .service-description article{
+        width: 400px;
+    }
+}
+
+
+/*Media query
+Phone- M*------------------------------------*/
+@media screen and (min-width:495px){
+    .service-gallery-pics{
+        width: 220px;
+        height:280px;
+    }
+
+}
+
+
+/*Media query
+Phone- M*------------------------------------*/
+@media screen and (min-width:495px){
+}
+
+/*Media query
+Phone- M*------------------------------------*/
+@media screen and (min-width:585px){
+    .service-gallery-pics{
+        width: 260px;
+        height:320px;
+    }
+}
+
+/*Media query
+Phone- M*------------------------------------*/
+@media screen and (min-width:600px){
+    .services-box h2{
+        font-size: 1.9rem;
+    }
+
+}
+
+
+/*Media query
+Tablet- L*------------------------------------*/
+@media screen and (min-width:740px){
+    .service-gallery-display{
+        column-count: 3;
+    }
+
+    .service-gallery-pics{
+        width: 220px;
+        height:280px;
+    }
+
+    .service-gallery-display img:nth-child(7){
+        margin-top: 10px;
+    }
+
+    .service-gallery-display img:nth-child(5){
+        margin-top: 28px;
+    }
+
+}
+
+
+/*Media query
+Laptop- S*------------------------------------*/
+@media screen and (min-width:830px){
+    .service-gallery-pics{
+        width: 250px;
+        height:310px;
+    }
+}
+
+/*Media query
+Laptop- L*------------------------------------*/
+@media screen and (min-width:970px){
+    .service-gallery-pics{
+        width: 290px;
+        height:350px;
+    }
+}
+
+/*Media query
+Laptop- L*------------------------------------*/
+@media screen and (min-width:1024px){
+    .services-box, .blur-veil{
+        height:33vh;
+    }
+
+    .blur-veil{
+        place-content: end start;
+    }
+
+    .services-box h2{
+        font-size: var(--TITLE-FONT-XXL);
+        margin-left:80px;
+        margin-bottom:40px;
+    }
+
+    .service-description{
+        height:64vh;
+    }
+
+    .service-description-box{
+        place-content: start start;
+        margin: auto;
+        padding-left: 80px;
+    }
+
+    .service-description article {
+        padding-left: 0px;
+    }
+
+    .service-description article{
+        width: 800px;
+        margin-top: 100px;
+        font-size: 1rem;
+    }
+
+    .service-description section:first-child{
+        text-indent: none; 
+    }
+
+    .service-description section{
+        margin-bottom: 20px;
+    }
+
+}
+
+/*Media query
+Laptop- XL*------------------------------------*/
+@media screen and (min-width:1035px) {
+    .service-gallery-display{
+        width:1035px;
+    }
+}
+
+/*Media query
+Laptop- L*------------------------------------*/
+/* @media screen and (min-width:1150px){
+    .services-box h2{
+        margin-left:8vw;
+    }
+
+    .service-gallery-display{
+        width: 1050px;
+    }
+    .service-description-box{
+        width:1050px;
+        margin: auto;
+    }
+} */
+
+/*Media query
+Laptop- XL*------------------------------------*/
+@media screen and (min-width:1171px){
+
+    .services-box h2{
+        margin-left:9.8vw;
+    }
+    
+    .service-description-box{
+        padding-left: 9.8vw;
+    }
+}
+
+/*Media query
+Laptop- XL*------------------------------------*/
+@media screen and (min-width:1306px){
+    .service-gallery-display{
+        width:1210px;
+    }
+
+    .service-gallery-pics{
+        width: 360px;
+        height: 420px;
+    }
+}
+
+
+
+/*Media query
+Laptop- XL*------------------------------------*/
+@media screen and (min-width:1440px){
+    .service-description article{
+        font-size:1.05rem;
+        line-height: 10px;
+    }
+
+    .service-description section{
+        line-height: 20px;
+    }
+}
 
 
