@@ -2540,18 +2540,23 @@ Tablet- custom XL*------------------------------------*/
     background-image: url("./Images-Fenn/edits/floor-kitchen2.jpeg");
     /* background-size: 480px 100vh; */
     background-size: cover;
-    background-position: -80px;
+    /* background-position: -80px; */
+    background-position: bottom center;
     background-repeat: no-repeat;
 }
 
 .kitchen-box{
     background-image: url("./Images-Fenn/Kitchen/kitchen-gray.jpeg");
-    background-size: 480px 100vh;
+    /* background-size: 480px 100vh; */
+    background-size: cover;
+    background-position: center;
 }
 
 .patio-box{
     background-image: url("./Images-Fenn/Patio/veranda-house3.jpeg");
-    background-size: 480px 100vh;
+    /* background-size: 480px 100vh; */
+    background-size: cover;
+    background-position: center;
 }
 
 .bathroom-box{
@@ -2669,12 +2674,20 @@ Phone- M*------------------------------------*/
 
 
 /*Media query
-Phone- M*------------------------------------*/
-@media screen and (min-width:495px){
+Phone- ML*------------------------------------*/
+@media screen and (min-width:549px){
+    .service-description article{
+        width: 450px;
+    }
+
+    .service-description section {
+        line-height: 21px;
+        word-spacing: 2.5px;
+    }
 }
 
 /*Media query
-Phone- M*------------------------------------*/
+Phone- MXL*------------------------------------*/
 @media screen and (min-width:585px){
     .service-gallery-pics{
         width: 260px;
@@ -2683,11 +2696,21 @@ Phone- M*------------------------------------*/
 }
 
 /*Media query
-Phone- M*------------------------------------*/
+Phone- MXXL*------------------------------------*/
 @media screen and (min-width:600px){
     .services-box h2{
         font-size: 1.9rem;
     }
+
+}
+
+/*Media query
+Phone- MXXXL*------------------------------------*/
+@media screen and (min-width:638px){
+    .service-description article{
+        width: 510px;
+    }
+
 
 }
 
@@ -2714,6 +2737,19 @@ Tablet- L*------------------------------------*/
 
 }
 
+/*Media query
+Tablet- L*------------------------------------*/
+@media screen and (min-width:768px){
+    .service-description article{
+        width: 560px;
+    }
+
+    .service-description section {
+        word-spacing: 3px;  
+    }
+
+}
+
 
 /*Media query
 Laptop- S*------------------------------------*/
@@ -2723,6 +2759,42 @@ Laptop- S*------------------------------------*/
         height:310px;
     }
 }
+
+
+/*Media query
+Laptop- S*------------------------------------*/
+@media screen and (min-width:845px){
+    .service-description section {
+        line-height: 22px;
+    }
+
+    .service-description article {
+        font-size: 1.2rem;
+        width: 590px;
+    }
+
+}
+
+/*Media query
+Laptop- S*------------------------------------*/
+@media screen and (min-width:865px){
+    .service-description article {
+        width: 610px;
+    }
+
+    .service-description section {
+        line-height: 23.5px;
+    }
+}
+
+/*Media query
+Laptop- S*------------------------------------*/
+@media screen and (min-width:865px){
+    .service-description article {
+        width: 630px;
+    }
+}
+
 
 /*Media query
 Laptop- L*------------------------------------*/
