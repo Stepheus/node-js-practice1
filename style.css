@@ -990,55 +990,38 @@ a.see-more-services:focus
         height:100%;
     }
 
-.slideshow-caption{
+.slide_caption{
+    padding: 10px 10px;
     position: absolute;
-    left: 88px;
+    color: white;
+    bottom: 2px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide-caption_background{
+    position: absolute;
     bottom: 0;
-    display: block;
-    height: 30px;
-    width: auto;
-    border-right: white solid 2px;
-    background-color: #bc815f;
-    opacity: 98%;
-    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95px;
+    height: 40px;
+    background-color: #BC815F;
+}
+
+.slide_caption[data-selected="yes"]{
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    opacity: 100%;
+}
+
+.slide_caption[data-selected="no"]{
+    opacity: 0;
 }
 
 .Service_label-list{
     display:flex;
-}
-
-/* .slideshow-caption::after,
-.slideshow-caption::before{
-    content: "";
-    width:79.5%;
-    height: 40px;
-    background-color: #bc815f;
-    position: absolute;
-} */
-
-/* .slideshow-caption::before{
-    transform: translateX(-103%);
-}
-
-.slideshow-caption::after{
-    transform: translateX(128%);
-
-} */
-
-.Service_label-caption{
-    width:90px;
-    height:30px;
-    border-left: whitesmoke 2px solid;
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-figcaption.slideshow-caption label{
-    font-size: 14px;
-    padding: 3px;
-    color:whitesmoke;
 }
 
 .Service_left-arrow{
@@ -1055,34 +1038,38 @@ figcaption.slideshow-caption label{
     opacity: 100%;
 }
 
-
-.slides_left-button{
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left:0;
-    width: 88px;
-    height: 30px;
-    opacity: 98%;
-    border: none;
-    background-color:#BC815F;
-
-}
-
-.slides_right-button{
+.slides_button{
     display:block;
     position: absolute;
-    bottom: 0;
-    right:0;
     width: 88px;
     height:30px;
     opacity:98%;
     border:none;
     background-color:#BC815F;
+    cursor: pointer;
 }
 
-.slides_left-button:active ~ .slideshow-caption{
-    margin-left:-90px;
+.slides_button:hover,
+.slides_button:active{
+    background-color: #7d4727;
+
+}
+
+.slides_button:focus{
+    border: 1px solid #7d4727;
+}
+
+.slides_button--left{
+    bottom: 0;
+    left:0;
+
+}
+
+
+
+.slides_button--right{
+    bottom: 0;
+    right:0;
 }
  
 /*Media query
