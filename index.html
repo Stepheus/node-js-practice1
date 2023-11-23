@@ -55,32 +55,36 @@
        <figure class="slideshow relative">
           <figure id="slides" class="slides">
 
-           <figure class="slide s0">
+           <figure id="s0" class="slide" data-selected="yes" data-position="0">
              <img id="kitchen-cover" class="brown-border" src="./Images-Fenn/Kitchen/kitchen-cover.jpeg" width="336px" heigh="336px" alt="kitchen-services">
-             <figcaption class="slide_caption" data-selected="yes">Kitchen</figcaption>
+             <!-- <figcaption class="slide_caption">Kitchen</figcaption> -->
             </figure>
   
-           <figure class="slide s1">
+           <figure id="s1" class="slide" data-selected="no" data-position="20%">
              <img id="bathroom-services-cover" class="brown-border" src="./Images-Fenn/Bathroom/bathroom-cover.jpeg" width="281px" height="281px" alt="bathroom-services">
-             <figcaption class="slide_caption" data-selected="no">Bathroom</figcaption>
+             <!-- <figcaption class="slide_caption" >Bathroom</figcaption> -->
            </figure>
   
-           <figure class="slide s2">
+           <figure id="s2" class="slide" data-selected="no" data-position="40%">
             <img id="flooring-services-cover" class="brown-border" src="./Images-Fenn/Flooring/flooring-cover.jpeg" width="200px" heigh="206px" alt="flooring-services">
-            <figcaption class="slide_caption" data-selected="no">Flooring</figcaption>
+            <!-- <figcaption class="slide_caption">Flooring</figcaption> -->
            </figure>
           
-           <figure class="slide s3">
+           <figure id="s3" class="slide" data-selected="no" data-position="60%">
              <img id="patio-cover-label" class="brown-border" src="./Images-Fenn/Patio/patio-cover.jpeg" width="270px" height="270px" alt="patio-services">
-             <figcaption class="slide_caption" data-selected="no">Outdoor</figcaption>
+             <!-- <figcaption class="slide_caption" >Outdoor</figcaption> -->
             </figure>
-
-           <button id= "leftBttn" class="slides_button slides_button--left"><img src="./Images-Fenn/edits/left-arrow-outline.png" class="Service_left-arrow" alt="left-arrow"></button>
-
+          </figure>
+          <button id= "leftBttn" class="slides_button slides_button--left"><img src="./Images-Fenn/edits/left-arrow-outline.png" class="Service_left-arrow" alt="left-arrow"></button>
           <button id="rightBttn" class="slides_button slides_button--right"><img src="./Images-Fenn/edits/right-arrow-outline.png" class="Service_right-arrow" alt="right-arrow"></button>
-          <div class="slide-caption_background"></div>
+          <ul id="box-caption" class="box-caption">
+            <li class="box_caption__text hide" data-show="yes">Kitchen</li>
+            <li class="box_caption__text hide" data-show="no">Bathroom</li>
+            <li class="box_caption__text hide" data-show="no">Flooring</li>
+            <li class="box_caption__text hide" data-show="no">Outdoor</li>
+          </ul>
 
-         </figure>
+         
 
        </figure>
 

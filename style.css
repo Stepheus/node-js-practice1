@@ -574,12 +574,6 @@ LAPTOP SMALL - Screen phone-------------------------------------*/
         font-size:4vw;
     }
 
-    .fenn-painting{
-        /* width:43%;
-        top:-5%;
-        left:44%; */
-    }
-
 }
 
 /*Media
@@ -977,6 +971,9 @@ a.see-more-services:focus
         width: 500%;
         height:100%;
         display: flex;
+        transition-property: transform;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in;
     }
 
 
@@ -990,17 +987,31 @@ a.see-more-services:focus
         height:100%;
     }
 
-.slide_caption{
+.box-caption li{
     padding: 10px 10px;
     position: absolute;
     color: white;
     bottom: 2px;
-    z-index: 2;
+    z-index: 3;
     left: 50%;
     transform: translateX(-50%);
+    transition-property: opacity;
+    transition-duration: 0.3s;
 }
 
-.slide-caption_background{
+.box-caption li[data-show="yes"]
+{
+    opacity: 100%;
+}
+
+.box-caption li[data-show="no"]
+{
+    opacity: 0;
+}
+
+
+.box-caption{
+    list-style-type: none;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -1010,13 +1021,13 @@ a.see-more-services:focus
     background-color: #BC815F;
 }
 
-.slide_caption[data-selected="yes"]{
+.slide[data-selected="yes"] .slide_caption{
     transition-property: opacity;
     transition-duration: 0.2s;
     opacity: 100%;
 }
 
-.slide_caption[data-selected="no"]{
+.slide[data-selected="no"] .slide_caption{
     opacity: 0;
 }
 
