@@ -31,14 +31,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
 function slide(direction){
     const slides = document.getElementById('slides');
     const currentSlide = slides.querySelector('[data-selected="yes"]');
+    const captions = document.getElementById('box-caption');
+    const currentCaption = captions.querySelector('[data-show="yes"]');
     if(direction==="left"){
         if(currentSlide.nextElementSibling){
             //data-position is updated soon as the doc loads.
             amountToMove = "-" + currentSlide.nextElementSibling.dataset.position;
             currentSlide.parentElement.style.transform = 'TranslateX('+ amountToMove + "px" + ')';
-            //  currentSlide.parentElement.style.transform = 'TranslateX(2%)';
+            //Move anchor to next slide and next text
             currentSlide.nextElementSibling.dataset.selected = "yes";
             currentSlide.dataset.selected = "no";
+            currentCaption.nextElementSibling.dataset.show ="yes";
+            currentCaption.dataset.show ="no";
         }else{
 
         }
@@ -50,8 +54,12 @@ function slide(direction){
             amountToMove = wholeSlideWidth - currentSlide.previousElementSibling.dataset.position;
             console.log({amountToMove});
             currentSlide.parentElement.style.transform = 'TranslateX('+ amountToMove + "px" +')';
+             //Move anchor to next slide and next text
             currentSlide.previousElementSibling.dataset.selected = "yes"; 
             currentSlide.dataset.selected = "no";
+            currentCaption.previousElementSibling.dataset.show="yes";
+            currentCaption.dataset.show="no";
+
         }else{
 
         }

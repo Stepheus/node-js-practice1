@@ -955,10 +955,10 @@ a.see-more-services:focus
     
  .slideshow{
         display: block;
-        width: 270px;
-        height: 270px;
+        width: 290px;
+        height: 290px;
         margin:auto;
-        margin-top: 35px;
+        margin-top: 30px;
         overflow: hidden;  
     }
 
@@ -988,11 +988,10 @@ a.see-more-services:focus
     }
 
 .box-caption li{
-    padding: 10px 10px;
     position: absolute;
     color: white;
-    bottom: 2px;
-    z-index: 3;
+    bottom: 5px;
+    z-index: 2;
     left: 50%;
     transform: translateX(-50%);
     transition-property: opacity;
@@ -1017,7 +1016,7 @@ a.see-more-services:focus
     left: 50%;
     transform: translateX(-50%);
     width: 95px;
-    height: 40px;
+    height: 30px;
     background-color: #BC815F;
 }
 
@@ -1052,60 +1051,60 @@ a.see-more-services:focus
 .slides_button{
     display:block;
     position: absolute;
-    width: 88px;
-    height:30px;
-    opacity:98%;
+    width: auto;
+    height:100%;
+    opacity:97%;
     border:none;
-    background-color:#BC815F;
+    background-color: transparent;
     cursor: pointer;
+    bottom: 50%;
+    transform: translateY(50%);
 }
 
 .slides_button:hover,
 .slides_button:active{
-    background-color: #7d4727;
+    background-color: #BC815F;
 
 }
 
 .slides_button:focus{
-    border: 1px solid #7d4727;
+    border: 1px solid #BC815F;
 }
 
 .slides_button--left{
-    bottom: 0;
     left:0;
 
 }
 
-
-
 .slides_button--right{
-    bottom: 0;
     right:0;
 }
  
 /*Media query
-Tablet- LARGE*------------------------------------*/
-@media screen and (min-width:320px){
-
-
+phone- medium*------------------------------------*/
+@media screen and (min-width:375px){
+    .slideshow{
+        width:320px;
+        height:320px;
+    }
 }
-
 
 /*Media query
 Tablet- LARGE*------------------------------------*/
 @media screen and (min-width:425px){
     .service-home-title{
         font-size: var(--TITLE-FONT-S);
-        padding-top: 4.5vw;
+        padding-top: 28px;
+
     }
 
     .slideshow{
-        width: 62vw;
-        height: 62vw;
+        width: 350px;
+        height: 350px;
     }
 
     .services-canvas{
-        height:87.06vw;
+        height:480.06px;
     }
 
     .wall-lamp{
