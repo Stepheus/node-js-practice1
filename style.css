@@ -947,10 +947,6 @@ a.see-more-services:focus
         height: 270px;
         z-index: 0;
     }
-    
- .wall-lamp{
-        width:20px;
-    }
 
     
  .slideshow{
@@ -959,7 +955,9 @@ a.see-more-services:focus
         height: 290px;
         margin:auto;
         margin-top: 30px;
-        overflow: hidden;  
+        overflow: hidden;
+        border: 3px white solid;
+        border-radius: 5px;  
     }
 
  .slideshow-xsmall img{
@@ -1059,11 +1057,15 @@ a.see-more-services:focus
     cursor: pointer;
     bottom: 50%;
     transform: translateY(50%);
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
 }
 
 .slides_button:hover,
 .slides_button:active{
-    background-color: #BC815F;
+    background-color: white;
+    color: #BC815F;
 
 }
 
@@ -1303,6 +1305,13 @@ Laptop-Large*------------------------------------*/
 /* ----------------------------------------------End-home-Service-Page----------------------------------------------------------*/
 
 /*----------------------------------------------Home-About-Page----------------------------------------------------------*/
+.transition1{
+background-image: url("./Images-Fenn/edits/home-page3-transition.png");
+background-position: center;
+background-size: 100% 100%;
+width:100%;
+min-height:35vw;
+}
 
 .about{
     width:100%;
@@ -1330,21 +1339,14 @@ Laptop-Large*------------------------------------*/
 
 .about-window{
     width: 100%;
-    min-height: 182px;
-    background-image: url("./Images-Fenn/edits/home-page3-skeleton.png");
+    min-height: 220px;
+    background-image: url("./Images-Fenn/edits/home-page3-window.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 .about-story-large{
     display:none;
-}
-.about-story{
-    width: 290px;
-    height: 451px;
-    font-family: "inter";
-    font-weight: bolder;
-    margin: auto;
-    margin-top: 30px;
 }
 
 article.about-story section{
@@ -1357,7 +1359,7 @@ article.about-story section{
 
 /*XSMALL - Screen phone------------*/
 .about{
-    height: 500px;
+    min-height: 700px;
 }
 
 .richie-portrait{
@@ -1369,8 +1371,10 @@ article.about-story section{
 
 .about-story{
     display: block;
-    width: 240px;
-    height: 300px;
+    font-family: "inter";
+    font-weight: bolder;
+    width: 280px;
+    height: 360px;
     overflow: scroll;
     margin:auto;
     font-size: 1rem;
@@ -1383,18 +1387,6 @@ article.about-story section{
 
 }
 
-/*Media 
-PHONE-SMALL  -------------------------------------*/
-@media screen and (min-width:320px){
-    .about-window{
-        width:100%;
-        height:57.08vw;
-    }
-
-    .about{
-        height:auto;
-    }
-}
 
 /*Media
 MEDIUM - Screen phone-------------------------------------*/
@@ -1408,12 +1400,6 @@ MEDIUM - Screen phone-------------------------------------*/
         width: 118px;
     }
 
-    .about-story{
-        width: 64vw;
-        height:80vw;
-
-    }
-    
 }
 
 /*Media
