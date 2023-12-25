@@ -70,12 +70,43 @@ function slide(direction){
 function changeServiceCaption(){
 
 }
-
+//Service button event
 const serviceBttnLeft = document.getElementById('rightBttn');
 serviceBttnLeft.addEventListener("click", ()=>slide("left"));
 const serviceBttnRight = document.getElementById('leftBttn');
 serviceBttnRight.addEventListener("click",()=>slide("right"));
 
+                            //Scroll events
+//About page
+// const aboutPage = document.getElementById("transition-about");
+// const aboutStory = document.getElementById("about-story");
+// const sections = aboutStory.querySelectorAll("section");
 
+// window.addEventListener("scroll", ()=>{
+//     const scrolled = window.scrollY;
+//     const offSet = aboutPage.offsetTop;
+//     const offHeight = document.getElementById("about").offsetHeight;
+//     if(scrolled >= offSet && scrolled <= (offSet + offHeight)){
+//         const richie = document.getElementById("richie-img");
+//         richie.classList.add("richie-appear");
+//         sections.forEach(text => {
+//             text.classList.add("section-about-appear");
+//         })
+//     }
+
+// })
+// //Reviews appear
+// const reviewPage = document.getElementById("reviewPage");
+// const homeReviews = document.getElementsByClassName("home-review");
+// window.addEventListener("scroll", ()=>{
+//     const scrolled = window.scrollY;
+//     const offSet = reviewPage.offsetTop;
+//     const offHeight = reviewPage.offHeight;
+//     if(scrolled >= offSet && scrolled <= (offSet + offHeight)){
+//         Array.from(homeReviews).forEach(review=>{
+//             review.className.add("show-review");
+//         })
+//     }
+// })
 
  

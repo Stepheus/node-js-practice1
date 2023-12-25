@@ -1336,11 +1336,14 @@ min-height:35vw;
     top: 60.30%;
     left: 22.32%;
     opacity: 0;
-    transition-property: opacity;
-    transition-duration: 1.2s;
+    animation-name: richie-appear;
+    animation-timeline: view();
+    animation-range-start: 20vh;
+    animation-range-end: exit;
 }
-.richie-portrait.richie-appear{
-    opacity: 100%;
+@keyframes richie-appear{
+  to {opacity: 100%;
+  }
 }
 
 
@@ -1363,15 +1366,17 @@ article.about-story section{
     text-indent: 10%;
     margin-bottom: 5px;
     opacity: 0;
-    transition-property: opacity;
-    transition-duration: 1.2s;
-    transition-delay: calc(0.5s * var(--delay));
+    animation-name: story-appear;
+    animation-timeline: view();
+    animation-range-start: begin;
+    animation-range-end: exit;
+    /* animation-delay: calc(0.5s * var(--delay)); */
+
 }
 
-article.about-story section.section-about-appear{
-    opacity: 1;
+@keyframes story-appear {
+  to {opacity: 1;}
 }
-
 
 /*XSMALL - Screen phone------------*/
 .about{
@@ -1727,14 +1732,20 @@ section.home-review:hover{
     margin-right: auto;
     margin-bottom: 50px;
     opacity: 0; 
-    transition-property: opacity;
+    /* transition-property: opacity;
     transition-duration: 1s;
-    transition-delay: calc(0.5s * var(--d));   
+    transition-delay: calc(0.5s * var(--d));    */
 }
-.home-review[data-small="yes"].show-review{
-    opacity: 100%;
+.home-review[data-small="yes"]{
+    animation-name: show-review;
+    animation-timeline: view();
+    animation-range-start: 40vh;
+    animation-range-end: 5px;
 }
 
+@keyframes show-review {
+    to{opacity: 100%;}
+}
 .home-review-pic{
     width: 80px;
     height: 80px;
