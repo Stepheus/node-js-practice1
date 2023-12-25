@@ -1360,7 +1360,7 @@ min-height:35vw;
     display:none;
 }
 
-article.about-story section{
+.about-story section{
     /* font-family: cursive; */
     font-weight: bold;
     text-indent: 10%;
@@ -1390,6 +1390,7 @@ article.about-story section{
     margin:auto;
 }
 
+
 .about-story{
     display: block;
     font-family: "inter";
@@ -1408,6 +1409,9 @@ article.about-story section{
 
 }
 
+.story-page{
+    height: 140%;
+}
 
 /*Media
 MEDIUM - Screen phone-------------------------------------*/
@@ -1455,7 +1459,7 @@ TABLET--IN --------------------------------------------------*/
         font-size: 16px;
     }
 
-    article.about-story section{
+    .about-story section{
         margin-bottom: 3vw;
     }
     
@@ -1576,7 +1580,7 @@ LAPTOP--Medium --------------------------------------------------*/
         bottom:10%;
     }
 
-    article.about-story-large section{
+    .about-story-large section{
         margin-bottom: 8px;
         font-weight: bold;
         text-indent: 10%;
