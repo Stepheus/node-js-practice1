@@ -732,13 +732,6 @@ LAPTOP- LARGE ----------------------------------------------------*/
     text-align: center;
 }
 
-
-.wall-lamp{
-    position: absolute;
-    left: 11.4%;
-    top: 5.24%;
-}
-
 .slides-laptop{
     display: none;
     /* width: 95vw; */
@@ -762,6 +755,7 @@ LAPTOP- LARGE ----------------------------------------------------*/
     border:solid 6px #bc815f;
     /* outline: solid 2px #52392F; */
 }
+
 img.kitchen-services-cover:hover{
     opacity:80%;
     transition-property: transform;
@@ -853,6 +847,7 @@ img.flooring-services-cover:hover{
     border:solid 6px #bc815f;
     /* outline: solid 2px #52392F; */
 }
+
 img.patio-services-cover:hover{
     opacity:80%;
     transition-property: transform;
@@ -897,7 +892,7 @@ a.see-more-services:focus
     cursor: pointer;
 }
 
- .see-more-line{
+.see-more-line{
     width: 95.1%;
     display: block;
     position: absolute;
@@ -906,13 +901,13 @@ a.see-more-services:focus
     top: 72%;
 }
 
- .more-services{
+.more-services{
     display:none;
     background-color: #939799;
     width: 100%;
 }
 
- .slideshow-large{
+.slideshow-large{
     display:none;
 }
 
@@ -920,70 +915,70 @@ a.see-more-services:focus
 /*XSMALL - Screen phone------------*/
     /* img.home-services-background{
         height:254px;
-    } */
+} */
 
 
 .services-canvas{
-        width:100%;
-        height:410px;
-        background-image:url("./Images-Fenn/edits/home-services-title.png"), 
-        linear-gradient(to right bottom, #e6e6e6, #939799);
-        background-size: 100% 100%, 100% 100%;
-        background-repeat: no-repeat; 
+    width:100%;
+    height:410px;
+    background-image:url("./Images-Fenn/edits/home-services-title.png"), 
+    linear-gradient(to right bottom, #e6e6e6, #939799);
+    background-size: 100% 100%, 100% 100%;
+    background-repeat: no-repeat; 
 
-    }
+}
 
- .service-home-title{
-        font-size: var(--TITLE-FONT-XS);
-        font-weight: bold;
-        text-align: center;
-        color: white;
-        padding-top: 23px;
-    }
+.service-home-title{
+    font-size: var(--TITLE-FONT-XS);
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 23px;
+}
 
- .home-service-bar{
-        position: absolute;
-        top: 5px;
-        height: 270px;
-        z-index: 0;
-    }
+.home-service-bar{
+    position: absolute;
+    top: 5px;
+    height: 270px;
+    z-index: 0;
+}
 
     
- .slideshow{
-        display: block;
-        width: 290px;
-        height: 290px;
-        margin:auto;
-        margin-top: 30px;
-        overflow: hidden;
-        border: 3px white solid;
-        border-radius: 5px;  
-    }
+.slideshow{
+    display: block;
+    width: 290px;
+    height: 290px;
+    margin:auto;
+    margin-top: 30px;
+    overflow: hidden;
+    border: 3px white solid;
+    border-radius: 5px;  
+}
 
- .slideshow-xsmall img{
+.slideshow-xsmall img{
         width: 100%;
         height: 100%;
-    }
+}
 
- .slides{
-        width: 500%;
-        height:100%;
-        display: flex;
-        transition-property: transform;
-        transition-duration: 0.4s;
-        transition-timing-function: ease-in;
-    }
+.slides{
+    width: 500%;
+    height:100%;
+    display: flex;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
 
 
- .slide{
-        width:20%;
-        transition-duration: 0.6s;
-    }
+.slide{
+    width:20%;
+    transition-duration: 0.6s;
+}
 
- .slide img{
-        width:100%;
-        height:100%;
-    }
+.slide img{
+    width:100%;
+    height:100%;
+}
 
 .box-caption li{
     position: absolute;
@@ -1080,6 +1075,30 @@ a.see-more-services:focus
 
 .slides_button--right{
     right:0;
+    animation-name: click-here;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2.65s;
+
+}
+
+@keyframes click-here {
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: white;
+        color: #bc815f;
+    }
+100%{
+        background-color: transparent;
+        color: white;
+    }
+
+
+    
+    
 }
  
 /*Media query
