@@ -1,32 +1,3 @@
-// document.addEventListener("readystatechange", (e)=>{
-//     if(e.target.readyState === "complete"){
-//         //create array of service captions and save it in session
-//         //check logic and if array is saved
-//         const caption = ["Kitchen", "Bathroom", "Flooring", "Outdoor"];
-//         sessionStorage.setItem("caption", JSON.stringify(caption));
-//     }
-// })
-
-document.addEventListener("DOMContentLoaded", ()=>{ 
-      //Get lengh of first img to be used as offset move
-      const firstImg = document.getElementById("kitchen-cover");
-      console.log({firstImg});
-      const imgWidth = firstImg.getBoundingClientRect().width;
-      console.log({imgWidth});
-
-      //Create an array of offsets that will added as dat inside the html
-      //document of each img slide
-      const imgSlides = document.getElementsByClassName("slide");
-      let imgArray = Array.from(imgSlides);
-      for (let i= 0; i < imgArray.length; i++){
-        let offset = imgWidth * i;
-        console.log({offset})
-        imgSlides[i].dataset.position = offset;
-      }
-      sessionStorage.setItem("totalWidth", JSON.stringify(offset));
-
-})
-
 
 function slide(direction){
     const slides = document.getElementById('slides');
@@ -67,46 +38,113 @@ function slide(direction){
     
 }
 
-function changeServiceCaption(){
+function richieAppear(entries, observer1){
+    entries.forEach(entry =>{
+        if (!entry.isIntersecting){
+            return;
+        }
+        
+        entry.target.classList.add("richie-appears");
+        observer1.unobserve(entry.target)
+    })
 
 }
-//Service button event
-const serviceBttnLeft = document.getElementById('rightBttn');
-serviceBttnLeft.addEventListener("click", ()=>slide("left"));
-const serviceBttnRight = document.getElementById('leftBttn');
-serviceBttnRight.addEventListener("click",()=>slide("right"));
 
-                            //Scroll events
-//About page
-// const aboutPage = document.getElementById("transition-about");
-// const aboutStory = document.getElementById("about-story");
-// const sections = aboutStory.querySelectorAll("section");
+function sectionsAppear(entries, observer2){
+    entries.forEach(entry =>{
+        if(!entry.isIntersecting){
+            return;
+        }
 
-// window.addEventListener("scroll", ()=>{
-//     const scrolled = window.scrollY;
-//     const offSet = aboutPage.offsetTop;
-//     const offHeight = document.getElementById("about").offsetHeight;
-//     if(scrolled >= offSet && scrolled <= (offSet + offHeight)){
-//         const richie = document.getElementById("richie-img");
-//         richie.classList.add("richie-appear");
-//         sections.forEach(text => {
-//             text.classList.add("section-about-appear");
-//         })
-//     }
+        const sections = entry.target.querySelectorAll("section");
+        sections.forEach(section=>{
+            section.classList.add("section-appear");
+        })
 
-// })
-// //Reviews appear
-// const reviewPage = document.getElementById("reviewPage");
-// const homeReviews = document.getElementsByClassName("home-review");
-// window.addEventListener("scroll", ()=>{
-//     const scrolled = window.scrollY;
-//     const offSet = reviewPage.offsetTop;
-//     const offHeight = reviewPage.offHeight;
-//     if(scrolled >= offSet && scrolled <= (offSet + offHeight)){
-//         Array.from(homeReviews).forEach(review=>{
-//             review.className.add("show-review");
-//         })
-//     }
-// })
+        observer2.unobserve(entry.target)
+    })
+    
+}
+
+function reviewsAppear(entries, observer3){
+    entries.forEach(entry =>{
+        if(!entry.isIntersecting){
+            return;
+        }
+
+        const reviews = entry.target.querySelectorAll("section");
+        reviews.forEach(review=>{
+            review.classList.add("show-review");
+        })
+
+        observer3.unobserve(entry.target);
+
+
+    })
+}
+
+
+document.addEventListener("DOMContentLoaded", ()=>{ 
+    //Get lengh of first img to be used as offset move
+    const firstImg = document.getElementById("kitchen-cover");
+    console.log({firstImg});
+    const imgWidth = firstImg.getBoundingClientRect().width;
+    console.log({imgWidth});
+
+    //Create an array of offsets that will be added as dat inside the html
+    //document of each img slide
+    const imgSlides = document.getElementsByClassName("slide");
+    let imgArray = Array.from(imgSlides);
+    let offset;
+    for (let i= 0; i < imgArray.length; i++){
+      offset = imgWidth * i;
+      console.log({offset})
+      imgSlides[i].dataset.position = offset;
+    }
+    sessionStorage.setItem("totalWidth", JSON.stringify(offset));
+
+     //Service button event(Add it in load event listener)
+    const serviceBttnLeft = document.getElementById('rightBttn');
+    serviceBttnLeft.addEventListener("click", ()=>slide("left"));
+    const serviceBttnRight = document.getElementById('leftBttn');
+    serviceBttnRight.addEventListener("click",()=>slide("right"));
+
+                                //Intersection Observer
+    //Observe richie picture
+    let option1 = {
+        root: null,
+        rootMargin: "-20% 0px -50% 0px",
+        threshold: 1
+    };
+    let observer1 = new IntersectionObserver(richieAppear, option1);
+    const richiePic = document.getElementById("richie-img");
+    observer1.observe(richiePic);
+
+
+    //observe sections stories from about page
+    let option2 = {
+        root: null,
+        rootMargin: "-20% 0px -50% 0px",
+        threshold: 0,
+    };
+    let observer2 = new IntersectionObserver(sectionsAppear, option2);
+    const articleAbout = document.getElementById("story-box");
+    observer2.observe(articleAbout);
+
+
+    //observe reviews   
+    let option3 ={
+        root: null,
+        rootMargin: "-10% 0px -10% 0px",
+        threshold: 1,
+    };
+    let observer3 = new IntersectionObserver(reviewsAppear, option3);
+    const reviewPage = document.getElementById("review-page");
+    observer3.observe(reviewPage);
+    console.log({reviewPage});
+
+
+})
+
 
  

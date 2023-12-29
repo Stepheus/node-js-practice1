@@ -1329,6 +1329,7 @@ min-height:35vw;
     padding:2px;
     top:-3%;
     left:48%;
+    transform: translateY(-25%);
 }
 
 .richie-portrait{
@@ -1336,14 +1337,12 @@ min-height:35vw;
     top: 60.30%;
     left: 22.32%;
     opacity: 0;
-    animation-name: richie-appear;
-    animation-timeline: view();
-    animation-range-start: 20vh;
-    animation-range-end: exit;
+    transition-property: opacity;
+    transition-duration: 0.6s;
 }
-@keyframes richie-appear{
-  to {opacity: 100%;
-  }
+
+.richie-appears{
+    opacity: 100%;
 }
 
 
@@ -1366,17 +1365,15 @@ min-height:35vw;
     text-indent: 10%;
     margin-bottom: 5px;
     opacity: 0;
-    animation-name: story-appear;
-    animation-timeline: view();
-    animation-range-start: begin;
-    animation-range-end: exit;
-    /* animation-delay: calc(0.5s * var(--delay)); */
-
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-delay: calc(0.3s * var(--delay));
 }
 
-@keyframes story-appear {
-  to {opacity: 1;}
+.about-story section.section-appear{
+    opacity: 100%;
 }
+
 
 /*XSMALL - Screen phone------------*/
 .about{
@@ -1736,15 +1733,12 @@ section.home-review:hover{
     margin-right: auto;
     margin-bottom: 50px;
     opacity: 0; 
-    /* transition-property: opacity;
-    transition-duration: 1s;
-    transition-delay: calc(0.5s * var(--d));    */
+    transition-property: opacity;
+    transition-duration: 0.65s;
+    transition-delay: calc(0.3s * var(--d));   
 }
-.home-review[data-small="yes"]{
-    animation-name: show-review;
-    animation-timeline: view();
-    animation-range-start: 40vh;
-    animation-range-end: 5px;
+.home-review[data-small="yes"].show-review{
+    opacity: 1;
 }
 
 @keyframes show-review {
