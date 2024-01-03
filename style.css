@@ -76,6 +76,11 @@ header{
     
 }
 
+header a,
+header a:visited{
+    color: white;
+}
+
 nav .icon-logo{
     display:none;
 }
