@@ -5,6 +5,7 @@ function slide(direction){
     const captions = document.getElementById('box-caption');
     const currentCaption = captions.querySelector('[data-show="yes"]');
     if(direction==="left"){
+        document.getElementById('leftBttn').style.display= "block";
         if(currentSlide.nextElementSibling){
             //data-position is updated soon as the doc loads.
             amountToMove = "-" + currentSlide.nextElementSibling.dataset.position;
@@ -14,15 +15,20 @@ function slide(direction){
             currentSlide.dataset.selected = "no";
             currentCaption.nextElementSibling.dataset.show ="yes";
             currentCaption.dataset.show ="no";
-        }else{
 
+            //make button disappear if there's nothing after
+            if (!currentSlide.nextElementSibling.nextElementSibling){
+                document.getElementById('rightBttn').style.display= "none";
+            }
+            
+        }else{
+            //Nothing
         }
     }else if(direction==="right"){
+        document.getElementById('rightBttn').style.display= "block";
         if(currentSlide.previousElementSibling){
-            // find total length in px of slide
-            wholeSlideWidth =JSON.parse(sessionStorage.getItem("totalWidth"));
-            console.log({wholeSlideWidth});
-            amountToMove = wholeSlideWidth - currentSlide.previousElementSibling.dataset.position;
+            // amountToMove = wholeSlideWidth - currentSlide.previousElementSibling.dataset.position;
+            amountToMove = "-" + currentSlide.previousElementSibling.dataset.position;
             console.log({amountToMove});
             currentSlide.parentElement.style.transform = 'TranslateX('+ amountToMove + "px" +')';
              //Move anchor to next slide and next text
@@ -31,8 +37,13 @@ function slide(direction){
             currentCaption.previousElementSibling.dataset.show="yes";
             currentCaption.dataset.show="no";
 
-        }else{
+            //make button disappear if there's nothing before
+            if (!currentSlide.previousElementSibling.previousElementSibling){
+                document.getElementById('leftBttn').style.display= "none";
+            }
 
+        }else{
+            //Nothing
         }
     }
     
@@ -98,10 +109,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let offset;
     for (let i= 0; i < imgArray.length; i++){
       offset = imgWidth * i;
-      console.log({offset})
       imgSlides[i].dataset.position = offset;
     }
-    sessionStorage.setItem("totalWidth", JSON.stringify(offset));
 
      //Service button event(Add it in load event listener)
     const serviceBttnLeft = document.getElementById('rightBttn');
@@ -136,7 +145,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let option3 ={
         root: null,
         rootMargin: "-10% 0px -10% 0px",
-        threshold: 1,
+        threshold: 0.75,
     };
     let observer3 = new IntersectionObserver(reviewsAppear, option3);
     const reviewPage = document.getElementById("review-page");
