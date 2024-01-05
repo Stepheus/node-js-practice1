@@ -1,4 +1,11 @@
 
+function hideMenu(){
+    const menuInput = document.getElementById("nav-logo");
+    if (menuInput.checked){
+        menuInput.checked = false;
+    }
+}
+
 function slide(direction){
     const slides = document.getElementById('slides');
     const currentSlide = slides.querySelector('[data-selected="yes"]');
@@ -8,7 +15,7 @@ function slide(direction){
         document.getElementById('leftBttn').style.display= "block";
         if(currentSlide.nextElementSibling){
             //data-position is updated soon as the doc loads.
-            amountToMove = "-" + currentSlide.nextElementSibling.dataset.position;
+            let amountToMove = "-" + currentSlide.nextElementSibling.dataset.position;
             currentSlide.parentElement.style.transform = 'TranslateX('+ amountToMove + "px" + ')';
             //Move anchor to next slide and next text
             currentSlide.nextElementSibling.dataset.selected = "yes";
@@ -28,7 +35,7 @@ function slide(direction){
         document.getElementById('rightBttn').style.display= "block";
         if(currentSlide.previousElementSibling){
             // amountToMove = wholeSlideWidth - currentSlide.previousElementSibling.dataset.position;
-            amountToMove = "-" + currentSlide.previousElementSibling.dataset.position;
+            let amountToMove = "-" + currentSlide.previousElementSibling.dataset.position;
             console.log({amountToMove});
             currentSlide.parentElement.style.transform = 'TranslateX('+ amountToMove + "px" +')';
              //Move anchor to next slide and next text
@@ -82,7 +89,6 @@ function reviewsAppear(entries, observer3){
         if(!entry.isIntersecting){
             return;
         }
-
         const reviews = entry.target.querySelectorAll("section");
         reviews.forEach(review=>{
             review.classList.add("show-review");
@@ -94,13 +100,52 @@ function reviewsAppear(entries, observer3){
     })
 }
 
+function contactAppear(entries, observer4){
+    entries.forEach(entry=>{
+        if(!entry.isIntersecting){
+            return;
+        }
+        const areaText = document.getElementById("user-note");
+        areaText.classList.add("area-show");
+        observer4.unobserve(entry.target);
+    })
+
+    
+}
+
+function contactListAppear(entries, observe5){
+    entries.forEach(entry=>{
+        if(!entry.isIntersecting){
+            return;
+        }
+        const listContact = entry.target.querySelectorAll("a");
+        console.log({listContact});
+        let i;
+        for(i=0; i< listContact.length; i++){
+            listContact[i].classList.add("flash-red");
+        }
+
+        observe5.unobserve(entry.target)  
+
+    })
+}
+
 
 document.addEventListener("DOMContentLoaded", ()=>{ 
+
+    //Make Menu go back after we click on a option
+    const navList = document.getElementById("nav-page");
+    //create loop instead
+    const listNavigation = Array.from(navList.children);
+    //create a click loop click event listener for each of them
+    listNavigation.forEach((list)=>{
+        list.addEventListener("click", ()=>hideMenu())
+    })
+
+
     //Get lengh of first img to be used as offset move
     const firstImg = document.getElementById("kitchen-cover");
-    console.log({firstImg});
     const imgWidth = firstImg.getBoundingClientRect().width;
-    console.log({imgWidth});
 
     //Create an array of offsets that will be added as dat inside the html
     //document of each img slide
@@ -150,8 +195,27 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let observer3 = new IntersectionObserver(reviewsAppear, option3);
     const reviewPage = document.getElementById("review-page");
     observer3.observe(reviewPage);
-    console.log({reviewPage});
 
+    //observe textarea
+    let option4={
+        root: null,
+        rootMargin: "-20% 0px -5% 0px",
+        threshold: 0.6,
+    };
+    let observer4 = new IntersectionObserver(contactAppear, option4);
+    const contactPage = document.getElementById("contact-field");
+    observer4.observe(contactPage);
+
+
+    //observe ul-contact
+    let option5={
+        root:null,
+        rootMargin:"0px",
+        threshold: 0.7,
+    };
+    let observer5 = new IntersectionObserver(contactListAppear, option5);
+    const listContact = document.getElementById("contact-list");
+    observer5.observe(listContact);
 
 })
 

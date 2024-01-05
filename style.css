@@ -1426,7 +1426,7 @@ min-height:35vw;
 }
 
 .story-page{
-    height: 140%;
+    height: 120%;
 }
 
 /*Media
@@ -2026,6 +2026,20 @@ ul.contact-ul a:hover{
     color:#b30000;
 }
 
+@keyframes red-flash {
+    to{
+        color:#B30000;
+    }
+    
+}
+
+ul.contact-ul a.flash-red{
+    animation-name: red-flash;
+    animation-duration: 0.3s;
+    animation-delay: calc(var(--c)* 0.4s);
+    animation-fill-mode: backwards;
+}
+
 .contact-days{
     margin: auto;
     font-weight: bold;
@@ -2071,8 +2085,29 @@ textarea.contact-area{
     margin-bottom: 1%;
     width:240px;
     height:150px;
+    transform: rotate(-5deg);
 }
-    
+
+@keyframes text-area-show {
+    0%{
+        transform: rotate(-5deg);
+    }
+    33%{
+        transform: rotate(5deg);
+    }
+    66%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+  
+textarea.contact-area.area-show{
+    animation-name: text-area-show;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 .contact-ul{
     text-align: center;
     display: block;
@@ -2084,6 +2119,7 @@ textarea.contact-area{
     background: #e2d8cc;
     list-style-type: none;
 }
+
 
 .contact-days{
     font-size: 1.1rem;
