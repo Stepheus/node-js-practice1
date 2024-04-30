@@ -860,6 +860,7 @@ img.patio-services-cover:hover{
     transition-timing-function: ease-in;
     transform: scale(1.09);
 }
+
 .patio-cover-label{
     position: absolute;
     left:15.25%;
@@ -1133,6 +1134,66 @@ Tablet- LARGE*------------------------------------*/
     }
 }
 
+/*Media
+TABLET-- --------------------------------------------------*/
+@media screen and (min-width: 505px){
+
+    .services-canvas{
+        height: 540px;
+    }
+
+    .slideshow{
+        width: 430px;
+        height:430px;
+    }
+
+
+}
+
+/*Media
+TABLET--IN --------------------------------------------------*/
+@media screen and (min-width: 610px){
+
+    .services-canvas{
+        height: 600px;
+    }
+
+    .service-home-title{
+        padding-top: 35px;
+    }
+
+    .slideshow{
+        width: 480px;
+        height: 480px;
+    }
+}
+
+/*Media
+TABLET--IN --------------------------------------------------*/
+@media screen and (min-width: 650px){
+    .services-canvas{
+        height: 660px;
+    }
+
+    .slideshow{
+        width: 520px;
+        height: 520px;
+    }
+}
+
+/*Media
+TABLET--IN --------------------------------------------------*/
+@media screen and (min-width: 690px){
+    .services-canvas{
+        height: 690px;
+    }
+
+    .slideshow{
+        width:550px;
+        height:550px;
+    }
+}
+
 /*Media query
 Tablet- LARGE*------------------------------------*/
 @media screen and (min-width:735px){
@@ -1145,9 +1206,13 @@ Tablet- LARGE*------------------------------------*/
 /*Media query
 Laptop- XSMAll------------------------------------*/
 @media screen and (min-width:768px){
+    .services-canvas{
+        height:550px;
+    }
+
     .service-home-title{
         font-size:var(--TITLE-FONT-M);
-        padding-top: 3.5vw;
+        padding-top: 20px;
     }
 
     .services-canvas{
@@ -1329,12 +1394,16 @@ background-image: url("./Images-Fenn/edits/home-page3-transition.png");
 background-position: center;
 background-size: 100% 100%;
 width:100%;
-min-height:35vw;
+min-height:10vw;
 }
 
 .about{
     width:100%;
     height:auto;
+    background-image: url("./Images-Fenn/edits/home-page3-window.png");
+    background-size: contain;
+    background-position: top 40px center;
+    background-repeat: no-repeat;
 }
 
 .home-about-title{
@@ -1369,9 +1438,6 @@ min-height:35vw;
 .about-window{
     width: 100%;
     min-height: 210px;
-    background-image: url("./Images-Fenn/edits/home-page3-window.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     margin-bottom: 30px;
 }
 .about-story-large{
@@ -1429,9 +1495,21 @@ min-height:35vw;
     height: 120%;
 }
 
+/* Media
+small - Screen phone-------------------------------------*/ 
+@media  screen and (min-width: 320px) {
+    .about{
+        background-size: 320px auto;
+    }
+    
+}
+
 /*Media
 MEDIUM - Screen phone-------------------------------------*/
 @media screen and (min-width:375px){
+    .about{
+        background-size: 350px auto;
+    }
 
     .home-about-title{
         font-size: large;
@@ -1446,32 +1524,78 @@ MEDIUM - Screen phone-------------------------------------*/
 /*Media
 TABLET-- --------------------------------------------------*/
 @media screen and (min-width: 425px){
+
+    .about{
+        background-size: 400px auto;
+    }
+
     .home-about-title{
         font-size: var(--TITLE-FONT-S);
         width: 15vw;
     }
+    
+    .about-window{
+        height:250px;
+    }
 
     .richie-portrait{
-        width: 28vw;
-        bottom: 25%;
+        width: 110px;
+        bottom: 26%;
+        left:38%;
     }   
 
     
 }
 
 /*Media
+TABLET-- --------------------------------------------------*/
+@media screen and (min-width: 500px){
+    .about{
+        background-size: 435px auto;
+    }
+
+    .about-window{
+        height:265px;
+    }
+
+    .richie-portrait{
+        width: 110px;
+        bottom: 22%;
+        left:38%;
+    }
+    
+    .about-story{
+        width: 300px;
+        height: 380px;
+    }
+
+}
+
+
+/*Media
 TABLET--IN --------------------------------------------------*/
 @media screen and (min-width: 535px){
 
+    .about{
+        background-size: 470px auto;
+        height: 800px;
+    }
+
+    .about-window{
+        height:290px;
+    }
+
+
+
     .richie-portrait{
-        width:25vw;
-        bottom:20%;
+        width:133px;
+        bottom:33%;
         left:38%;
     }
 
     .about-story{
-        width: 50vw;
-        height: 65vw;
+        width:330px;
+        height: 400px;
         font-size: 16px;
     }
 
@@ -1483,72 +1607,119 @@ TABLET--IN --------------------------------------------------*/
 
 /*Media
 TABLET--IN --------------------------------------------------*/
-@media screen and (min-width: 550px){
+@media screen and (min-width: 580px){
+    .about{
+        background-size: 490px auto;
+        height: 860px;
+    }
+
+    .about-window{
+        height:300px;
+    }
+
+
 
     .richie-portrait{
-        /* width:137.5px; */
-        bottom:20%;
+        width:145px;
+        bottom:35%;
         left:38%;
     }
 
-}
-
-
-
-/*Media
-TABLET--IN --------------------------------------------------*/
-/* @media screen and (min-width: 575px){
     .about-story{
-        width: 345px;
-        height: 421px;
-        font-size: 17.25px;
+        width:330px;
+        height: 440px;
+        font-size: 16px;
     }
 
-    .richie-portrait{
-        width: 161px;
-    }  
-
-} */
-
-/*Media
-TABLET--IN --------------------------------------------------*/
-
-/*Media
-TABLET--Medium --------------------------------------------------*/
-@media screen and (min-width: 685px){
-    .richie-portrait{
-        width: 22vw;
-        top: 55%;
+    .about-story section{
+        margin-bottom: 10px;
     }
-
 
 }
 
 /*Media
-TABLET--Large --------------------------------------------------*/
-@media screen and (min-width: 713px){
+TABLET--IN --------------------------------------------------*/
+@media screen and (min-width: 620px){
+    .about{
+        background-size: 530px auto;
+        height: 940px;
+    }
+
+    .about-window{
+        height:325px;
+    }
+
+
 
     .richie-portrait{
-        width: 22vw;
+        width:150px;
+        bottom:36%;
+        left:38%;
     }
 
     .about-story{
-        width:356.5px;
-        height:463.45px;
+        width:330px;
+        height: 440px;
+        font-size: 16px;
     }
+
+    .story-page{
+        height:420px
+    }
+}
+
+/*Media
+TABLET--IN --------------------------------------------------*/
+@media screen and (min-width: 670px){
+    .richie-portrait{
+        width:150px;
+        bottom:36%;
+        left:39%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .about{
+        background-size: 565px auto;
+        height: 990px;
+    }
+
+    .about-window{
+        height:345px;
+    }
+
+
+
+    .richie-portrait{
+        width:150px;
+        bottom:31%;
+        left:40%;
+    }
+
+    .about-story{
+        width:350px;
+        height: 440px;
+        font-size: 16px;
+    }
+
 }
 
 /*Media
 LAPTOP--Small --------------------------------------------------*/
 @media screen and (min-width: 768px){
+
+    .about{
+        height: 1010px;
+    }
+
     .home-about-title{
         font-size: var(--TITLE-FONT-M);
     }
     
     .richie-portrait{
-        width: 20vw;
+        width: 153.6px;
         left:40%;
-        top: 60%;
+        bottom: 34%;
     }
 
     
@@ -1569,10 +1740,23 @@ LAPTOP--Small --------------------------------------------------*/
 /*Media
 LAPTOP--Medium --------------------------------------------------*/
 @media screen and (min-width: 845px){
+
+    .about{
+        background-size: 800px auto;
+        background-position: center bottom 60%;
+        min-height: 0px;
+        height: 580px;      
+    }
+
+    .about-window{
+        height: 500px;
+        margin-bottom: 0px;
+    }
+
     .richie-portrait{
-        width: 18vw;
-        left:24%;
-        top: 63%;
+        width: 152px;
+        left:26%;
+        bottom: 20%;
     }
 
     .about-story{
@@ -1582,10 +1766,10 @@ LAPTOP--Medium --------------------------------------------------*/
 
     .about-story-large{
         display: block;
-        width: 290px;
-        height: 370px;
+        width: 260px;
+        height: 340px;
         overflow: scroll;
-        font-size: 1.07rem;
+        font-size: 0.95rem;
         font-family: "inter";
         background-color: white;
         padding-left: 15px;
@@ -1593,7 +1777,7 @@ LAPTOP--Medium --------------------------------------------------*/
         border: 8px solid #52392F;
         position: absolute;
         left:52%;
-        bottom:10%;
+        bottom:9%;
     }
 
     .about-story-large section{
@@ -1603,11 +1787,30 @@ LAPTOP--Medium --------------------------------------------------*/
     }
 }
 
+/*Media
+LAPTOP--Medium --------------------------------------------------*/
+@media screen and (min-width: 940px){
+    .about{
+        background-size: 860px auto;
+        background-position: center bottom 50%;
+        min-height: 0px;
+        height: 580px;      
+    }
+
+    .richie-portrait{
+        bottom: 9%;
+    }
+
+    .about-story-large{
+        left: 54%;
+        bottom: 6%;
+    }
+}
 
 
 /*Media
 LAPTOP--Large L --------------------------------------------------*/
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1024px){
 
     .home-about-title{
         font-size: var(--TITLE-FONT-XL);
@@ -1615,12 +1818,12 @@ LAPTOP--Large L --------------------------------------------------*/
 
     .about-story-large{
         left: 55%;
-        font-size:1.13rem;
     }
     .richie-portrait{
+        width: 160px;
         right:58%;
-        bottom: 115px;
-        width: 184.5px;
+        bottom: 18%;
+        
     }
 
 }
