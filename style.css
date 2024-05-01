@@ -1812,17 +1812,28 @@ LAPTOP--Medium --------------------------------------------------*/
 LAPTOP--Large L --------------------------------------------------*/
 @media screen and (min-width: 1024px){
 
+    .about{
+        background-size: 960px auto;
+        background-position: center bottom 20%;
+    
+    }
+
+    .about-window{
+        height: 600px;
+    }
+
     .home-about-title{
         font-size: var(--TITLE-FONT-XL);
     }
 
     .about-story-large{
         left: 55%;
+        bottom: 10%;
     }
     .richie-portrait{
         width: 160px;
         right:58%;
-        bottom: 18%;
+        bottom: 14%;
         
     }
 
@@ -1831,34 +1842,70 @@ LAPTOP--Large L --------------------------------------------------*/
 /*Media
 LAPTOP--Large XL --------------------------------------------------*/
 @media screen and (min-width: 1185px){
+    .about{
+        background-size: 1060px auto;
+        background-position: center bottom 10%;
+        height:630px;
+        margin-bottom: 50px;
+    }
+
+    .about-window{
+        height: 700px;
+    }
+
     .richie-portrait{
-        width: 16%;
+        width:180px;
+        bottom:22%;
+
     }
 
     .about-story-large{
-        transform: scale(1.11);
-        left: 56.3%;
-        bottom: 14%;
+        left: 53.3%;
+        bottom: 15%;
         font-size: 0.98rem
     }
 }
 
 /*Media
-LAPTOP--Large XXL --------------------------------------------------*/
-@media screen and (min-width: 1352px){
+LAPTOP--Large XL --------------------------------------------------*/
+@media screen and (min-width: 1285px){
     .richie-portrait{
-        top: 50%;
-        left:22%;
+        left: 29%;
+    }
+}
+
+/*Media
+LAPTOP--Large XXL --------------------------------------------------*/
+@media screen and (min-width: 1350px){
+    .about{
+        background-size: 1150px auto;
+        background-position: center bottom 10%;
+        height:660px;
+    }
+    .richie-portrait{
+        bottom:14%;
+        left:28%;
     }
 
     .about-story-large{
-        transform: scale(1.32);
         left: 58.4%;
-        bottom: 23%;
-        font-size: 0.92rem;
+        bottom: 11%;
     }
 
 }
+
+/*Media
+LAPTOP--Large XXL --------------------------------------------------*/
+@media screen and (min-width: 1440px){
+    .about-story-large{
+        width: 290px;
+        height:380px;
+        left: 54.4%;
+        font-size: 0.99rem;
+    }
+
+}
+
 
 /*Media
 LAPTOP--Large XXL --------------------------------------------------*/
@@ -2085,7 +2132,18 @@ Laptop--- Medium *------------------------------------*/
 
 /*Media query
 Laptop--- Medium *------------------------------------*/
-@media screen and (min-width:1074px){
+@media screen and (min-width:1073px){
+    .home-review[data-small="yes"].show-review,
+    .home-review[data-small="no"].show-review { 
+        opacity: 0.7;
+    }
+
+    .home-review[data-small="yes"].show-review:hover,
+    .home-review[data-small="no"].show-review:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+
     #review-3{
         display: contents;
     }
