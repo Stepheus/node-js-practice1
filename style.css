@@ -1906,38 +1906,32 @@ LAPTOP--Large XXL --------------------------------------------------*/
 
 }
 
+/*Media
+LAPTOP--Large XXL --------------------------------------------------*/
+@media screen and (min-width: 1530px){
+    .richie-appears{
+        left: 32%;
+    }
+
+}
 
 /*Media
 LAPTOP--Large XXL --------------------------------------------------*/
-@media screen and (min-width: 1805px){
-    .about-story-large{
-        width:345.4px;
-        height: 454.4px;
-        font-size: 1.05rem;
+@media screen and (min-width: 1775px){
+    .richie-appears{
+        left: 35%;
     }
-
-    .home-about-title{
-        font-size: var(--TITLE-FONT-XXL);
-    }
-
-    .richie-portrait{
-        top: 48%;
-    }
-
 }
 
 /*Media
-LAPTOP--Large XXXL --------------------------------------------------*/
-@media screen and (min-width: 2199px){
-    .about-story-large{
-        height: 500px;
-        width: 380px;
-    }
-
-    .richie-portrait{
-        width: 325px;
+LAPTOP--Large XXL --------------------------------------------------*/
+@media screen and (min-width: 2550px){
+    .richie-appears{
+        left: 39%;
     }
 }
+
+
 
 
 
@@ -2167,6 +2161,15 @@ Laptop--- Medium *------------------------------------*/
         padding-bottom: 8.08vw;
     }
 }
+
+/*Media query
+Laptop--- Medium *------------------------------------*/
+@media screen and (min-width:1825px){
+    .review-page-box{
+        width: 1336px;
+    }
+}
+
 /*Media query
 Laptop--- Medium *------------------------------------*/
 @media screen and (min-width:2199px){
