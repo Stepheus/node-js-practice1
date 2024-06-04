@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fenn Construction</title>
+    <meta name="author" content="Stephen Iboudah">
+    <meta name="description" content="Website construction company">
+    <meta name="keyword" content="Azel Texas Fenn construction">
+    <meta name="copyright" content="Stephen, Inc">
+</head>
+
+<body>
+  <header>
+    <!-- Logo icon size is 376-266 94-66.5 -->
+    <div>
+      <img src="./Images(Fenn)/edits/logo-gray.jpeg" alt="Fenn Construction Logo" class="center">
+    </div>
+    <nav aria-label="primary-navigation">
+       <ul>
+         <li><a href="index.html" id="homepage">Home</a></li>
+         <li><a href="services.html" id="services">Services</a></li>
+         <li><a href="about.html" id="about">About Us</a></li>
+         <li><a class="current-nav" href="contact.html">Contact</a></li>
+       </ul>
+    </nav>
+    
+  </header>
+  <hr>
+
+  <main class="contact-main">
+    <!--Message US-->
+    <fieldset class="contact-fieldset">
+      <legend class="contact-legend"><h3>Reach Us</h3></legend>
+      <form method="post" action="" class="contact-form">
+        <p class="contact-center">
+          <label for="user-name">Name</label>
+        </p>
+         <input type="text" name="user-name" placeholder="John Smith" id="user-name" class="contact-input">
+        <p class="contact-center">
+           <label for="user-mail">Email</label> 
+        </p>
+         <input type="email" name="user-mail" placeholder="John@email.com" id="user-mail" class="contact-input">
+        <p class="contact-center">
+           <label for="user-phone">Phone(XXX-XXX-XXX)</label> 
+        </p>
+         <input type="tel" name="user-phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="contact-input">
+        <br>
+
+        <p class="contact-center">
+          <label for="user-subject">Subject</label>
+        </p>
+        <select name="user-subject" id="user-subject" required class="contact-subject">
+           <option></option>
+           <option value="flooring">Flooring</option>
+           <option value="kitchen">Kitchen</option>
+           <option value="bathroom">Bathroom</option>
+           <option value="outdoor">Outdoor</option>
+           <option value="other">*Other*</option>
+        </select>
+
+        <textarea id="user-note" placeholder="Write your message here" name="user-note" class="contact-area" cols="40vw" rows="8"></textarea>
+        <p class="contact-p-button">
+          <button type="submit" class="contact-button">Send</button><button type="reset" class="contact-button">Reset</button>
+        </p>
+      </form>
+
+      <ul class="contact-ul">
+          <li><a href="https://www.facebook.com/FENN-Construction-243662966013522" target="_blank">Richie Fenn</a></li>
+          <li><a href="tel:+1817-495-8897">(817)495-8897</a></li>
+          <li><a href="mailto: rich.e75@hotmail.com">Richiefenn98@gmail.com</a></li>
+          <li><a href="https://www.google.com/maps/place/Sanctuary,+TX+76020/@32.9040668,-97.7197939,11z/data=!3m1!4b1!4m5!3m4!1s0x864de2fe142c584b:0xa91ae7528083bc5f!8m2!3d32.9186258!4d-97.5463885" target="_blank">
+            <address>
+              Azle,
+              Texas Zip 76020
+            </address>
+           </a></li>
+        
+
+      </ul>
+    
+    </fieldset>
+
+    <article id="schedule">
+      <h4 id="schedule-days" class="contact-days">Monday - Friday</h4>
+      <h4 id="schedule-hours" class="contact-hours">9am - 5pm</h4>
+
+    </article>    
+
+    <br>    
+    <hr>
+  </main>
+
+  <footer>
+    <!--Site Map-->
+    <h4>Sitemap</h4>
+    <h4>Message us</h4>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li class="footer-services"><a href="services.html">Services</a></li>
+    </ul>
+    <form method="post" action="">
+      <p>
+      <input type ="email" id="user-contact" name="user-contact" placeholder="name@email.com">
+      </p>
+      <p>
+        <textarea id="user-message" placeholder="write your message here" name="user-message" rows="6" cols="30" class="footer-textarea" wrap="hard" ></textarea>
+      </p>
+      <p>
+      <button type="submit">Submit</button> <button type="reset">Reset</button>
+      </p>
+    </form>
+
+    <ul class="footer-ul2">
+      <li><a href="contact.html">Contact</a></li>
+      <li class="footer-gallery"><a href="flooring-pics.html">Gallery</a></li>
+    </ul>
+    <p class="copy-right">Copyright &copy; Fenn Construction.</p>
+
+
+   
+  </footer>
+</body>
+
+</html>
