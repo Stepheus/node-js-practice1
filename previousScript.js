@@ -5,6 +5,7 @@ function hideMenu(){
         menuInput.checked = false;
     }
 }
+//
 
 function slide(direction){
     const slides = document.getElementById('slides');
