@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fenn Construction</title>
+    <meta name="author" content="Stephen Iboudah">
+    <meta name="description" content="Website construction company">
+    <meta name="keyword" content="Azel Texas Fenn construction">
+    <meta name="copyright" content="Stephen, Inc">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+
+
+<body>
+  <header>
+    <a href="index.html"><p class="fenn-construction-title"><img src="./Images-Fenn/edits/logo-blue.png" width="45px" alt="logo"><span class="title-text">Fenn<br>C<span class="logo-wheels">o</span>nstructi<span class="logo-wheels">o</span>n</span></p></a>
+    <nav>
+      <input type="checkbox" name="nav-logo" id="nav-logo">
+      <label for="nav-logo" class="menu-button"><div class="menu-icon"></div></label>
+      <ul id= "nav-page" class="nav-list">
+       <li><a href="index.html">home</a></li>
+       <li><a href="#home-services">services</a></li>
+       <li><a href="#about">about</a></li>
+       <li><a href="#contact" class="color-brown">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="home-hero-box" style="position:relative;">
+     <img src="./Images-Fenn/edits/background-hero-9.png" class="image-block" width="100%" alt="home-pic">
+     <p class="slogan-rebuild">Rebuild</p>
+     <p class="slogan-to">To</p>
+     <p class="slogan-love">Love</p>
+     <!-- <p class="fennco">Fennco</p> -->
+     <img src="./Images-Fenn/edits/Fenn-painting-clear.png" alt="fenn-painting" class="fenn-painting" width="433px" height="819px">
+    
+    </div>
+     <img  src="./Images-Fenn/edits/transition-p1-p2-test.png" width="100%" class="image-block" alt="transition">
+     
+     <!--Page-2(Home-Service) -->
+     <div id="home-services" class="services-canvas" style="position: relative;">
+       <p class="service-home-title">Services</p>
+       <!-- <img src="./Images-Fenn/edits/wall-lamp.png" class="wall-lamp" alt="wall-lamp"> -->
+
+       <figure class="slideshow relative">
+          <figure id="slides" class="slides">
+
+           <figure id="s0" class="slide" data-selected="yes" data-position="0">
+             <a href="kitchen-services.html"><img id="kitchen-cover" src="./Images-Fenn/Kitchen/kitchen-cover.jpeg" width="336px" heigh="336px" alt="kitchen-services"></a>
+             <!-- <figcaption class="slide_caption">Kitchen</figcaption> -->
+            </figure>
+  
+           <figure id="s1" class="slide" data-selected="no" data-position="20%">
+             <a href="bathroom-services.html"><img id="bathroom-services-cover" src="./Images-Fenn/Bathroom/bathroom-cover.jpeg" width="281px" height="281px" alt="bathroom-services"></a>
+             <!-- <figcaption class="slide_caption" >Bathroom</figcaption> -->
+           </figure>
+  
+           <figure id="s2" class="slide" data-selected="no" data-position="40%">
+            <a href="flooring-services.html"><img id="flooring-services-cover" src="./Images-Fenn/Flooring/flooring-cover.jpeg" width="200px" heigh="206px" alt="flooring-services"></a>
+            <!-- <figcaption class="slide_caption">Flooring</figcaption> -->
+           </figure>
+          
+           <figure id="s3" class="slide" data-selected="no" data-position="60%">
+             <a href="patio-services.html"><img id="patio-cover-label" src="./Images-Fenn/Patio/patio-cover.jpeg" width="270px" height="270px" alt="patio-services"></a>
+             <!-- <figcaption class="slide_caption" >Outdoor</figcaption> -->
+            </figure>
+          </figure>
+          <button id= "leftBttn" class="slides_button slides_button--left"><p class="Service_left-arrow" alt="left-arrow">&#60;</p></button>
+          <button id="rightBttn" class="slides_button slides_button--right"><p class="Service_right-arrow" alt="right-arrow">&#62;</p></button>
+          <ul id="box-caption" class="box-caption">
+            <li class="box_caption__text hide" data-show="yes">Kitchen</li>
+            <li class="box_caption__text hide" data-show="no">Bathroom</li>
+            <li class="box_caption__text hide" data-show="no">Flooring</li>
+            <li class="box_caption__text hide" data-show="no">Outdoor</li>
+          </ul>
+
+         
+
+       </figure>
+
+       <figure class="slides-laptop relative">
+         <a href="kitchen-services.html"><img id="kitchen-coverL"src="./Images-Fenn/Kitchen/kitchen-cover.jpeg" class="kitchen-services-cover" width="336px" heigh="336px" alt="kitchen-services"></a>
+         <label for="kitchen-cover" class="kitchen-cover-label"> Kitchen </label>
+
+         <a href="bathroom-services.html"><img id="bathroom-services-coverL" src="./Images-Fenn/Bathroom/bathroom-cover.jpeg" class="bathroom-services-cover" width="281px" height="281px" alt="bathroom-services"></a>
+         <label for="bathroom-services-cover" class="bathroom-cover-label"> Bathroom </label>
+ 
+         <a href="flooring-services.html"><img id="flooring-services-coverL" src="./Images-Fenn/Flooring/flooring-cover.jpeg" class="flooring-services-cover" width="200px" heigh="206px" alt="flooring-services"></a>
+         <label for="flooring-services-cover" class="flooring-cover-label"> Flooring </label>
+
+         <a href="patio-services.html"><img id="patio-cover-labelL"src="./Images-Fenn/Patio/patio-cover.jpeg" class="patio-services-cover" width="270px" height="270px" alt="patio-services"></a>
+         <label for="patio-cover-label" class="patio-cover-labelL"> Outdoor </label>
+ 
+         <a href="#more-services" class="see-more-services">see more</a>
+         <img class="see-more-line" src="./Images-Fenn/edits/line-see-more.png" alt="line-see-more">
+       </figure>
+       
+    </div>
+
+    <!--Page-3(Home-About) -->
+    <img src="./Images-Fenn/edits/Transition-p2-p3(2).png" width="100%" alt="transition-space">
+    <div id="transition-about" class="transition1"></div>
+    <div id="about" class="about" style="position:relative;">
+     <figure class="about-window" style="position:relative" >
+      <h3 class="home-about-title">About</h3>
+       <img id="richie-img" class="richie-portrait" src="./Images-Fenn/edits/richie-frame-edit.png" width="270px" `qalt="richie-portrait" loading="easy">
+       <article class="about-story-large" id="about-story-large">
+        <section><span style="font-size:2rem; color: #287AB8">W</span>e founded FennCo in 2014. Then, we were just a few contractors that came together to service our folks of Azle, Tx.</section>
+        <section>Today, our company has worked over 100 sites, and holds a 5 stars rating from our recurring and loyal customers.</section>
+        <section>We keep our people by providing quality work paired with a transparent process that keeps you fully informed on each stage of the execution.</section>
+        <section><a style="color:#B30000;" href="#contact">Contact us</a> for more inquiries and free estimates and check our <a style="color:#34A56F;" href="#reviews">reviews</a> below.</section>
+      </article>
+     </figure>
+     <div id="story-box" class="about-story">
+        <article class="story-page" id="about-story">
+          <section style="--delay:1;"><span style="font-size:2rem; color: #287AB8">W</span>e founded FennCo in 2014. Then, we were just a few contractors that came together to service our folks of Azle, Tx.</section>
+          <section style="--delay:2;">Today, our company has worked over 100 sites, and holds a 5 stars rating from our recurring and loyal customers.</section>
+          <section style="--delay:3;">We keep our people by providing quality work paired with a transparent process that keeps you fully informed on each stage of the execution.</section>
+          <section style="--delay:4;"><a style="color:#B30000;" href="#contact">Contact us</a> for more inquiries and free estimates and check our <a style="color:#34A56F;" href="#reviews">reviews</a> below.</section>
+        </article> 
+     </div>
+    
+    
+    </div>
+
+
+    <!--Transition-space-->
+    <!-- <img src="./Images-Fenn/edits/transition-p3-p4.png" width="100%" alt="transition-space"> -->
+    <!--Page-4-->
+    <div id="review-page" class="gradient">
+    <div id="reviews" class="review-page-box">
+     <article class="home-page4-reviews" >
+       <!--review1-->
+       <section class="home-review" style="--d:1;" data-small="yes">
+         <figure id="review-1">
+           <a href="https://www.facebook.com/pj.tripolone/posts/pfbid0Mon4mVWaZyHdQ6bqZDBNcHAGXJoqC1C3XuRytQTNVYFNNGa9x8b6W6oEkLvQCZ6Gl" target="_blank"><img src="./Images-Fenn/Reviews/Pj Tripolone.png" class="round-img center-img home-review-pic" width="190px" height="190px" alt="Janice Kushner" loading="easy"></a>
+           <figcaption id="Janice-Kushner-review" class="home-review-caption text-center">
+            "These guys are great!  Affordable, efficient, timely, informative and friendly. We will be definitely calling them to redo our windows then our bathroom soon."
+           </figcaption>
+         </figure>
+       </section>
+
+       <!--review2-->  
+       <section class="home-review" style="--d:2;"  data-small="yes">
+        <figure id="review-2">
+          <a href="https://www.facebook.com/cathy.hulme.94/posts/pfbid027T3qQvktKQKGLAuQj6jV8GbfS7tNmaonxTMbdW8prKGftv3YYTsBRNLrysMCqhSSl" target="_blank"><img src="./Images-Fenn/Reviews/Cathy-Hulme.png" class="round-img center-img home-review-pic" width="190px" height="190px" alt="Janice Kushner" loading="easy"></a>
+          <figcaption id="Janice-Kushner-review" class="home-review-caption text-center" >
+           "We hired Fenn Construction to remodel our kitchen, employees showed up at 8 A.M. and worked until 4 or 5 P.M. completed our kitchen it less than a month. Having remodeled and built several homes, it's difficult to find hard, dedicated individuals to "get the job done" but Richie and his crew did. I would recommend them in a heart beat."
+          </figcaption>
+        </figure>
+       </section>
+
+       <!--review3--> 
+       <section class="home-review" data-small="no">
+         <figure id="review-3">
+           <a href="https://www.facebook.com/janice.kushner1/posts/pfbid02AdccMSG1GBhtpobzqjG6omViNXLPuBaoJUdXvPrjdYaVy9SSV6ZfXtoH84DZCZkYl" target="_blank"><img src="./Images-Fenn/Reviews/Janice-Kushner.jpeg" class="round-img center-img home-review-pic" width="190px" height="190px" alt="Janice Kushner" loading="easy"></a>
+             <figcaption id="Janice-Kushner-review" class="home-review-caption text-center">
+           "I needed several items done quickly. Richie Fenn and his crew made it happen!! The finished work is great and of professional quality. I love the work and the crew was very personable and worked incredibly hard to complete a huge job on my schedule. Without question, I will be hiring Fenn Construction again in the future!! Thank you for a great job!!"
+             </figcaption>
+         </figure>
+       </section>
+     </article>
+     <p class="home-review-see-more"><a href="https://www.facebook.com/profile.php?id=100063510165548&sk=reviews" target="_blank">see more</a></p>
+    </div>
+    </div>
+
+    <!--Home-Contact-->
+    <div id="contact" class="home-contact">
+     <fieldset id="contact-field" class="contact-fieldset">
+       <legend class="contact-legend"><h3 class="contact-title">Reach Us</h3></legend>
+       <form method="post" action="" class="contact-form">
+         <p class="contact-center">
+          <label for="user-name">Name</label>
+         </p>
+         <input type="text" name="user-name" placeholder="John Smith" id="user-name" class="contact-input">
+         <p class="contact-center">
+           <label for="user-mail">Email</label> 
+         </p>
+         <input type="email" name="user-mail" placeholder="John@email.com" id="user-mail" class="contact-input">
+         <p class="contact-center">
+           <label for="user-phone">Phone(XXX-XXX-XXX)</label> 
+         </p>
+          <input type="tel" name="user-phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="contact-input">
+         <br>
+
+         <p class="contact-center">
+           <label for="user-subject">Subject</label>
+         </p>
+         <select name="user-subject" id="user-subject" required class="contact-subject">
+           <option></option>
+           <option value="flooring">Flooring</option>
+           <option value="kitchen">Kitchen</option>
+           <option value="bathroom">Bathroom</option>
+           <option value="outdoor">Outdoor</option>
+           <option value="other">*Other*</option>
+         </select>
+
+         <textarea id="user-note" placeholder="Write your message here" name="user-note" class="contact-area" cols="40vw" rows="8"></textarea>
+         <p class="contact-p-button">
+          <button type="submit" class="contact-button">Send</button><button type="reset" class="contact-button">Reset</button>
+         </p>
+       </form>
+
+       <ul id="contact-list" class="contact-ul">
+          <li><a style="--c:1;" href="https://www.facebook.com/FENN-Construction-243662966013522" target="_blank">Richie Fenn</a></li>
+          <li><a style="--c:2;" href="tel:+1817-495-8897">(817)495-8897</a></li>
+          <li><a style="--c:3;" href="mailto: rich.e75@hotmail.com">Richiefenn98@gmail.com</a></li>
+          <li><a style="--c:4;" href="https://www.google.com/maps/place/Sanctuary,+TX+76020/@32.9040668,-97.7197939,11z/data=!3m1!4b1!4m5!3m4!1s0x864de2fe142c584b:0xa91ae7528083bc5f!8m2!3d32.9186258!4d-97.5463885" target="_blank">
+            <address>
+              Azle,
+              Texas Zip 76020
+            </address>
+           </a></li>
+       </ul>
+      </fieldset>
+      <!--Time-->
+     <article id="schedule">
+       <p id="schedule-days" class="contact-days">Monday - Friday</p>
+       <p id="schedule-hours" class="contact-hours"><time datetime="09:00">9am</time> - <time datetime="17:00">5pm</time></p>
+      </article>   
+     <br>   
+    </div> 
+    <hr>
+
+  </main>
+ 
+  
+  
+  <footer>
+
+    <div class="footer-container">
+      <div id="footer-sitemap" class="footer-sitemap">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html#about">about</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100063510165548&sk=reviews" target="_blank">reviews</a></li> 
+      </ul>
+        <ul id="contact-icons" class="contact-icons-list">
+          <li><a href="https://www.facebook.com/FENN-Construction-243662966013522" target="_blank"><img src="./Images-Fenn/edits/facebook-icon(brown).webp" width="40px" height="40px" alt="facebook-icon"></a></li>
+          <li><a href="tel:+1817-495-8897"><img src="./Images-Fenn/edits/icon-phone(brown).png"></a></li>
+          <li><a href="mailto: rich.e75@hotmail.com"><img src="./Images-Fenn/edits/email-icon(brown).webp"></a></li>
+          <li><a href="https://www.google.com/maps/place/Sanctuary,+TX+76020/@32.9040668,-97.7197939,11z/data=!3m1!4b1!4m5!3m4!1s0x864de2fe142c584b:0xa91ae7528083bc5f!8m2!3d32.9186258!4d-97.5463885" target="_blank"><img src="./Images-Fenn/edits/map-icon(brown).webp"></a></li>
+        </ul> 
+      </div>
+  
+      <div id="footer-services" class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="flooring-services.html">flooring</a></li>
+          <li><a href="kitchen-services.html">kitchen</a></li>
+          <li><a href="bathroom-services.html">bathroom</a></li>
+          <li><a href="patio-services.html">outdoor</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-message">
+        <h4>Message Us</h4>
+        <form method="post" action="">
+          <p>
+            <input type="tel" name="user-phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          </p>
+          <p>
+            <textarea id="user-message" placeholder="write your message here" name="user-message" rows="5" cols="20" class="footer-textarea" wrap="hard" ></textarea>
+          </p>
+          <p>
+          <button type="submit">Submit</button> <button type="reset">Reset</button>
+          </p>
+        </form>
+      </div> 
+    </div>
+    <p class="copy-right">Copyright &copy; Fenn Construction.</p> 
+
+  </footer>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

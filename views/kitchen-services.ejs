@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Fenn Construction</title>
+  <meta name="author" content="Stephen Iboudah">
+  <meta name="description" content="Website construction company">
+  <meta name="keyword" content="Azel Texas Fenn construction">
+  <meta name="copyright" content="Stephen, Inc">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <%- include("./partials/header.ejs") %>
+  <hr>
+
+  <main>
+    <figure class="services-box kitchen-box">
+      <div class="blur-veil"><h2>Kitchen</h2>
+      </div> 
+    </figure>
+
+    <div  class="service-description">
+      <div class="service-description-box">
+       <article>
+         <section>A floor reinstallation is one of the easiest ways to change the look and feels of your home. In additon to being relatively quick, it also adds more safety as old floors are prone to break and cause injuries.</section>
+         <section>From demo and prep, we offer a variety of looks working with types such as vynil plank, carpet, wood, tiles, roled laminate etc.</section>
+         <section>For additional materials or more details on the installations process and quotes, <a href= index.html#contact>contact us</a> and we'll discuss your vision. Check out some of our work in the <a href="#flooring-gallery">gallery</a> below too.</section>
+       </article>
+      </div>
+    </div>
+
+    <div class="service-gallery" id="flooring-gallery">
+     <h3>Gallery</h3>
+     <hr>
+     <div class="service-gallery-display">
+      <figure>
+        <img src="./Images-Fenn/Kitchen/kitchen-gray.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-brown4.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-random2.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-raw2.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-random6.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-random3.jpeg" alt="" class="service-gallery-pics">
+      </figure>
+      <figure>
+        <img src="./Images-Fenn/Kitchen/kitchen-brown.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-brown3.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-wood.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-random4.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-random7.jpeg" alt="" class="service-gallery-pics">
+        <img src="./Images-Fenn/Kitchen/kitchen-gray2.jpeg" alt="" class="service-gallery-pics">
+      </figure>
+    </div>
+  </main>
+  <hr>
+  <%- include("./partials/footer.ejs") %>
+  
+</body>
+
+</html>
